@@ -1,0 +1,83 @@
+\documentclass[14pt]{article}
+
+\newcommand{\slashed}[1]{\hbox{{$#1$}\llap{$/$}}}
+\begin{document}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{center}
+	{\Large\bf Conventions on signs and constants}
+\end{center}
+
+\bigskip
+
+	The Fourier transform is such that
+$ p_\mu \to i \partial_\mu $. 
+	This way, a derivative in an
+	interaction term, acting on a propagator will yield
+$ \pm i k_\mu $\footnote[2]{The upper sign corresponds to an outgoing
+particle, the lower ($ - i k^\mu $) --- to an incoming one},
+	where
+$ k_\mu $
+	is the momentum running through the propagator line.
+
+	Electron charge is 
+$ e = - |e| $ \footnote[3]{This agrees with Peskin \& Schr\"oder and also
+with Lifshitz \& Pitaevsky.}.
+
+	The QED action written for the \underline{electron} is
+$ \mathcal{L}_{\rm int} = -e\bar{\psi}\slashed{A}\psi $.
+
+	The covariant derivative is 
+$ \mathcal{D}_\mu = \partial_\mu + i e A_\mu $.
+
+	The vertex term for 
+$ i M $\footnote[8]{ 
+$ M $ is the amplitude, so that 
+$ S = 1 + i M (2\pi)^4 \delta \left(p_1 + p_2 - p_3 - p_4\right) $.}
+	is 
+$ - i e \gamma^\mu $.
+
+	Each new vertex we introduce acquires a factor of 
+``$ i $''
+	when converted to Feynman rules. That is, if
+$ \mathcal{L}_{\rm int} = \eta_1 \bar\psi \slashed{n} 
+	\left(n\cdot\partial\right)^2 \psi $,
+	its vertex will correspond to
+$ i\eta_1 \slashed{n} \left ( n \cdot (-i k)\right)^2 $.
+
+\bigskip
+	Feynman rules:
+\renewcommand{\arraystretch}{2.3}
+\begin{tabular}{lc}
+	fermion propagator &
+$ \frac{i\left(\slashed{p} + m \right)}{p^2 - m^2 + i\epsilon} $ \\
+
+	photon propagator &
+$ \frac{-i g_{\mu\nu}}{p^2 + i\epsilon} $ \\
+
+	photon-electron vertex & 
+$ -i e \gamma^\mu $ \\
+\end{tabular}
+
+\bigskip
+	where we take the lagrangian
+$ \mathcal{L}_{\rm QED} = - \frac{1}{4} F_{\mu\nu}F^{\mu\nu} +
+		\bar{\psi}\left( i \slashed{\partial} - m \right)\psi -
+		e\bar{\psi}\slashed{A}\psi $.
+
+	The scalar field lagrangian is
+$ \mathcal{L}_{\phi} = \partial_\mu \bar{\phi} \partial^\mu \phi -
+			m^2 \bar{\phi} \phi $.
+
+\renewcommand{\arraystretch}{1.0}
+	We assume $\gamma_5$ to be 
+$\left[\begin{array}{cc}
+      0  & 1 \\
+      1  & 0
+\end{array}\right]$, and the {\it left} projector
+$\frac{1 - \gamma^5}{2}$.
+
+	We assume the generators of SU(N) to be normalized as
+$ {\rm Tr}\left(T^a T^b\right) = \frac{1}{2} \delta^{ab} $.
+
+\end{document}

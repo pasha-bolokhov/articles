@@ -1,0 +1,671 @@
+This is TeX, Version 3.14159 (Web2C 7.4.5) (format=latex 2003.3.8)  12 JAN 2005 22:50
+**rtubes1.tex
+(./rtubes1.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+
+(/usr/share/texmf/tex/latex/cyrillic/koi8-r.def
+File: koi8-r.def 1999/11/16 v1.0d Input encoding file
+))
+(/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+
+(/usr/share/texmf/tex/generic/babel/russianb.ldf
+Language: russianb 2001/02/21 v1.1n Russian support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Russian'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@russian = a dialect from \language0
+(/usr/share/texmf/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2001/08/11 v1.0f Cyrillic encoding definition file
+)
+LaTeX Info: Redefining \latintext on input line 118.
+LaTeX Info: Redefining \textlatin on input line 123.
+Package babel Info: Making " an active character on input line 188.
+))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2001/08/11 v1.0f Cyrillic encoding definition file
+LaTeX Font Info:    Redeclaring font encoding T2A on input line 38.
+)
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 95.
+
+(/usr/share/texmf/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+No file rtubes1.aux.
+\openout1 = `rtubes1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+Overfull \hbox (35.50739pt too wide) in paragraph at lines 26--29
+\T2A/cmr/m/n/12 четырехмерных моделях является важной задачей(нправлением) в со
+временной
+ []
+
+
+LaTeX Warning: Citation `LF' on page 1 undefined on input line 35.
+
+
+LaTeX Warning: Citation `ss' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: Citation `BNF' on page 1 undefined on input line 40.
+
+
+Overfull \hbox (65.52902pt too wide) in paragraph at lines 30--42
+\T2A/cmr/m/n/12 нелинейных четырехмерных моделей, обладающих устойчивыми солито
+ноподобными
+ []
+
+
+Overfull \hbox (23.11671pt too wide) in paragraph at lines 30--42
+\T2A/cmr/m/n/12 решениями. Одна из таких моделей, с переменными принимающими зн
+ачения
+ []
+
+
+LaTeX Warning: Citation `FN' on page 1 undefined on input line 46.
+
+
+LaTeX Warning: Citation `VK' on page 1 undefined on input line 52.
+
+
+Overfull \hbox (29.14836pt too wide) in paragraph at lines 48--57
+[]\T2A/cmr/m/n/12 Одним из важных свойств модели Фаддеева-Скирма является возмо
+жность
+ []
+
+
+Overfull \hbox (26.8601pt too wide) in paragraph at lines 48--57
+\T2A/cmr/m/n/12 интерпретации ее статических решений в виде узлов состоящих из 
+скрученных
+ []
+
+
+Overfull \hbox (14.3009pt too wide) in paragraph at lines 48--57
+\T2A/cmr/m/n/12 Хопфа. Этот заряд имеет простую интерпретацию через степень зац
+епления
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+Overfull \hbox (2.38768pt too wide) in paragraph at lines 58--67
+[]\T2A/cmr/m/n/12 В настоящей работе при помощи концепции скрученных трубок дае
+тся
+ []
+
+
+Overfull \hbox (8.59459pt too wide) in paragraph at lines 58--67
+\T2A/cmr/m/n/12 в области высоких энергий. Это позволяет авторам сделать предпо
+ложение
+ []
+
+
+Overfull \hbox (12.5025pt too wide) in paragraph at lines 58--67
+\T2A/cmr/m/n/12 об области применимости степенных приближений для энергии конкр
+етных
+ []
+
+
+Overfull \hbox (17.07439pt too wide) in paragraph at lines 68--73
+\T2A/cmr/m/n/12 ее свойств. Лагранжиан модели задается следующей функцией произ
+водных
+ []
+
+
+Overfull \hbox (8.68857pt too wide) in paragraph at lines 76--80
+\T2A/cmr/m/n/12 включает в себя одну константу, которая имеет размерность $\OT1
+/cmr/m/n/12 [\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 ] = [][]$\T2A/cmr/m/n/12 . 
+ []
+
+
+Overfull \hbox (0.26686pt too wide) in paragraph at lines 81--84
+[]\T2A/cmr/m/n/12 С произвольной векторной функцией $[]$ естественным образом с
+вязана
+ []
+
+
+Overfull \hbox (39.90889pt too wide) in paragraph at lines 93--105
+\T2A/cmr/m/n/12 если длина вектора $[]$ является постоянной величиной (вектор $
+[]$ параметризуется
+ []
+
+[1
+
+]
+Overfull \hbox (4.34894pt too wide) in paragraph at lines 125--127
+[]\T2A/cmr/m/n/12 Статические решения модели могут быть найдены путем минимизац
+ии
+ []
+
+
+LaTeX Warning: Reference `HC' on page 2 undefined on input line 131.
+
+
+Overfull \hbox (27.37045pt too wide) in paragraph at lines 129--136
+\T2A/cmr/m/n/12 Сопоставляя общее выражение для топологического заряда ([]) с к
+онкретным
+ []
+
+
+Overfull \hbox (36.91403pt too wide) in paragraph at lines 129--136
+\T2A/cmr/m/n/12 потенциалом $\OML/cmm/m/it/12 E$ \T2A/cmr/m/n/12 при помощи тео
+рем вложения в функциональных пространствах
+ []
+
+
+LaTeX Warning: Citation `Ward0' on page 2 undefined on input line 145.
+
+
+Overfull \hbox (16.41795pt too wide) in paragraph at lines 139--147
+\T2A/cmr/m/n/12 Из этого неравенства немедленно следует важное заключение: супе
+рпозиция
+ []
+
+
+Overfull \hbox (1.57124pt too wide) in paragraph at lines 139--147
+\T2A/cmr/m/n/12 то есть между такими решениями имеется нетривиальное взаимодейс
+твие
+ []
+
+
+LaTeX Warning: Citation `HS' on page 2 undefined on input line 173.
+
+
+Overfull \hbox (35.34425pt too wide) in paragraph at lines 149--174
+\T2A/cmr/m/n/12 Статические решения модели Фаддеева-Скирма имеют простую интерп
+ретацию
+ []
+
+
+Overfull \hbox (4.2342pt too wide) in paragraph at lines 149--174
+\OML/cmm/m/it/12 S[]$\T2A/cmr/m/n/12 , или, в координатах, это вектор $\OT1/cmr
+/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
+2 1)$\T2A/cmr/m/n/12 . Тогда прообраз южного полюса
+ []
+
+
+Overfull \hbox (31.10596pt too wide) in paragraph at lines 149--174
+\T2A/cmr/m/n/12 полюса является, в свою очередь, множеством замкнутых кривых, о
+бразующих
+ []
+
+
+Overfull \hbox (6.62885pt too wide) in paragraph at lines 149--174
+\T2A/cmr/m/n/12 произвольно малый замкнутый контур проходящий один раз вокруг л
+инии
+ []
+
+
+Overfull \hbox (36.16124pt too wide) in paragraph at lines 149--174
+\T2A/cmr/m/n/12 модели показывают, что устойчивыми являются только решения с тр
+ивиальным
+ []
+
+[2]
+
+LaTeX Warning: Citation `MNS' on page 3 undefined on input line 201.
+
+
+Overfull \hbox (24.41286pt too wide) in paragraph at lines 192--206
+\T2A/cmr/m/n/12 решений можно ввести некоторые локальные характеристические пар
+аметры,
+ []
+
+
+Overfull \hbox (18.39783pt too wide) in paragraph at lines 192--206
+\OML/cmm/m/it/12 g$\T2A/cmr/m/n/12 , но не от энергии или заряда Хопфа солитона
+. В качестве таких параметров
+ []
+
+
+Overfull \hbox (17.3095pt too wide) in paragraph at lines 209--227
+\T2A/cmr/m/n/12 именно, радиус трубки $\OML/cmm/m/it/12 r$ \T2A/cmr/m/n/12 или 
+половину среднего расстояния между центрами
+ []
+
+
+Overfull \hbox (32.40746pt too wide) in paragraph at lines 209--227
+\T2A/cmr/m/n/12 вывод что перечисленные выше величины должны быть связаны соотн
+ошением
+ []
+
+
+Overfull \hbox (36.65727pt too wide) in paragraph at lines 233--250
+\T2A/cmr/m/n/12 выше соотношение наталкиваются на определенные препятствия. Сра
+внительно
+ []
+
+
+Overfull \hbox (5.48682pt too wide) in paragraph at lines 233--250
+\T2A/cmr/m/n/12 простое двумерное моделирование двух параллельных скрученных тр
+убок
+ []
+
+
+Overfull \hbox (55.08717pt too wide) in paragraph at lines 233--250
+\T2A/cmr/m/n/12 сожалению, трехмерное моделирование требует слишком больших выч
+ислительных
+ []
+
+[3]
+
+LaTeX Warning: Reference `glr' on page 4 undefined on input line 261.
+
+
+Overfull \hbox (34.6578pt too wide) in paragraph at lines 265--265
+[]\T2A/cmr/bx/n/17.28 Связь концепции скрученных трубок с оценкой
+ []
+
+
+Overfull \hbox (19.67503pt too wide) in paragraph at lines 268--277
+\T2A/cmr/m/n/12 Вакуленко-Капитанского при помощи введеной ранее концепции скру
+ченных
+ []
+
+
+Overfull \hbox (7.28651pt too wide) in paragraph at lines 268--277
+\T2A/cmr/m/n/12 трубок. А именно, мы покажем, что для статических решений с дос
+таточно
+ []
+
+
+Overfull \hbox (20.66646pt too wide) in paragraph at lines 268--277
+\T2A/cmr/m/n/12 большой энергией топологический заряд $\OML/cmm/m/it/12 Q$ \T2A
+/cmr/m/n/12 пропорционален энергии решения
+ []
+
+
+LaTeX Warning: Citation `MNS' on page 4 undefined on input line 289.
+
+
+Overfull \hbox (42.53267pt too wide) in paragraph at lines 282--298
+[]\T2A/cmr/m/n/12 Объяснение выглядит следующим образом. Будем рассматривать ст
+атическое
+ []
+
+
+Overfull \hbox (8.1715pt too wide) in paragraph at lines 282--298
+\T2A/cmr/m/n/12 решение (солитон) как тонкую эластичную трубку радиуса $\OML/cm
+m/m/it/12 r$ \T2A/cmr/m/n/12 (или площади
+ []
+
+
+Overfull \hbox (0.26706pt too wide) in paragraph at lines 282--298
+\T2A/cmr/m/n/12 быть многосвязным, то есть состоящим из нескольких замкнутых тр
+убок.
+ []
+
+
+Overfull \hbox (27.02315pt too wide) in paragraph at lines 300--315
+[]\T2A/cmr/m/n/12 Для того чтобы вычислить топологический заряд необходимо <<ра
+стащить>>
+ []
+
+
+Overfull \hbox (4.01848pt too wide) in paragraph at lines 300--315
+\T2A/cmr/m/n/12 подсчитывая при этом количество операций расцепления между лини
+ями.
+ []
+
+
+Overfull \hbox (32.07233pt too wide) in paragraph at lines 300--315
+\T2A/cmr/m/n/12 единичной длины пропорционально линейному размеру узла $\OML/cm
+m/m/it/12 x$\T2A/cmr/m/n/12 . Действительно,
+ []
+
+[4]
+
+LaTeX Warning: Citation `MNS' on page 5 undefined on input line 333.
+
+
+Overfull \hbox (47.41878pt too wide) in paragraph at lines 328--338
+\T2A/cmr/m/n/12 прообразов, связанными с их вращением друг относительно друга (
+скрученностью
+ []
+
+
+Overfull \hbox (5.98409pt too wide) in paragraph at lines 328--338
+\T2A/cmr/m/n/12 трубки). Так как число <<скручиваний>> на единицу длины трубки 
+является
+ []
+
+
+Overfull \hbox (29.80855pt too wide) in paragraph at lines 328--338
+\T2A/cmr/m/n/12 фиксированным параметром [[]], то число таких расцеплений пропо
+рционально
+ []
+
+
+LaTeX Warning: Citation `HS' on page 5 undefined on input line 350.
+
+
+LaTeX Warning: Citation `MNS' on page 5 undefined on input line 350.
+
+
+LaTeX Warning: Citation `Ward' on page 5 undefined on input line 350.
+
+
+Overfull \hbox (9.73033pt too wide) in paragraph at lines 339--354
+[]\T2A/cmr/m/n/12 Несмотря на то, что приведенное вычисление ни в коей мере не 
+является
+ []
+
+
+Overfull \hbox (29.14825pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 точным, оно, тем не менее, демонстрирует природу нетривиального
+ показателя
+ []
+
+
+Overfull \hbox (12.50247pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 самозацепления связанных компонент узла и зацепления разных ком
+понент
+ []
+
+
+Overfull \hbox (26.54074pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 друг за друга. В то же время, благодаря скрученности трубок, то
+пологический
+ []
+
+
+Overfull \hbox (12.5087pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 заряд $\OML/cmm/m/it/12 Q$ \T2A/cmr/m/n/12 имеет составляющую п
+ропорциональную энергии в первой степени,
+ []
+
+
+Overfull \hbox (9.41032pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 которая является доминирующей при малых размерах узла. Это указ
+ывает
+ []
+
+
+Overfull \hbox (30.80956pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 на необоснованность попыток [[]], [[]], [[]] аппроксимировать э
+кспериментальные
+ []
+
+
+Overfull \hbox (24.57593pt too wide) in paragraph at lines 339--354
+\T2A/cmr/m/n/12 данные для низких энергий при помощи степенной зависимости с по
+казателем
+ []
+
+
+Overfull \hbox (13.49278pt too wide) in paragraph at lines 356--363
+\T2A/cmr/m/n/12 искомая длина $\OML/cmm/m/it/12 l$ \T2A/cmr/m/n/12 является нек
+оторой функцией размера (а значит и энергии)
+ []
+
+
+Overfull \hbox (21.1497pt too wide) in paragraph at lines 366--373
+\T2A/cmr/m/n/12 зацепления одной связанной компоненты со всеми остальными компо
+нентами
+ []
+
+[5]
+
+LaTeX Warning: Reference `HH' on page 6 undefined on input line 394.
+
+
+Overfull \hbox (6.79208pt too wide) in paragraph at lines 386--395
+\T2A/cmr/m/n/12 число связанных компонент узла и добавлением вклада от самозаце
+пления
+ []
+
+
+LaTeX Warning: Reference `bnd' on page 6 undefined on input line 413.
+
+
+LaTeX Warning: Reference `HH' on page 6 undefined on input line 417.
+
+
+LaTeX Warning: Reference `bnd' on page 6 undefined on input line 423.
+
+
+Overfull \hbox (13.32178pt too wide) in paragraph at lines 412--427
+\T2A/cmr/m/n/12 концепции скрученных трубок. Попытки построить конфигурации с д
+линой
+ []
+
+
+Overfull \hbox (7.46553pt too wide) in paragraph at lines 412--427
+\T2A/cmr/m/n/12 и степенью зацепления удовлетворяющими соотношению ([]) показыв
+ают,
+ []
+
+
+Overfull \hbox (36.9756pt too wide) in paragraph at lines 412--427
+\T2A/cmr/m/n/12 произвольно высокой энергией нельзя использовать компонеты фикс
+ированного
+ []
+
+
+LaTeX Warning: Reference `QE' on page 6 undefined on input line 432.
+
+
+LaTeX Warning: Reference `LL' on page 6 undefined on input line 435.
+
+
+Overfull \hbox (63.07701pt too wide) in paragraph at lines 429--437
+\T2A/cmr/m/n/12 В заключение приведем конструктивный пример последовательности 
+конфигураций,
+ []
+
+
+Overfull \hbox (6.79327pt too wide) in paragraph at lines 429--437
+\T2A/cmr/m/n/12 состоящих из скрученных трубок, энергия и заряд которых удовлет
+воряют
+ []
+
+
+Overfull \hbox (5.32358pt too wide) in paragraph at lines 438--449
+[]\T2A/cmr/m/n/12 Каждая из этих конфигураций представляет из себя подобие стал
+ьного
+ []
+
+
+Overfull \hbox (1.08284pt too wide) in paragraph at lines 438--449
+\T2A/cmr/m/n/12 из рассматриваемых здесь скрученных трубок, обвивающихся по спи
+рали
+ []
+
+
+Overfull \hbox (21.3154pt too wide) in paragraph at lines 438--449
+\T2A/cmr/m/n/12 вокруг центральной линии объекта и, таким образом, заполняющих 
+оболочку
+ []
+
+[6]
+Overfull \hbox (16.90758pt too wide) in paragraph at lines 450--460
+[]\T2A/cmr/m/n/12 Приведем оценку для энергии и топологического заряда рассмари
+ваемых
+ []
+
+
+Overfull \hbox (14.69586pt too wide) in paragraph at lines 450--460
+\T2A/cmr/m/n/12 помощи его радиуса $\OML/cmm/m/it/12 R$\T2A/cmr/m/n/12 . Для то
+го чтобы конфигурации в последовательности
+ []
+
+
+Overfull \hbox (54.24913pt too wide) in paragraph at lines 450--460
+\T2A/cmr/m/n/12 были подобны друг другу длина каждой из них $\OML/cmm/m/it/12 L
+[]$ \T2A/cmr/m/n/12 должна быть пропорциональна
+ []
+
+
+Overfull \hbox (3.09508pt too wide) in paragraph at lines 461--484
+\T2A/cmr/m/n/12 (число которых пропорционально $\OML/cmm/m/it/12 R[]$\T2A/cmr/m
+/n/12 ) величин $\OML/cmm/m/it/12 Rr[]$\T2A/cmr/m/n/12 . Очевидно, что такая
+ []
+
+
+Overfull \hbox (4.27475pt too wide) in paragraph at lines 461--484
+\T2A/cmr/m/n/12 сумма пропорциональна $\OML/cmm/m/it/12 R[]$\T2A/cmr/m/n/12 . Б
+олее точные вычисления дают приближение 
+ []
+
+
+Overfull \hbox (34.03616pt too wide) in paragraph at lines 494--501
+\T2A/cmr/m/n/12 Вакуленко-Капитанского. Приведен пример последовательности конф
+игураций
+ []
+
+
+Overfull \hbox (21.96669pt too wide) in paragraph at lines 494--501
+\T2A/cmr/m/n/12 со сколь угодно большой энергией, удовлетворящих степенному соо
+тношению
+ []
+
+[7]
+Overfull \hbox (19.5159pt too wide) in paragraph at lines 544--555
+\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 4$ \T2A/cmr/m/n/12 входящего
+ в оценку Вакуленко-Капитанского в области высоких энергий.
+ []
+
+
+Overfull \hbox (18.04977pt too wide) in paragraph at lines 544--555
+\T2A/cmr/m/n/12 степенных приближений для энергии конкретных решений рассматрив
+аемой
+ []
+
+[8] (./rtubes1.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1979 strings out of 95847
+ 21315 string characters out of 1195949
+ 69774 words of memory out of 1000001
+ 4909 multiletter control sequences out of 10000+50000
+ 14016 words of font info for 39 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 27i,9n,24p,635b,294s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on rtubes1.dvi (8 pages, 35928 bytes).

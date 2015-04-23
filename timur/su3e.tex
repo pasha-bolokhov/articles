@@ -1,0 +1,1674 @@
+\documentclass[a4paper,12pt]{article}
+%\usepackage{lhr,russian}
+%\usepackage[koi8-r]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[english,russian]{babel}
+
+%\usepackage[russian]{babel}
+%\usepackage[T2A]{fontenc}
+
+\renewcommand{\baselinestretch}{1.1}
+
+\usepackage{amsmath,amssymb,latexsym}
+%\usepackage{amsmath,amssymb}
+
+\textwidth=16cm
+\textheight=23cm
+
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\dd}{d}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\RE}{Re}
+\DeclareMathOperator{\IM}{Im}
+
+
+\newcommand{\Aa}{C}
+\newcommand{\BB}{\mathcal{B}}   %prod of B
+\newcommand{\KK}{K}   %Kirillov's 2-form
+\newcommand{\LL}{\mathcal{L}}   %Lagrangian
+
+\newcommand{\al}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\la}{\lambda}
+\newcommand{\na}{\nabla}
+\newcommand{\om}{\omega}
+\newcommand{\si}{\sigma}
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\tro}{\tilde{\rho}}
+\newcommand{\pr}{\partial}
+\newcommand{\prm}{\partial_{\mu}}
+\newcommand{\prn}{\partial_{\nu}}
+\newcommand{\uu}{\mathbf{u}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\ee}{\mathbf{e}}
+
+\renewcommand{\vec}[1]{\mbox{\boldmath$#1$}}
+
+\allowdisplaybreaks[1]
+
+\begin{document}
+%\selectlanguage{russian}
+\begin{center}
+        Infrared variables for the
+$ SU(3) $ Yang-Mills field
+\end{center}
+
+{\bf Abstract.} 
+	The self-dual parametrization of the
+$ SU(2) $ Yang-Mills field, proposed by A.~Niemi and L.~Faddeev for
+infrared description of the theory, can be generalized for the
+$ SU(3) $ gauge group case.
+        We show, that the simple duality of the
+$ SU(2) $ gauge field is not transferred to the higher
+rank verbatim. The algebraic structures arising in the lagrangian for
+new compact variables are interpreted in terms of the 
+$ SU(2)^{\otimes 3} $ group.
+
+\vspace{0.5cm}
+	In the papers
+\cite{prl},
+\cite{pl} and
+\cite{FNP}
+	A.~Niemi and the second of the authors of this article considered
+	an approach of substitution of independent variables for the Yang-Mills theory
+        in which compact-valued field quantities were used.
+        In the case of 
+    $ SU(2) $
+	the field
+    $ \vec{n}(x) $
+	is such a variable, which takes its values in the 2-dimensional sphere
+    $ S^{2} $.
+
+	The approach of 
+\cite{prl},
+\cite{pl}
+	based on exploiting the Cho connection
+\cite{Cho}
+	for the 
+    $ SU(2) $
+	gauge group and its generalization to higher ranks. 
+ 	The approach presented in 
+\cite{FNP}
+	for the case of
+    $ SU(2) $ gauge group
+	is essentially different. As we assume, it more adequately
+	describes the theory in the infrared limit.
+
+	In the present work, we consider a generalization of the
+	latter approach for the case of the 
+    $ SU(3) $ gauge group.
+	Further generalization to a rank more than two is very straightforward,
+ 	and thus we will only discuss the case of $ SU(3) $, in order
+	not to overload the derivations.
+
+
+	At the variable substitutions suggested in
+\cite{prl}--\cite{FNP}
+	the field
+    $ \vec{n} $
+	enters the Yang-Mills lagrangian via the following structures
+\begin{gather*}
+	e_{2} = (\prm \vec{n})^{2} , \\
+	e_{4} = (\prm \vec{n} \times \prn \vec{n} , \vec{n})^{2} .
+\end{gather*}
+	As shown in
+\cite{Nat}--\cite{BS},
+	the lagrangian
+\begin{equation}
+\label{lfirst}
+	\LL = a (\prm \vec{n})^{2} + 
+		b (\prm \vec{n} \times \prn \vec{n} , \vec{n})^{2}
+\end{equation}
+	admits string-like solitonic solutions.
+
+	The general stimulus of the papers
+\cite{prl}--\cite{FNP}
+	was a hypothesis that such excitations remain in the full
+	Yang-Mills theory as well. From this point of view, it is 
+	quite natural to study how the field
+    $ \vec{n}(x) $
+	and the structures
+    $ a e_{2} + b e_{4} $
+	can be generalized to a higher rank.
+
+	Two sets of variables analogous to 
+    $ \vec{n}(x) $
+	were introduced in the approach
+\cite{FNP},
+	which we have called the <<electric>> and <<magnetic>> variables.
+	Both sets of the variables entered the Yang-Mills lagrangian
+	in a similar way, what let the authors speculate about a
+	new duality. As we are going to show here, a simple duality of
+	the 
+    $ SU(2) $
+	gauge field cannot be transferred to a higher rank literally.
+	The lagrangian of the <<electric>> variables forms a more 
+	complicated expression, as compared to that of the <<magnetic>>
+	variables. And, furthermore, an additional angular <<electric>>
+	variable emerges, with no <<magnetic>> quantity corresponding
+	to it.
+	
+	The first part of this paper reproduces the results of 
+\cite{FNP}
+	by means of technique of the maximal abelian gauge
+\cite{thf}.
+	In the second part we describe a parametrization
+	of the
+$  SU(3) $
+	Yang-Mills field. In the third part we discuss an algebraic
+	interpretation of the model lagrangian
+(\ref{lfirst}).
+
+        We use the following conventions. Greek indices
+$ \mu $, $ \nu $, $ \la $
+	stand for the space-time coordinate indices,
+	Latin indices	
+    $ k,l $
+	are used for spatial coordinates,
+	and the indices
+    $ a,b,c $
+	count the weight vectors of the 
+    $ su(3) $ algebra.
+	Repetitive internal indices are summed up by, though in some places
+	we explicitly put the sum signs.
+
+	The squares of expressions and the squares of moduli of expressions
+	are assumed to contain repetitive indices. In particular, these ones:
+\begin{gather*}
+        a_{\mu} b_{\mu} \equiv - a_{0} b_{0} +
+		a_{1} b_{1} + a_{2} b_{2} + a_{3} b_{3} , \\
+        |a_{\mu} b_{\nu} - c_{\mu} d_{\nu} |^{2} \equiv \sum_{\mu\nu}
+                (a_{\mu} b_{\nu} - c_{\mu} d_{\nu})
+		(\bar{a}_{\mu} \bar{b}_{\nu} - \bar{c}_{\mu} \bar{d}_{\nu}) .
+\end{gather*}
+
+\section{The lagrangian of the 
+    $ SU(2) $ Yang-Mills field}
+	Here we are going to show general results and conclusions of
+	the paper
+\cite{FNP}
+	using conventions adapted for further generalization.
+
+	The lagrangian of the Yang-Mills field is invariant 
+	under the non-commuting gauge group transformations.
+	In this group, we can choose an abelian
+	subgroup generated by exponents of the Cartan subalgebra elements
+	(with coordinate-dependent coefficients) of the corresponding Lie 
+	algebra.
+	We will refer to the gauge transformations formed by the subgroup
+	as abelian transformations.
+
+
+	The work 
+\cite{FNP}
+	expresses the lagrangian of 
+    $ SU(2)$
+	Yang-Mills theory in terms of quantities which are invariant
+	under the abelian transformations. A suitable choice of new variables
+	makes the lagrangian contain an expression similar to the model 
+	lagrangian
+(\ref{lfirst}).
+	We will revoke this technique in order to generalize it to the case 
+	of the
+    $ SU(3) $
+	group later.
+
+	Let 
+    $ A_{\mu}(x) $ 
+	be the Yang-Mills field,
+    $ \mu = 0,1,2,3 $;
+    $ A_{\mu}(x) \in su(2) $.
+	It is natural to choose the basis of the 
+    $ su(2) $
+	algebra in terms of the following matrices
+\begin{equation*}
+	\si_{3} =
+	\begin{pmatrix}
+		1 & 0 \\
+		0 & -1
+	\end{pmatrix} , \quad
+	\si_{+} =
+	\begin{pmatrix}
+		0 & 1 \\
+		0 & 0
+	\end{pmatrix} , \quad
+	\si_{-} =
+	\begin{pmatrix}
+		0 & 0 \\
+		1 & 0
+	\end{pmatrix} .
+\end{equation*}
+	The matrix
+    $ \si_{3} $
+	forms the basis of the Cartan subalgebra of the 
+    $ su(2) $
+	algebra, and as we have defined above, 
+	??induces??
+	the abelian transformations:
+\begin{equation}
+\label{cgauge}
+	A_{\mu} \to e^{i\be' \si_{3}} A_{\mu} e^{-i\be' \si_{3}} 
+		- \prm \be' \si_{3} , 
+\end{equation}
+	Let us decompose the field
+    $ A_{\mu} $ 
+	into a Cartan component
+    $ A^{3}_{\mu} $
+	and a complex component
+    $ B_{\mu} $,
+	which corresponds to the root vector:
+\begin{equation*}
+	 A_{\mu} = A^{3}_{\mu} \si_{3} + B_{\mu} \si_{+} +
+				\bar{B}_{\mu} \si_{-} .
+\end{equation*}
+	This expansion corresponds to the maximal abelian gauge
+	which is frequently used in lattice models.
+\cite{thf}.
+	The component 
+    $ B_{\mu} $
+	transforms as a charge field under the transformation
+(\ref{cgauge}):
+\begin{equation*}
+	B_{\mu} \to e^{2i\be'} B_{\mu} ,
+\end{equation*}
+	meanwhile
+    $ A^{3}_{\mu} $ ---
+	as an abelian gauge field:
+\begin{equation*}
+	A^{3}_{\mu} \to A^{3}_{\mu} - \prm \be' .
+\end{equation*}
+	In terms of the fields
+    $ A^{3}_{\mu} $, $ B_{\mu} $ 
+	the lagrangian of the
+    $ SU(2) $ Yang-Mills field reads
+\begin{multline}
+\label{LL}
+	\LL = -1/4 \tr \left( [\prm + iA_{\mu} , \prn + iA_{\nu}]
+		\right)^{2} = \\
+	= ((\prm A^{3}_{\nu} - \prn A^{3}_{\mu}) + i 
+	(B_{\mu} \bar{B}_{\nu} - \bar{B}_{\mu} B_{\nu}))^{2}
+	+ \na_{\mu} B_{\nu} \bar{\na}_{\mu} \bar{B}_{\nu}
+	- \na_{\mu} B_{\nu} \bar{\na}_{\nu} \bar{B}_{\mu} ,
+\end{multline}
+	where
+    $ \na_{\mu} $
+	--- is the action of the abelian part of the covariant derivative, 
+	that is
+\begin{equation*}
+	\na_{\mu} B \equiv (\prm + 2i A^{3}_{\mu}) B .
+\end{equation*}
+
+	By adding gauge fixing terms 
+    $ |\na_{\mu} B_{\mu}|^{2} $ 
+	to the lagrangian we can get rid of <<unwanted>> cross-terms:
+    $ \na_{\mu} B_{\nu} \bar{\na}_{\nu} \bar{B}_{\mu} $,
+	what results in the lagrangian's	
+(\ref{LL})
+	turning into:
+\begin{multline}
+\label{Ll}
+    \int \LL_{g} = \int \LL + |\na_{\mu} B_{\mu}|^{2} 
+	= \int \bigl( (\prm A^{3}_{\nu} - \prn A^{3}_{\mu})^{2} -
+	(B_{\mu} \bar{B}_{\nu} - \bar{B}_{\mu} B_{\nu})^{2} + \\
+	+ 4 i (\prm A^{3}_{\nu} - \prn A^{3}_{\mu}) 
+		(B_{\mu} \bar{B}_{\nu} - \bar{B}_{\mu} B_{\nu}) +
+	|\na_{\mu} B_{\nu}|^{2} \bigr) .
+\end{multline}
+	We have introduced the integration signs since this equation 
+	uses integration by parts.
+
+	The following combination
+\begin{equation*}
+	J_{\mu} = \frac{i}{2 \rho^{2}} (\prm \bar{B}_{\nu} B_{\nu} - 
+		\prm B_{\nu} \bar{B}_{\nu}) ,
+\end{equation*}
+	 where
+\begin{equation*}
+	\rho^{2} = B_{\nu} \bar{B}_{\nu} ,
+\end{equation*}
+	behaves like 
+    $ -2 A^{3}_{\mu} $
+	under the abelian transformations
+(\ref{cgauge}),
+	and hence the substitution
+\begin{equation}
+\label{cha}
+	\Aa_{\mu} = A^{3}_{\mu} + 1/2 J_{\mu} 
+\end{equation}
+	lets us eliminate the abelian-noninvariant field
+    $ A^{3}_{\mu} $.
+	The last term of the expression 
+(\ref{Ll})
+	can be written the following way in terms of 
+    $ \Aa_{\mu} $,
+    $ J_{\mu} $:
+\begin{equation}
+\label{naB}
+	|\na_{\mu} B_{\nu}|^{2} = |\prm B_{\nu}|^{2}
+		- \rho^{2} J^{2}_{\mu} + 4 \rho^{2} \Aa^{2}_{\mu} .
+\end{equation}
+
+	In a generic case, the vectors
+    $ B_{\mu} $,
+    $ \bar{B}_{\mu} $
+	define a two-dimensional plane in the four-dimensional space-time.
+	Let the complex vectors
+    $ \ee_{\mu} $,
+    $ \bar{\ee}_{\mu} $
+	be a basis in that plane, that is, obey the relations:
+\begin{equation}
+\label{norme}
+	\ee_{\mu} , \bar{\ee}_{\mu} \, : \quad
+		\ee_{\mu} \ee_{\mu} = 0 , \quad
+		\ee_{\mu} \bar{\ee}_{\mu} = 1 .
+\end{equation}
+	Using the earlier defined density
+    $ \rho $
+	we can derive the following expansion for the vector
+    $ B_{\mu} $:
+\begin{equation}
+\label{chb}
+	B_{\mu} = \rho (\cos \al e^{i\be+i\ga} \ee_{\mu} +
+		\sin \al e^{i\be - i\ga} \bar{\ee}_{\mu}) .
+\end{equation}
+	The only abelian-noninvariant quantity here is the angle
+    $ \be $:
+	the transformation
+(\ref{cgauge})
+	adds an extra term
+    $ 2 \be' $
+	to it.
+
+	The expansion 
+(\ref{chb})
+	has been defined up to a basis rotation
+    $ \ee_{\mu} $,
+    $ \bar{\ee}_{\mu} $:
+\begin{align}
+\label{ggauge}
+	\ga & \to \ga + \ga' \\
+\nonumber
+	\ee_{\mu} & \to e^{-i\ga'} \ee_{\mu} ,
+\end{align}
+	which corresponds to one more
+    $ U(1) $-gauge 
+	field
+\begin{equation*}
+	\Ga_{\mu} = i \ee_{\nu} \prm \bar{\ee}_{\nu} .
+\end{equation*}
+	It is easy to see that the transformation
+(\ref{ggauge})
+	does not change the sum
+    $ \prm \ga + \Ga_{\mu} $.
+
+	The variables
+    $ \al, \ga $
+	are Euler angles of a vector
+    $ \vec{t} $,
+	which takes its values in the unit sphere
+    $ S^{2} $:
+\begin{equation*}
+        \vec{t} = 
+	\begin{pmatrix}
+		\sin 2\al \cos 2\ga \\
+		\sin 2\al \sin 2\ga \\
+		\cos 2\al 
+	\end{pmatrix} , \quad
+	t_{+} = \frac{1}{2} \sin 2\al e^{2i\ga}, \quad
+	t_{-} = \frac{1}{2} \sin 2\al e^{-2i\ga}.
+\end{equation*}
+	The transformations
+(\ref{ggauge}), 
+	when acting upon the vector
+    $ \vec{t} $,
+	rotate this vector around the third coordinate axis.
+	The field
+    $ \Ga_{\mu} $
+	lets us construct a derivative of the vector
+    $ \vec{t} $
+	which is covariant with respect to that rotation:
+\begin{equation*}
+	(\na_{\mu} \vec{t})_{k} = \sum_{l}
+		(\delta^{kl} \prm - 2 \varepsilon^{kl3} \Ga_{\mu}) t_{l} .
+\end{equation*}
+
+	This way, abelian-invariant compact variables which arose in the
+	quantity
+    $ B_{\mu} $
+	are divided into two parts: a vector on the two-dimensional sphere
+    $ \vec{t} $
+	(angles $ \al, \ga $)
+	and a couple of mutually conjucated unit-length complex vectors
+    $ \ee_{\mu}, \bar{\ee}_{\mu} $.
+	The same way as in the work
+\cite{FNP}
+	we will call the former ones the <<electric>> variables, and the latter
+	ones --- the <<magnetic>> variables.
+
+	Let us express the right hand side of the formula
+(\ref{naB})
+	in terms of the new variables:
+\begin{multline}
+	|\nabla_{\mu} B_{\nu}|^{2} = 
+	(\prm \rho)^{2} + \rho^{2} (|\prm \ee_{\nu}|^{2} +
+		t_{+} (\prm \ee_{\nu})^{2} + t_{-} (\prm \bar{\ee}_{\nu})^{2})
+\\
+	+ \rho^{2} ((\prm \al)^{2} + (\prm \be)^{2} + (\prm \ga)^{2} +
+		2 \cos 2\al \, \prm \be \, \prm \ga ) 
+	+2 \rho^{2} \Ga_{\mu} (\cos 2\al \, \prm \be + \prm \ga)
+\\
+	- \rho^{2} (\cos 2\al (\prm \ga + \Ga_{\mu}) + \prm \be )^{2} 
+	+ 4 \rho^{2} \Aa^{2}_{\mu} .
+\end{multline}
+	Here the first two lines come from the 
+	term 
+    $ |\prm B_{\nu}|^{2} $
+	in the right hand side of the equation
+(\ref{naB}).
+	Since the left hand side is invariant under the 
+	abelian transformations,
+	all the terms containing the angle
+$ \be $ 
+	cancel;
+	after adding and subtracting $ \rho^{2} \Ga^{2}_{\mu} $ we obtain
+\begin{multline*}
+	|\nabla_{\mu} B_{\nu}|^{2} = (\prm \rho)^{2} + \rho^{2} 
+		(|\prm \ee_{\nu}|^{2} + t_{+} (\prm \ee_{\nu})^{2} + 
+			t_{-} (\prm \bar{\ee}_{\nu})^{2} - \Ga^{2}_{\mu}) + \\
+		+ \rho^{2} ((\prm \al)^{2} 
+			+ \sin^{2}2\al (\prm \ga + \Ga_{\mu})^{2}) 
+	+ 4 \rho^{2} \Aa^{2}_{\mu} .
+\end{multline*}
+	It is possible to show that the second last term in this equation
+	is exactly
+    $ 1/4 \rho^{2} (\nabla_{\mu} \vec{t})^{2} $,
+	and, hence,
+\begin{equation}
+\label{maineq}
+	|\na_{\mu} B_{\nu}|^{2} = 
+		(\prm \rho)^{2} + \rho^{2}
+	(|\prm \ee_{\nu}|^{2} - \Ga^{2}_{\mu} + t_{+} (\prm \ee_{\nu})^{2}
+		+ t_{-} (\prm \bar{\ee}_{\nu})^{2}
+		+ 1/4 (\na_{\mu} \vec{t})^{2}
+	+ 4 \Aa^{2}_{\mu}) .
+\end{equation}
+
+	Now, using the relations
+\begin{equation*}
+	H_{\mu\nu} \equiv \prm J_{\nu} - \prn J_{\mu} =
+	1/2 (\vec{t}, \nabla_{\mu} \vec{t} \times \nabla_{\nu} \vec{t}) + 
+		t_{3} (\prm \Ga_{\nu} - \prn \Ga_{\mu}) ,
+\end{equation*}
+	and the substitutions 
+(\ref{cha}) and
+(\ref{chb}),
+	we arrive at the following expression for the lagrangian
+(\ref{Ll}):
+\begin{multline}
+\label{Lf}
+	\LL_{g} = (E_{\mu\nu} + 1/2 H_{\mu\nu})^{2}  + 2 G_{\mu\nu}
+		(H_{\mu\nu} + 2 E_{\mu\nu} ) 
+			+  1/4 \rho^{2} (\na_{\mu} \vec{t})^{2} \\
+	+  \rho^{2} (|\prm \ee_{\nu}|^{2} - \Ga^{2}_{\mu} + 
+		t_{+} (\prm \ee_{\nu})^{2} + t_{-}(\prm \bar{\ee}_{\nu})^{2})
+	+ (\prm \rho)^{2} + \rho^{4} t^{2}_{3} + 4 \rho^{2} \Aa^{2}_{\mu} ,
+\end{multline}
+	where we have introduced
+\begin{align*}
+	E_{\mu\nu} & = \prm \Aa_{\nu} - \prn \Aa_{\mu} , \\
+	G_{\mu\nu} & = i \rho^{2} t_{3} 
+		(\ee_{\mu} \bar{\ee}_{\nu} - \ee_{\nu} \bar{\ee}_{\mu}) .
+\end{align*}
+	We can consider the expansion of the lagrangian
+    $ \LL_{g} $ in derivatives,
+	treating the variable 
+    $ \vec{t} $
+	as <<fast>>, and
+    $ \ee_{\mu} $ ---
+	as <<slow>>. The equation
+(\ref{Lf})
+	generates the effective lagrangian
+\begin{equation}
+\label{Leff}
+	(\prm \Aa^{3}_{\nu} - \prn \Aa^{3}_{\mu} + 
+		1/4 (\vec{t}, \prm \vec{t} \times \prn \vec{t}) )^{2}
+		+ 1/4 \rho^{2} (\prm \vec{t})^{2} + 4 \rho^{2} \Aa^{2}_{\mu} 
+		+ V(t) ,
+\end{equation}
+	which represents the model structure
+(\ref{lfirst}),
+	interacting with the massive vector field
+    $ \Aa_{\mu} $.
+
+	The duality of the variables
+    $ \vec{t} $
+	and
+    $ \ee_{\mu} $
+	is clearly exposed by transferring to the hamiltonian formalism.
+	For static configurations, the energy functional depends
+	only on two out of four parameters of the complex
+	vector
+    $ \ee_{\mu} $,
+	which can be represented by a vector
+    $ \vec{m} $
+	taking its values in the sphere
+    $ S^{2} $.
+	Thus, the energy functional contains the following terms
+\begin{gather*}
+	|\partial_{k} \ee_{l}|^{2} - \Ga^{2}_{k} = (\partial_{k} \vec{m})^{2},\\
+	\partial_{k} \Ga_{l} - \partial_{l} \Ga_{k} =
+		(\partial_{k} \vec{m} \times \partial_{l} \vec{m}, \vec{m}) .
+\end{gather*}
+	To the first order in derivatives of the <<slow>> field
+    $ \vec{t} $
+	the hamiltonian of the vector
+    $ \vec{m} $
+	appears to have the same form as the hamiltonian obtained 
+	from the lagrangian
+(\ref{Leff}).
+	Exact relations for the variables
+    $ \vec{m} $
+	are shown in 
+\cite{FNP}.
+
+\section{Parametrization of the
+    $ SU(3) $ Yang-Mills field}
+	Let us apply the approach described in the previous section to the
+	lagrangian of the 
+    $ SU(3) $ 
+	Yang-Mills field.
+	We choose the following basis of the Lie algebra
+    $ su(3) $:
+\begin{gather}
+\label{lambda}
+	\la^{+}_{1} = \begin{pmatrix}
+			0 & 1 & 0 \\
+			0 & 0 & 0 \\
+			0 & 0 & 0 
+			\end{pmatrix} ,
+	\quad
+	\la^{+}_{2} = \begin{pmatrix}
+			0 & 0 & 0 \\
+			0 & 0 & 0 \\
+			1 & 0 & 0 
+			\end{pmatrix} ,
+	\quad
+	\la^{+}_{3} = \begin{pmatrix}
+			0 & 0 & 0 \\
+			0 & 0 & 1 \\
+			0 & 0 & 0 
+			\end{pmatrix} , \\
+\nonumber
+	\la^{-}_{1} = \begin{pmatrix}
+			0 & 0 & 0 \\
+			1 & 0 & 0 \\
+			0 & 0 & 0 
+			\end{pmatrix} ,
+	\quad
+	\la^{-}_{2} = \begin{pmatrix}
+			0 & 0 & 1 \\
+			0 & 0 & 0 \\
+			0 & 0 & 0 
+			\end{pmatrix} ,
+	\quad
+	\la^{-}_{3} = \begin{pmatrix}
+			0 & 0 & 0 \\
+			0 & 0 & 0 \\
+			0 & 1 & 0 
+			\end{pmatrix} , \\
+\nonumber
+	\la_{3} = \begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & -1 & 0 \\
+			0 & 0 & 0 
+			\end{pmatrix} ,
+	\quad
+	\la_{8} = \frac{1}{3} \begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & -2 
+			\end{pmatrix} .
+	\quad
+\end{gather}
+	This basis differs from the traditionally used Gell-Mann
+	basis by a change in the normalization and a transmutation of the
+	matrices
+    $ \la_{2} $.
+	Such a change allows us to make the commutational relations
+	for the generators
+    $ \la^{+} $ and
+    $ \la^{-} $  more transparent:
+\begin{gather*}
+	\{ \la^{\pm}_{a} , \la^{\pm}_{b} \} = \pm \eps^{abc} \la^{\mp}_{c} , \\
+	\{ \la^{+}_{a} , \la^{-}_{b} \} = 0 \quad a \neq b , \\
+	\{ \la^{+}_{1} , \la^{-}_{1} \} = \la_{3} , \\
+	\{ \la^{+}_{2} , \la^{-}_{2} \} = -1/2 \la_{3} - 3/2 \la_{8}, \\
+	\{ \la^{+}_{3} , \la^{-}_{3} \} = -1/2 \la_{3} + 3/2 \la_{8}.
+\end{gather*}
+	The matrices 
+    $ \la_{3} $ and
+    $ \la_{8} $
+	compose a basis of the Cartan subalgebra of the 
+	algebra
+    $ su(3) $, 
+	and satisfy the following normalization conditions:
+\begin{equation*}
+	\tr \la_{3} \la_{3} = 2 , \quad
+	\tr \la_{3} \la_{8} = 0 , \quad
+	\tr \la_{8} \la_{8} = 2/3 .
+\end{equation*}
+	The matrices
+    $ \la^{+,-}_{1,2,3} $,
+	which correspond to the root vectors of this algebra, obey the 
+	following normalization
+\begin{equation*}
+	\tr \la^{+}_{a} \la^{+}_{b} = 0 , \quad
+	\tr \la^{-}_{a} \la^{-}_{b} = 0 , \quad
+	\tr \la^{+}_{a} \la^{-}_{b} = \delta_{ab} .
+\end{equation*}
+	Being generators of the Cartan subalgebra, the matrices
+    $ \la_{3} $, 
+    $ \la_{8} $
+	generate the abelian transformations:
+\begin{equation}
+\label{AG}
+	A_{\mu} \to e^{i\om'_{3} \la_{3} + i \om'_{8} \la_{8}} 
+		A_{\mu} e^{-i\om'_{3} \la_{3} - \om'_{8} \la_{8}}
+		- \prm \om'_{3} \la_{3} - \prm \om'_{8} \la_{8} .
+\end{equation}
+	Let us expand the 
+    $ SU(3) $
+	Yang-Mills field with respect to the basis consisting of the generators
+(\ref{lambda}):
+\begin{equation*}
+	A_{\mu} = A^{3}_{\mu} \la_{3} + A^{8}_{\mu} \la_{8}
+		+ B^{1}_{\mu} \la^{+}_{1} + \bar{B}^{1}_{\mu} \la^{-}_{1} 
+		+ B^{2}_{\mu} \la^{+}_{2} + \bar{B}^{2}_{\mu} \la^{-}_{2} 
+		+ B^{3}_{\mu} \la^{+}_{3} + \bar{B}^{3}_{\mu} \la^{-}_{3} .
+\end{equation*}
+	Under the transformations
+(\ref{AG})
+	the coefficients
+    $ A^{3}_{\mu} $ and
+    $ A^{8}_{\mu} $
+	behave as abelian gauge fields:
+\begin{equation}
+\label{AGA}
+        A^{3,8}_{\mu} \to A^{3,8}_{\mu} - \prm \om'_{3,8} ,
+\end{equation}
+	and
+    $ B^{1,2,3}_{\mu} $ ---
+	as charged vector fields:
+\begin{align}
+\label{AGB}
+	B^{1}_{\mu} & \to e^{2i\om'_{3}} B^{1}_{\mu} ,\\
+\nonumber
+	B^{2}_{\mu} & \to e^{-i\om'_{3} - i\om'_{8}} B^{2}_{\mu} ,\\
+\nonumber
+	B^{3}_{\mu} & \to e^{-i\om'_{3} + i\om'_{8}} B^{3}_{\mu} .
+\end{align}
+	The transformation rules of the vectors
+    $ B_{\mu} $
+	allow us to compute the action of the abelian part of the covariant
+	derivative:
+\begin{align}
+\label{CD}
+    \na_{\mu} B^{1}_{\nu} & = (\prm + 2i A^{3}_{\mu}) B^{1}_{\nu}, \\
+\nonumber
+    \na_{\mu} B^{2}_{\nu} & = (\prm -iA^{3}_{\mu}-iA^{8}_{\mu}) B^{2}_{\nu}, \\
+\nonumber
+    \na_{\mu} B^{3}_{\nu} & = (\prm -iA^{3}_{\mu}+iA^{8}_{\mu}) B^{3}_{\nu} .
+\end{align}
+	Using this derivative we can rewrite the lagrangian of the
+    $ SU(3) $
+	Yang-Mills field as follows:
+\begin{multline}
+	\LL = - \tr \left( [\prm + iA_{\mu} , \prn + iA_{\nu}]
+		\right)^{2} = \\
+\label{L31}
+	= 2\bigl( \prm A^{3}_{\nu} - \prn A^{3}_{\mu} + 
+	i (B^{1}_{\mu} \bar{B}^{1}_{\nu} - B^{1}_{\nu} \bar{B}^{1}_{\mu})
+	- \frac{i}{2}(B^{2}_{\mu} \bar{B}^{2}_{\nu} 
+		- B^{2}_{\nu} \bar{B}^{2}_{\mu})
+	- \frac{i}{2}(B^{3}_{\mu} \bar{B}^{3}_{\nu} 
+		- B^{3}_{\nu} \bar{B}^{3}_{\mu})
+	\bigr)^{2} \\
+	+ \frac{2}{3} \bigl( \prm A^{8}_{\nu} - \prn A^{8}_{\mu} 
+	- \frac{3i}{2}(B^{2}_{\mu} \bar{B}^{2}_{\nu} 
+		- B^{2}_{\nu} \bar{B}^{2}_{\mu})
+	+ \frac{3i}{2}(B^{3}_{\mu} \bar{B}^{3}_{\nu} 
+		- B^{3}_{\nu} \bar{B}^{3}_{\mu})
+	\bigr)^{2} \\
+	+ 4 \sum_{a=1,2,3} | \na_{\mu} B^{a}_{\nu} + i \eps^{abc}
+		\bar{B}^{b}_{\mu} \bar{B}^{c}_{\nu} |^{2} 
+	- 4 \sum_{a=1,2,3} 
+		\na_{\mu} B^{a}_{\nu} \bar{\na}_{\nu} \bar{B}^{a}_{\mu} .
+\end{multline}
+	We can transform the <<inconvenient>> cross-terms
+    $ \na_{\mu} B^{a}_{\nu} \bar{\na}_{\nu} \bar{B}^{a}_{\mu} $
+	in the last line, by adding the gauge fixing terms 
+\begin{equation*}
+	4 \sum_{j=1,2,3} \tr |\na_{\mu} B^{j}_{\mu}|^{2} ,
+\end{equation*}
+	to the lagrangian, into the expression
+\begin{gather}
+\nonumber
+	2 i (\prm A^{3}_{\nu} - \prn A^{3}_{\mu}) \left(
+	2 (B^{1}_{\mu} \bar{B}^{1}_{\nu} - B^{1}_{\nu} \bar{B}^{1}_{\mu})
+	- (B^{2}_{\mu} \bar{B}^{2}_{\nu} - B^{2}_{\nu} \bar{B}^{2}_{\mu})
+	-(B^{3}_{\mu} \bar{B}^{3}_{\nu} - B^{3}_{\nu} \bar{B}^{3}_{\mu})
+	\right) \\
+\label{gauges}
+	+ 2 i (\prm A^{8}_{\nu} - \prn A^{8}_{\mu}) \left(
+	(B^{3}_{\mu} \bar{B}^{3}_{\nu} - B^{3}_{\nu} \bar{B}^{3}_{\mu})
+	- (B^{2}_{\mu} \bar{B}^{2}_{\nu} - B^{2}_{\nu} \bar{B}^{2}_{\mu})
+	\right) ,
+\end{gather}
+	which doubles the cross-terms of the first two lines.
+
+	According to the formulae
+(\ref{AGA})--(\ref{AGB}),
+	the quantities
+    $ (\prm A^{3,8}_{\nu} - \prn A^{3,8}_{\mu}) $ 
+	and
+    $ B^{a}_{\mu} \bar{B}^{a}_{\nu} $
+	are invariant with respect to the abelian transformations.
+	
+	The fields 
+    $ A^{3,8}_{\mu} $
+	and derivatives
+    $ \prm B^{a}_{\nu} $,
+	which appeared in the last line of the lagrangian
+(\ref{L31})
+	are explicitly non-invariant.
+
+	Consider the terms
+\begin{equation}
+\label{nab}
+	|\na_{\mu} B^{1}_{\nu}|^{2} +
+	|\na_{\mu} B^{2}_{\nu}|^{2} +
+	|\na_{\mu} B^{3}_{\nu}|^{2} ,
+\end{equation}
+	which contain a form quadratic in the fields 
+    $ A^{3}_{\mu} $,
+    $ A^{8}_{\mu} $.
+	After applying the covariant derivative
+(\ref{CD})
+	and introducing the designations
+\begin{gather}
+	\rho_{a}^{2} \equiv B^{a}_{\nu} \bar{B}^{a}_{\nu} \, ,\\
+\label{JJJ}
+	J^{a}_{\mu} \equiv \frac{i}{2 \rho^{2}_{a}} 
+		(\prm \bar{B}^{a}_{\nu} B^{a}_{\nu} 
+			- \prm B^{a}_{\nu} \bar{B}^{a}_{\nu}) ,
+\end{gather}
+	these terms can be rewritten as follows
+\begin{equation*}
+	\sum_{a=1,2,3} |\prm B^{a}_{\nu}|^{2} + 
+	\sum_{r,s=3,8} \Omega_{rs} A^{r}_{\mu} A^{s}_{\mu} +
+	2 \sum_{\substack{r=3,8\\ a=1,2,3}} P_{ra} A^{r}_{\mu} J^{a}_{\mu} ,
+%	2i\rho_{1}^{2} A^{3}_{\mu} J^{1}_{\mu} 
+%	- \rho_{2}^{2} (A^{3}_{\mu} + A^{8}_{\mu}) J^{2}_{\mu} 
+%	+ \rho_{3}^{2} (A^{8}_{\mu} - A^{3}_{\mu}) J^{3}_{\mu} ,
+\end{equation*}
+	here
+    $ \Omega_{rs} $,
+    $ P_{ra} $
+	are the following matrices
+%    $ A^{3}_{\mu} $,
+%    $ A^{8}_{\mu} $:
+\begin{equation}
+	\Omega = \begin{pmatrix}
+4 \rho^{2}_{1} + \rho^{2}_{2} + \rho^{2}_{3} & \rho^{2}_{2} - \rho^{2}_{3} \\
+	\rho^{2}_{2} - \rho^{2}_{3} & \rho^{2}_{2} + \rho^{2}_{3}
+		\end{pmatrix} , \quad
+	P = \begin{pmatrix}
+		2 \rho^{2}_{1} & - \rho^{2}_{2} & - \rho^{2}_{3} \\
+			0	& - \rho^{2}_{2} & \rho^{2}_{3}
+		\end{pmatrix}.
+\end{equation}
+	The determinant of the matrix
+    $ \Omega $
+	is equal to
+\begin{equation*}
+	4 (\rho^{2}_{1} \rho^{2}_{2}
+                + \rho^{2}_{1} \rho^{2}_{3} + \rho^{2}_{2} \rho^{2}_{3}) ,
+\end{equation*}
+	and thus at positive densities
+    $ \rho^{2}_{a} $
+	this matrix is inversible, and then the expression
+(\ref{nab})
+	can be transformed to
+%\begin{multline}
+\begin{equation}
+\label{interm}
+	\sum_{a=1,2,3} |\prm B^{a}_{\nu}|^{2} + 
+	\sum_{r,s=3,8} \Omega_{rs} 
+%		(A^{r}_{\mu} + (\Omega^{-1} P J_{\mu})^{r})
+		(A_{\mu} + \Omega^{-1} P J_{\mu})^{r}
+%		(A^{s}_{\mu} + (\Omega^{-1} P J_{\mu})^{s})
+		(A_{\mu} + \Omega^{-1} P J_{\mu})^{s}
+%\\
+	- \sum_{a,b} J^{a}_{\mu} (P \Omega^{-1} P)_{ab} J^{b}_{\mu} .
+%\end{multline}
+\end{equation}
+	This transformation enables us to replace the fields
+    $ A^{3}_{\mu} $,
+    $ A^{8}_{\mu} $
+	with the abelian-invariant variables
+    $ \Aa^{3}_{\mu} $,
+    $ \Aa^{8}_{\mu} $:
+\begin{gather}
+\label{Aa38}
+	\Aa^{3}_{\mu} = A^{3}_{\mu} + (\Omega^{-1} P J_{\mu})^{3} = 
+			A^{3}_{\mu} + 1/2(J^{1}_{\mu} - 
+		\tro^{2}_{1} \sum_{a} J^{a}_{\mu}) \\
+%		+ \rho^{-2}_{2} J^{2}_{\mu} + \rho^{-2}_{3} J^{3}_{\mu}) \\
+\nonumber
+	\Aa^{8}_{\mu} = A^{8}_{\mu} + (\Omega^{-1} P J_{\mu})^{8} 
+		= A^{8}_{\mu} + 1/2 (J^{3}_{\mu} - 
+		\tro^{2}_{3} \sum_{k} J^{k}_{\mu} )
+%		+ \rho^{-2}_{2} J^{2}_{\mu} + \rho^{-2}_{3} J^{3}_{\mu}))
+	- 1/2 (J^{2}_{\mu} 
+		- \tro^{2}_{2} \sum_{a} J^{a}_{\mu}) ,
+%		+ \rho^{-2}_{2} J^{2}_{\mu} + \rho^{-2}_{3} J^{3}_{\mu})) ,
+\end{gather}
+	where
+\begin{equation*}
+	\tro^{2}_{a} = 
+		\frac{\prod_{b\ne a} \rho^{2}_{b}}{\rho^{2}_{1} \rho^{2}_{2}
+		+ \rho^{2}_{1} \rho^{2}_{3} + \rho^{2}_{2} \rho^{2}_{3}} .
+\end{equation*}
+	The combination
+\begin{equation*}
+	I_{\mu} = J^{1}_{\mu} + J^{2}_{\mu} + J^{3}_{\mu} ,
+\end{equation*}
+	introduced in the definition of the variables
+    $ \Aa^{3}_{\mu} $,
+    $ \Aa^{8}_{\mu} $,
+	is invariant under the abelian transformations, as 
+	follows from the relations
+(\ref{AGB})
+	and
+(\ref{JJJ}).
+
+	The form quadratic in
+    $ J^{a}_{\mu} $
+	which is arose in the expression
+(\ref{interm})
+	reads as
+\begin{equation*}
+	\sum_{a,b} J^{a}_{\mu} (P \Omega^{-1} P)_{ab} J^{b}_{\mu} =
+		\sum_{a} \rho^{2}_{a} (J^{a}_{\mu})^{2} -
+	\tro^{2}_{1} \rho^{2}_{1} I^{2}_{\mu}~,
+\end{equation*}
+	and, together with the rest terms of the sum
+(\ref{nab}),
+	gives
+\begin{equation}
+\label{prel}
+	\sum_{a=1,2,3} \left( 
+	|\prm B^{a}_{\nu}|^{2} - \rho^{2}_{a} (J^{a}_{\mu})^{2}
+	\right) 
+	+ \tro^{2}_{1} \rho^{2}_{1} I^{2}_{\mu} 
+	+ \sum_{r,s} \Omega_{rs} \Aa^{r}_{\mu} \Aa^{s}_{\mu} .
+\end{equation}
+	Here we note that the first and the last sums are
+	direct analogs to the right hand side of the relation
+(\ref{naB})
+	of the 
+    $ SU(2) $
+	gauge group case.
+	Emergence of the second term --- the square of the invariant
+	current
+    $ I_{\mu} $ ---
+	is the speciality of a higher rank group.	
+
+	Since for any
+    $ a $,
+	the products
+    $ \tro^{2}_{a} \rho^{2}_{a} $
+	are equal to the ??fraction?? of the 
+	symmetric forms of the
+	third
+    $ s_{3} $ 
+	and second
+    $ s_{2} $ 
+	powers in 
+    $ \rho^{2}_{a} $,
+	it's quite natural to introduce the designation
+\begin{equation*}
+	\frac{s_{3}}{s_{2}} =
+		\frac{\rho^{2}_{1} \rho^{2}_{2} \rho^{2}_{3}}{
+	\rho^{2}_{1} \rho^{2}_{2} + \rho^{2}_{1} \rho^{2}_{3} +
+		\rho^{2}_{2} \rho^{2}_{3}} = \rho^{2}_{1} \tro^{2}_{1}
+	= \rho^{2}_{2} \tro^{2}_{2} = \rho^{2}_{3} \tro^{2}_{3}.
+\end{equation*}
+
+	Let us divide the vectors
+    $ B^{a}_{\mu} $
+	into <<electric>>
+    $ (\al_{a}, \ga_{a} ) $
+	and <<magnetic>>
+    $ (\ee^{a}_{\mu}, \bar{\ee}^{a}_{\mu}) $
+	components, the same way as it was done for the case of the
+    $ SU(2) $
+	group in the equation
+(\ref{chb}):
+\begin{gather}
+	B^{a}_{\mu} = \rho_{a} (
+		\cos \al_{a} e^{i\be_{a}+i\ga_{a}} \ee^{a}_{\mu} +
+		\sin \al_{a} e^{i\be_{a} - i\ga_{a}} \bar{\ee}^{a}_{\mu}) ,\\
+\nonumber
+		\ee^{a}_{\mu} \ee^{a}_{\mu} = 0 , \quad
+		\ee^{a}_{\mu} \bar{\ee}^{a}_{\mu} = 1 .
+\end{gather}
+
+	If we separate the parameters
+    $ \om_{3} $,
+    $ \om_{8} $,
+	which receive contributions under the transformations
+(\ref{AG})
+\begin{align}
+	\be_{1} & = 2 \om_{3} + \om	,	\\
+\nonumber
+	\be_{2} & = - \om_{3} - \om_{8} + \om ,	\\
+\nonumber
+	\be_{3} & = - \om_{3} + \om_{8} + \om ,
+\end{align}
+	out of the angles
+    $ \be_{a} $
+	and substitute the fields
+    $ B^{a}_{\mu} $
+	into the sum
+(\ref{prel}),
+	then we will see that the result will contain the 
+	abelian-invariant quantity
+    $ \om $
+	only.
+	Indeed, introducing three fields taking their values on
+	the unit sphere
+    $ S^{2} $
+\begin{equation*}
+        \vec{t}^{a} = 
+	\begin{pmatrix}
+		\sin 2\al_{a} \cos 2\ga_{a} \\
+		\sin 2\al_{a} \sin 2\ga_{a} \\
+		\cos 2\al_{a}
+	\end{pmatrix} ,
+\end{equation*}
+	and the vector fields
+\begin{equation*}
+	\Ga^{a}_{\mu} = i \ee^{a}_{\nu} \prm \bar{\ee}^{a}_{\nu} ,
+\end{equation*}
+	we find that,
+	according to the relation
+(\ref{maineq}),
+	the terms
+(\ref{prel})
+	look the following way:
+\begin{multline}
+\label{kin}
+	\sum_{a=1,2,3} \left(
+		(\prm \rho_{a})^{2} + \rho_{a}^{2}
+	(|\prm \ee^{a}_{\nu}|^{2} - (\Ga^{a}_{\mu})^{2} + 
+	t^{a}_{+} (\prm \ee^{a}_{\nu})^{2}
+		+ t^{a}_{-}(\prm \bar{\ee}^{a}_{\nu})^{2})
+		+ 1/4 \rho_{a}^{2} (\nabla_{\mu} \vec{t}^{a})^{2}
+	\right) \\
+		+ \frac{s_{3}}{s_{2}} 
+	(\sum_{a=1,2,3} \cos 2\al_{a} (\prm \ga_{a} + \Ga^{a}_{\mu})
+		+ 3 \prm \om )^{2} 
+	+ \sum_{r,s} \Omega_{rs} \Aa^{r}_{\mu} \Aa^{s}_{\mu} ,
+\end{multline}
+	and, thus, do not contain
+    $ \om_{3} $,
+    $ \om_{8} $.
+%	Данное выражение играет роль кинетической энергии для
+%	переменных
+%    $ \ee $,
+%    $ \vec{t} $,
+%    $ \om $.
+
+	Substituting the fields
+    $ A^{r}_{\mu} $,
+    $ r=3,8 $,
+	expressed in terms of the variables
+    $ \Aa^{r}_{\mu} $ and
+    $ J^{a}_{\mu} $, $ a=1,2,3 $
+	using the substitution
+(\ref{Aa38}),
+	into the field strength tensors
+    $ \prm A^{r}_{\nu} - \prn A^{r}_{\mu} $
+	yields
+\begin{equation*}
+	H^{a}_{\mu\nu} = \prm (J^{a}_{\nu} 
+		- \tro^{2}_{a} I_{\nu}) 
+	- \prn (J^{a}_{\mu} - \tro^{2}_{a} I_{\mu}) .
+\end{equation*}
+	The tensors
+    $ H^{a}_{\mu\nu} $
+	do not depend on the angles
+    $ \om_{3} $,
+    $ \om_{8} $,
+	what follows from the explicit form of the currents
+    $ J^{a}_{\mu} $:
+\begin{equation}
+\label{JJ}
+	J^{a}_{\mu} = \cos 2\al_{a} (\prm \ga_{a}+C^{a}_{\mu}) 
+		+ \prm \be_{a} .
+\end{equation}
+	
+	We can use tensors
+    $ H^{a}_{\mu\nu} $
+	to rewrite the first two lines of the lagrangian
+(\ref{L31}),
+	expressing the gauge-fixing addition in terms of 
+	the invariant variables:
+\begin{multline}
+\label{L1}
+	\frac{1}{3} \sum_{a} \left(H^{a}_{\mu\nu}	\right)^{2}
+	+ 2 \left(E^{3}_{\mu\nu} \right)^{2}
+	+ \frac{2}{3} \left(E^{8}_{\mu\nu} \right)^{2}
+	+ 2 E^{3}_{\mu\nu} H^{1}_{\mu\nu}
+	+ 2 ( H^{1}_{\mu\nu} - 2E^{3}_{\mu\nu} )
+		(G^{2}_{\mu\nu} + G^{3}_{\mu\nu} - 2 G^{1}_{\mu\nu}) \\
+	+ \frac{2}{3} E^{8}_{\mu\nu} (H^{3}_{\mu\nu} - H^{2}_{\mu\nu}) 
+	+ 2 (H^{3}_{\mu\nu} - H^{2}_{\mu\nu} + 2 E^{8}_{\mu\nu})
+		(G^{3}_{\mu\nu} - G^{2}_{\mu\nu}) 
+	+ 3 \sum_{a} (G^{a}_{\mu\nu})^{2} - ( \sum_{a} G^{a}_{\mu\nu} )^{2} .
+\end{multline}
+	Here we have introduced the designation
+    $ G^{a}_{\mu\nu} $
+	for the
+    $ \ga $-invariant tensors
+\begin{equation*}
+	G^{a}_{\mu\nu} = i \rho^{2}_{a} t^{a}_{3} 
+	(\ee^{a}_{\mu} \bar{\ee}^{a}_{\nu} -\bar{\ee}^{a}_{\mu} \ee^{a}_{\nu}) ,
+	\quad a = 1,2,3
+\end{equation*}
+	and
+    $ E^{r}_{\mu\nu} $
+	for the field strength tensors
+    $ \Aa^{r}_{\mu} $:
+\begin{equation*}
+	E^{r}_{\mu\nu} = \prm \Aa^{r}_{\nu} - \prn \Aa^{r}_{\mu} ,
+		\quad r = 3,8 .
+\end{equation*}
+
+	Besides the terms
+(\ref{nab})
+	which we have already considered, the last line of the
+	lagrangian
+(\ref{L31})
+	contains the quantities
+\begin{equation*}
+	4 \sum_{a} |\eps^{abc} B^{b}_{\mu} B^{c}_{\nu} |^{2}
+	-4i \sum_{abc} \eps^{abc} (\nabla_{\mu} B^{a}_{\nu} 
+		B^{b}_{\mu} B^{c}_{\nu} - \bar{\nabla}_{\mu}
+	\bar{B}^{a}_{\nu} \bar{B}^{b}_{\mu} \bar{B}^{c}_{\nu}) .
+\end{equation*}
+	Using the substitution
+(\ref{Aa38})
+	we can rewrite them as
+\begin{multline}
+\label{L3}
+	12 \eps^{1bc} \Aa^{3}_{\mu} (B^{1}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+		+ \text{c.c.})
+	- 4 \eps^{2bc} \Aa^{8}_{\mu} (B^{2}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+		+ \text{c.c.})
+	+ 4 \eps^{3bc} \Aa^{8}_{\mu} (B^{3}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+		+ \text{c.c.}) \\
+	- 4i\eps^{abc} (\prm + i (J^{a}_{\mu} - \tro^{2}_{a} I_{\mu}))
+		B^{a}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+	+ 4i\eps^{abc} (\prm - i (J^{a}_{\mu} - \tro^{2}_{a} I_{\mu}))
+		\bar{B}^{a}_{\nu} \bar{B}^{b}_{\mu} \bar{B}^{c}_{\nu} \\
+	+ 4 \sum_{a} |\eps^{abc} B^{b}_{\mu} B^{c}_{\nu} |^{2} .
+\end{multline}
+	The invariance of the terms like
+\begin{equation*}
+	B^{1}_{\mu} B^{2}_{\nu} B^{3}_{\la} \, , \quad
+	\bar{B}^{1}_{\mu} \bar{B}^{2}_{\nu} \bar{B}^{3}_{\la} \, , \quad
+	 |\eps^{abc} B^{b}_{\mu} B^{c}_{\nu} |^{2}
+\end{equation*}
+%	содержащихся в предпоследней строке лагранжиана
+	immediately follows from the formulae
+(\ref{AGB}).
+	Using the definition 
+(\ref{JJJ})
+	of currents
+    $ J^{a}_{\mu} $,
+	we can conclude that the quantities
+\begin{equation*}
+	(\prm + i J^{a}_{\mu} ) B^{a}_{\nu} ,
+\end{equation*}
+	are transformed under the abelian transformations 
+	the same way as the vectors
+    $ B^{a}_{\nu} $ 
+	are, 
+	and hence the quantities
+\begin{equation}
+\label{JBBB}
+	\eps^{abc} (\prm + i (J^{a}_{\mu} - \tro^{2}_{a} I_{\mu})) 
+		B^{a}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+\end{equation}
+	are abelian-invariant.
+
+	After substitution of the variables
+    $ \al_{a}, \ga_{a}, \ee^{a}_{\mu}, \bar{\ee}^{a}_{\mu} $
+	into
+    $ B^{a}_{\mu} $,
+    $ J^{a}_{\mu} $
+	the terms
+(\ref{JBBB})
+	provide for additions
+    $ M^{a}_{\mu} $,
+    $ \vec{T}^{a}_{\mu} $,
+    $ S^{a}_{\mu\nu} $,
+    $ N_{\mu} $
+	to 
+(\ref{nab}).
+	The expression
+(\ref{kin})
+	turns into:
+\begin{multline}
+\label{nkin}
+	\sum_{a=1,2,3} \left(
+		(\prm \rho_{a} + M^{a}_{\mu} )^{2}
+		- (M^{a}_{\mu})^{2} + \rho_{a}^{2}
+	(|\prm \ee^{a}_{\nu}|^{2} - (C^{a}_{\mu})^{2} 
+	+ t^{a}_{+} (\prm \ee^{a}_{\nu} + S^{a}_{\mu\nu})^{2}
+			\right. \\
+	\left.
+		+ t^{a}_{-}(\prm \bar{\ee}^{a}_{\nu} +\bar{S}^{a}_{\mu\nu})^{2}
+	- (S^{a}_{\mu\nu})^{2} - (\bar{S}^{a}_{\mu\nu})^{2}
+		+ 1/4 (\nabla_{\mu} \vec{t}^{a} + \vec{T}^{a}_{\mu})^{2} 
+		- 1/4 (\vec{T}^{a}_{\mu})^{2} )
+	\right) + \\
+	+ \frac{s_{3}}{s_{2}} (I_{\mu} - N_{\mu})^{2} 
+		- \frac{s_{3}}{s_{2}} N_{\mu}^{2} 
+	+ \sum_{r,s} \Omega_{rs} \Aa^{r}_{\mu} \Aa^{s}_{\mu} .
+%	+ \frac{s_{3}}{s_{2}} (I_{\mu} - \frac{1}{2} 
+%		\sum_{j}\eps^{jkl} \rho^{-2}_{j} 
+%		(B^{j}_{\nu} B^{l}_{\nu} B^{k}_{\mu} + \bar{B}^{j}_{\nu}
+%	\bar{B}^{l}_{\nu} \bar{B}^{k}_{\mu}))^{2} + 
+%	(\sum_{j}\eps^{jkl} \rho^{-2}_{j} (B^{j}_{\nu} B^{l}_{\nu} B^{k}_{\mu} 
+%		+ \bar{B}^{j}_{\nu} \bar{B}^{l}_{\nu} \bar{B}^{k}_{\mu}))^{2}.
+\end{multline}
+	We have defined the tensors
+    $ M^{a}_{\mu} $,
+    $ S^{a}_{\mu\nu} $,
+    $ \vec{T}^{a}_{\mu} $
+	and the vector
+    $ N_{\mu} $
+	as:
+\begin{gather*}
+	N_{\mu} = \frac{1}{2} \sum_{abc}\eps^{abc} \rho^{-2}_{a}
+		(B^{a}_{\nu} B^{c}_{\nu} B^{b}_{\mu} + \bar{B}^{a}_{\nu}
+			\bar{B}^{c}_{\nu} \bar{B}^{b}_{\mu}) , \\
+	M^{a}_{\mu} = \sum_{bc} \frac{\eps^{abc}}{2i\rho_{a}}
+		(B^{a}_{\nu} B^{c}_{\nu} B^{b}_{\mu}
+		- \bar{B}^{a}_{\nu} \bar{B}^{c}_{\nu} \bar{B}^{b}_{\mu}) , \\
+	S^{a}_{\mu\nu} = \frac{i}{4} \eps^{abc}  e^{i \ga_{a}} 
+		((\sin \al_{a})^{-1} B^{b}_{\nu} B^{c}_{\mu}
+	- (\cos \al_{a})^{-1} \bar{B}^{b}_{\nu} \bar{B}^{c}_{\mu}) , \\
+	(T^{a}_{\mu})_{1} = \cos 2\al_{a} \cos 2\ga_{a} \IM \Phi^{a}_{\mu}
+		+ \sin 2\ga_{a} \RE \Phi^{a}_{\mu} , \\
+	(T^{a}_{\mu})_{2} = \cos 2\al_{a} \sin 2\ga_{a} \IM \Phi^{a}_{\mu}
+		- \cos 2\ga_{a} \RE \Phi^{a}_{\mu} , \\
+	(T^{a}_{\mu})_{3} = \sin 2\al_{a} \IM \Phi^{a}_{\mu} ,
+\end{gather*}
+	where
+    $ \Phi^{a}_{\mu} $
+	are complex quantities
+\begin{equation*}
+	\Phi^{a}_{\mu} = \eps^{abc} (\sin \al_{a} e^{i \ga_{a}} \ee^{a}_{\nu}
+			- \cos \al_{a} e^{-i \ga_{a}} \bar{\ee}^{a}_{\nu})
+		B^{c}_{\nu} B^{b}_{\mu} .
+\end{equation*}
+	The product
+    $ e^{i \ga_{a}} \ee^{a}_{\mu} $
+	and the function
+    $ \Phi^{a}_{\mu} $
+	are invariant under rotation of the basis
+    ($ \ee^{a}_{\mu} , \bar{\ee}^{a}_{\mu}$)
+(\ref{ggauge}),
+	and hence the vector
+    $ \vec{T}^{a}_{\mu} $
+	and the derivative
+    $ \nabla_{\mu} \vec{t}^{a} $
+	are covariant under this rotation,
+	and their sum which has appeared in the relation
+(\ref{nkin})
+	is a correctly defined quantity.
+
+%	Функции
+%    $ \Phi^{a}_{\mu} $
+%	не зависят от углов
+%    $ \ga_{a} $
+%	так как в них входят только инвариантные комбинации
+%    $ e^{i \ga_{a}} \ee^{a}_{\mu} $,
+%	и, следовательно, вектора
+%    $ \vec{T}^{a}_{\mu} $,
+%	также как и производные
+%    $ \nabla^{a}_{\mu} \vec{t}^{a} $
+%	при изменении переменных
+%    $ \ga^{a} $
+%	претерпевают поворот вокруг третьей оси координат, то есть
+%	являются ковариантными.
+
+	Summing up the formulae
+(\ref{L1}),
+(\ref{nkin}) and
+(\ref{L3})
+	we get the lagrangian of the
+    $ SU(3) $
+	Yang-Mills field as:
+\begin{multline}
+\label{LG}
+	\frac{1}{3} \sum_{a} \left(H^{a}_{\mu\nu}	\right)^{2}
+	+ 2 \left(E^{3}_{\mu\nu} \right)^{2}
+	+ \frac{2}{3} \left(E^{8}_{\mu\nu} \right)^{2}
+	+ 2 E^{3}_{\mu\nu} H^{1}_{\mu\nu}
+	+ 2 ( H^{1}_{\mu\nu} - 2E^{3}_{\mu\nu} )
+		(G^{2}_{\mu\nu} + G^{3}_{\mu\nu} - 2 G^{1}_{\mu\nu}) \\
+	+ \frac{2}{3} E^{8}_{\mu\nu} (H^{3}_{\mu\nu} - H^{2}_{\mu\nu}) 
+	+ 2 (H^{3}_{\mu\nu} - H^{2}_{\mu\nu} + 2 E^{8}_{\mu\nu})
+		(G^{3}_{\mu\nu} - G^{2}_{\mu\nu}) 
+	+ 3 \sum_{a} (G^{a}_{\mu\nu})^{2} - ( \sum_{a} G^{a}_{\mu\nu} )^{2} \\
+	+ \sum_{a=1,2,3} 4 \left(
+		(\prm \rho_{a} + M^{a}_{\mu} )^{2}
+		- (M^{a}_{\mu})^{2} + \rho_{a}^{2}
+	(|\prm \ee^{a}_{\nu}|^{2} - (\Ga^{a}_{\mu})^{2} 
+	+ t^{a}_{+} (\prm \ee^{a}_{\nu} + S^{a}_{\mu\nu})^{2}
+			\right. \\
+	\left.
+		+ t^{a}_{-}(\prm \bar{\ee}^{a}_{\nu} +\bar{S}^{a}_{\mu\nu})^{2}
+	- (S^{a}_{\mu\nu})^{2} - (\bar{S}^{a}_{\mu\nu})^{2}
+		+ 1/4 (\nabla_{\mu} \vec{t}^{a} + \vec{T}^{a}_{\mu})^{2} 
+		- 1/4 (\vec{T}^{a}_{\mu})^{2} )
+	\right) \\
+	+ 4 \frac{s_{3}}{s_{2}} (I_{\mu} - N_{\mu})^{2} 
+		- \frac{s_{3}}{s_{2}} N_{\mu}^{2} +
+		4 \sum_{a} |\eps^{abc} B^{b}_{\mu} B^{c}_{\nu} |^{2} 
+	+ \sum_{r,s} \Omega_{rs} \Aa^{r}_{\mu} \Aa^{s}_{\mu} \\
+%	+ \frac{s_{3}}{s_{2}} (I_{\mu} - \frac{1}{2} 
+%		\sum_{j}\eps^{jkl} \rho^{-2}_{j} 
+%		(B^{j}_{\nu} B^{l}_{\nu} B^{k}_{\mu} + \bar{B}^{j}_{\nu}
+%	\bar{B}^{l}_{\nu} \bar{B}^{k}_{\mu}))^{2} + 
+%	(\sum_{j}\eps^{jkl} \rho^{-2}_{j} (B^{j}_{\nu} B^{l}_{\nu} B^{k}_{\mu} 
+%		+ \bar{B}^{j}_{\nu} \bar{B}^{l}_{\nu} \bar{B}^{k}_{\mu}))^{2} \\
+	+ 12 \eps^{1bc} \Aa^{3}_{\mu} (B^{1}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+		+ \text{c.c.})
+	- 4\eps^{2bc} \Aa^{8}_{\mu} (B^{2}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+		+ \text{c.c.})
+	+ 4\eps^{3bc} \Aa^{8}_{\mu} (B^{3}_{\nu} B^{b}_{\mu} B^{c}_{\nu}
+		+ \text{c.c.}) .
+\end{multline}
+%	Это выражение является основным разультатом данной статьи.
+	The last four lines were obtained from the last line of the
+	lagrangian
+(\ref{L31}),
+	and the first two lines from the first two lines
+	of that lagrangian and from the contribution of the gauge terms
+??? is this reference correct ???
+(\ref{gauges}) correspondingly.
+
+	The lagrangian 
+(\ref{L31}),
+	unlike that of the 
+    $ SU(2) $
+	Yang-Mills field
+(\ref{Ll}),
+	is not invariant under transformations
+\begin{equation*}
+	B^{a}_{\mu} \to - B^{a}_{\mu} .
+\end{equation*}
+	This makes the formula
+(\ref{LG})
+	include 
+    $ \sin \al_{a} $ and
+    $ \cos \al_{a} $,
+	besides the functions of the double angle.
+
+\section{The algebraic interpretation}
+	Generalization of the model structure
+(\ref{lfirst})
+	to the case of the <<electric>> variables contained in the
+	lagrangian
+(\ref{LG})
+	looks as follows:
+\begin{multline}
+\label{LS}
+	\LL_{e} = \frac{1}{12}
+		\bigl( \sum_{a} \bigl( (\vec{t}^{a}, \prm \vec{t}^{a} \times
+                \prn \vec{t}^{a}) - \tro^{2}_{a}
+        \sum_{b} (\vec{t}^{b}, \prm \vec{t}^{b} \times
+                \prn \vec{t}^{b}) \bigr)^{2} + \\
+	+ \sum_{a} \rho^{2}_{a} (\prm \vec{t}^{a})^{2} +
+	\frac{s_{3}}{s_{2}} (\sum_{a} \cos 2 \al_{a} \prm \ga_{a} 
+		+ 3 \prm \om)^{2} + V(\vec{t}^{1}, \vec{t}^{2}, \vec{t}^{3}) 
+	\bigr).
+\end{multline}
+	Here the terms 
+    $ \cos 2 \al_{a} \prm \ga_{a} $
+	are functions of the vectors
+    $ \vec{t}^{a} $.
+	Indeed:
+\begin{equation*}
+	\cos 2 \al \prm \ga = \frac{(\prm \vec{t} \times \vec{t})_{3} t_{3}}
+		{4(1 - (t_{3})^{2})} .
+\end{equation*}
+	This lagrangian can be obtained from the formula
+(\ref{LG}),
+	for example, by expanding in derivatives, assuming
+	the vectors
+    $ \ee^{a}_{\mu} $
+	slowly changing and not mutually correlating.
+
+	The lagrangian 
+(\ref{LS}) 
+	can be expressed in terms of objects related
+	to the product
+    $ (SU(2))^{\otimes 3} $.
+	Let
+\begin{equation*}
+	R_{\mu} = R^{1}_{\mu} +  R^{2}_{\mu} + R^{3}_{\mu}
+\end{equation*}
+	be the right ?? Morer-Cartan?? form, where each of
+    $  R^{1,2,3}_{\mu} $
+	is constructed as follows:
+\begin{equation*}
+	R^{a}_{\mu} = g^{-1}_{a} \prm g_{a} \, ; \quad
+	g_{a} = e^{-i \ga_{a} \sigma^{a}_{3}} e^{-i \al_{a} \sigma^{a}_{2}} 
+		e^{i \om \sigma^{a}_{3}} , \:
+	g_{a} \in (SU(2))^{\otimes 3} .
+\end{equation*}
+	Let
+    $ h_{1} $, $ h_{+} $, $ h_{-} $
+	--- be vectors from the Cartan subalgebra of the
+	algebra $ (su(2))^{3} $:
+\begin{align*}
+	h_{1} & = \frac{s_{3}}{s_{2}}
+		(\sigma^{1}_{3} + \sigma^{2}_{3} + \sigma^{3}_{3}) , \\
+	h_{\pm} & = \frac{\rho^{2}_{1} (c_{\pm} + d_{\pm}) \sigma^{1}_{3}
+			- \rho^{2}_{2} c_{\pm} \sigma^{2}_{3} 
+			- \rho^{2}_{3} d_{\pm} \sigma^{3}_{3}}{
+	\sqrt{2}(s^{2}_{1}-3s_{2})^{1/4} (s_{2} (c_{\pm}+d_{\pm}))^{1/2}} ,
+\end{align*}
+	where
+\begin{gather*}
+	s_{1} = \rho^{2}_{1} + \rho^{2}_{2} + \rho^{2}_{3} , \\ 
+	c_{\pm} = \rho^{4}_{3} - \rho^{2}_{1}\rho^{2}_{2}
+			\pm \rho^{2}_{3} \sqrt{s^{2}_{1}-3s_{2}} , \\
+	d_{\pm} = \rho^{4}_{2} - \rho^{2}_{1}\rho^{2}_{3}
+			\pm \rho^{2}_{2} \sqrt{s^{2}_{1}-3s_{2}} ,
+\end{gather*}
+	and
+    $ s_{2} $ and
+    $ s_{3} $
+	are the earlier defined symmetric forms of the second and third
+	powers of the density squares
+    $ \rho_{a} $.
+	In the general case
+($ \rho_{2} \neq \rho_{3} $)
+	the vectors
+    $ h_{1} $, $ h_{+} $, $ h_{-} $
+	form an orthonormal basis with respect to the scalar product
+\begin{equation*}
+	< x , y > = \tr \sum_{a}(\sigma^{a}_{3})^{2} \rho^{-2}_{a} x y .
+\end{equation*}
+	Then the quadratic terms of the lagrangian
+(\ref{LS})
+	can be written as
+\begin{equation*}
+	\sum_{a} \rho^{2}_{a} (\prm \vec{t}^{a})^{2} +
+	\frac{s_{3}}{s_{2}} (\sum_{a} \cos 2 \al_{a} \prm \ga_{a} 
+		- 3 \prm \om)^{2} 
+	=  -\sum_{a=1,+,-} \tr [R_{\mu}, h_{a}]^{2} - (\tr h_{1} R_{\mu})^{2}.
+\end{equation*}
+	Here a 1-form 
+\begin{equation}
+\label{Mform}
+	F = \tr (h_{1} R_{\mu}) \, dx^{\mu} = 
+	\bigl(\frac{s_{3}}{s_{2}} \bigr)^{1/2}
+		(\sum_{a} \cos 2 \al_{a} \prm \ga_{a} - 3 \prm \om) \, dx^{\mu},
+\end{equation}
+	emerges, which is in fact a 
+	primitive (of the pre-image)
+??pervoobraznaya(...)??
+	of Kirillov 2-form
+\begin{equation*}
+	\KK_{1} = \tr (h_{1} [R_{\mu}, R_{\nu}])\, dx^{\mu} \wedge dx^{\nu}
+		= \dd F.
+\end{equation*}
+	Two other Kirillov forms
+\begin{equation*}
+	\KK_{\pm} = \tr (h_{\pm} [R_{\mu},R_{\nu}])\, dx^{\mu} \wedge dx^{\nu} ,
+\end{equation*}
+	are used for constructing terms of the higher power in derivatives
+    $ \vec{t}^{a} $:
+\begin{equation*}
+	\frac{1}{12} \sum_{a} \bigl( (\vec{t}^{a}, \prm \vec{t}^{a} \times
+		\prn \vec{t}^{a}) - \tro^{2}_{a}
+	\sum_{b} (\vec{t}^{b}, \prm \vec{t}^{b} \times
+	\prn \vec{t}^{b}) \bigr)^{2} = \xi_{+} \KK_{+} \wedge {\KK_{+}}^{*} 
+	+ \xi_{-} \KK_{-} \wedge {\KK_{-}}^{*} ,
+\end{equation*}
+	where
+\begin{equation*}
+	\xi_{\pm} = - \frac{s_{1} \pm \sqrt{s^{2}_{1}-3s_{2}}}{6s_{2}} .
+\end{equation*}
+	This way, the lagrangian
+(\ref{LS})
+	can be written using ?Morer-Cartan? forms as follows:
+\begin{equation}
+\label{LR}
+        \LL_{e} = \xi_{+} (\tr h_{+} [R_{\mu}, R_{\nu}])^{2}
+		+ \xi_{-} (\tr h_{-} [R_{\mu}, R_{\nu}])^{2}
+	- \tr [R_{\mu}, h_{a}]^{2} - (\tr h_{1} R_{\mu})^{2} .
+\end{equation}
+	Interpreting the first two terms as squares of two Kirillov forms,
+	and the last one as a ??primitive?? of the third form, 
+	assumes a possibility
+	of adding an arbitrary closed 1-form to the ??primitive??.
+	This is the degree of freedom which the 1-form
+    $ \prm \om $,
+	introduced in the expression
+(\ref{Mform}) for the form
+    $ F $,
+	corresponds to.
+	Thus, emergence of the term
+    $ \frac{s_{3}}{s_{2}} I^{2} $
+	and of the seventh <<electric>> variable
+    $ \om $
+	in the lagrangian
+(\ref{LG})
+	has a natural algebraic interpretation in terms of Kirillov forms.
+
+	Direct generalization of the model lagrangian
+(\ref{lfirst}),
+	as proposed in
+\cite{pl},
+	can be built in an analogous way to constructing of the lagrangian
+(\ref{LR}),
+	but it uses Kirillov forms of the group
+    $ SU(3) $
+	for the terms of the higher power in the derivatives 
+	of dynamical variables,
+	rather than the product 
+    $ (SU(2))^{\otimes 3} $.
+
+	The <<magnetic>> variables enter the lagrangian
+(\ref{LG})
+	in a more simple way. 
+	When transferring to the hamiltonian formalism and expanding in
+	derivatives of the slow and mutually non-correlating <<electric>>
+	variables
+    $ \al_{a} $, $ \ga_{a} $,
+	the <<magnetic>> variables
+    $ \vec{m}_{a} $
+	separate, and for each of them we obtain a hamiltonian like
+\begin{equation*}
+	\eta (\partial_{k} \vec{m} \times \partial_{l} \vec{m} , \vec{m})^{2}
+	+ \varrho (\partial_{k} \vec{m})^{2}
+	+ \varkappa \frac{(\partial_{k} \vec{m} \times \vec{m})_{3} m_{3}}
+		{1 - (m_{3})^{2}} .
+\end{equation*}
+	These expressions, though different from the hamiltonian corresponding
+	to the model structure
+(\ref{lfirst}),
+	by presence of the last term, nevertheless preserve its basic properties.
+	Importance of appearance of the term
+\begin{equation*}
+	\frac{(\partial_{k} \vec{m} \times \vec{m})_{3} m_{3}}{1 - (m_{3})^{2}}
+\end{equation*}
+	in hamiltonians admitting stable string-like solutions is discussed in
+	the paper
+\cite{NN}.
+
+
+\section*{Conclusion}
+	The present generalization of the self-dual parametrization of
+	the Yang-Mills field allows us to express the lagrangian of the
+    $ SU(3) $
+	theory in terms of three neutral scalar fields
+    $ \rho_{a} $,
+	two massive vector fields,
+	three complex unit-length vectors
+    $ \ee^{a}_{\mu} $,
+	which have <<magnetic>> interpretation, and seven
+	<<electric>> variables
+    $ \al_{a} $, $ \ga_{a} $, $ \om $.
+	The <<magnetic>> variables enter the lagrangian in 
+	a simpler way, which, together with the emergence 
+	of the seventh <<electric>> variable
+    $ \om $,
+	leads to the violation of the <<electro-magnetic>> duality
+	present in the lagrangian of the 
+    $ SU(2) $
+	Yang-Mills field.
+	The energy functional for the <<magnetic>> variables can be
+	divided into three instances of a modified hamiltonian
+	for the
+    $ SU(2) $ 
+	<<magnetic>> variables.
+	The <<electric>> variables do not produce an analog of the
+	lagrangian
+(\ref{lfirst})
+	for the vector
+$  \vec{n} $,
+	which takes its values in the factorspace
+$ SU(3)/(U(1))^{2}$,
+	but instead form a more complicated expression which is based
+	on the Kirillov forms of the group
+    $ (SU(2))^{\otimes 3} $.
+
+	The approach presented in this paper allows for a generalization
+	to an
+    $ SU(N) $
+	gauge group case.
+	Lie algebra of 
+    $ su(N) $
+	has a Cartan subalgebra of dimension
+    $ r = N-1 $
+	and 
+    $ d = 1/2 N(N-1)$
+	root vectors.
+	Consequently, the lagrangian of the
+    $ SU(N) $
+	Yang-Mills field will depend on 
+    $ d $
+	sets consisting of neutral scalar fields
+    $ \rho $,
+	<<electric>> variables
+    $ \al, \ga $
+	and complex <<magnetic>> vectors
+    $ \ee_{\mu} $.
+	Furthermore, the lagrangian will include
+    $ d-r $
+	invariant currents
+    $ I_{\mu} $
+	which depend on the additional <<electric>> variables
+	зависящих от дополнительных <<электрических>> переменных
+    $ \om $.
+%	(являющихся функциями векторов
+%    $ \vec{t} $)
+%	и такое же количество угловых переменных
+%    $ \om $.
+	An abstract scheme of such a generalization is proposed in the
+	paper
+\cite{zap291}.
+
+\vspace{0.5cm}
+
+	The work was supported in part by Russian Foundation of Fundamental
+	Research under grant 02-01-00085.
+
+\begin{thebibliography}{9}
+
+\bibitem{prl} L.~D.~Faddeev and A.~J.~Niemi, Phys. Rev. 
+	Lett., 1999, {\bf 82}, 1624. 
+
+\bibitem{pl} L.~D.~Faddeev and A.~J.~Niemi, 
+	Phys. Lett., 1999, {\bf B449}, 214; 
+	Phys. Lett., 1999, {\bf B464}, 90.
+
+\bibitem{FNP}
+	L.~D.~Faddeev, A.~Niemi,
+%	Aspects of Electric-Magnetic Duality in SU(2) Yang-Mills Theory.
+	Phys. Lett., 2002, {\bf B525}, 195.
+
+\bibitem{Cho}
+	Y.~M.~Cho, Phys. Rev., 1980, {\bf D21}, 1080; 
+	Phys. Rev., 1981, {\bf D23}, 2415;
+	Phys. Rev. Lett., 1980, {\bf 44}, 1115.
+
+%\bibitem{ed} E.~Langmann and A.~J.~Niemi, Phys. Lett. {\bf B463}
+%	(1999) 252; Y.~M.~Cho, H.~Lee and D.~G.~Pak, hep-th/9905215 
+
+%\bibitem{Fad75}
+%        L.~D.~Faddeev,
+%        Quantization of Solitons.
+%        {\it Preprint IAS} print-75-QS70, 1975.
+
+\bibitem{Nat}
+	L.~D.~Faddeev and A.~J.~Niemi,
+	Nature, 1997, {\bf 387}, 58.
+
+\bibitem{HS}
+	J.~Hietarinta, P.~Salo,
+%	Faddeev-Hopf Knots: Dynamics of Linked Unknots.
+	{Phys. Lett.}, 1999, {\bf B451}, 60.
+
+\bibitem{BS}
+	R.~Battye, P.~M.~Sutcliffe,
+%	Knots as Stable Soliton Solutions in a Three-Dimensional Classical
+%	Field Theory.
+	Phys. Rev. Lett., 1998, {\bf 81}, 4798.
+
+\bibitem{thf} G. 't Hooft, Nucl. Phys., 1981, {\bf B190}, 455;
+	Nucl. Phys., 1978, {\bf B138}, 1;
+	A.~M.~Polyakov, Nucl. Phys., 1977, {\bf B120}, 429.
+
+%\bibitem{zakr} B.M.A.G.~Piette, B.~J.~Schoers and 
+%	W.~J.~Zakrzewski, Nucl. Phys. {\bf B439} (1995) 205; 
+%	P.~Eslami, W.~J.~Zakrzewski and M.~Sarbishaei, {\tt
+%	hep-th/0001153}
+
+\bibitem{NN} S.~Nasir, A.~J.~Niemi, Field Theories from Bundles of Strings,
+	e-print archive hep-th/0106009.
+
+\bibitem{zap291} T.A.~Bolokhov, Peculiarities of parametrization of the
+	$ SU(N) $ Yang-Mills field, 35, Notes of POMI Scientific Seminars,
+	v.~291, St.Petersburg 2003.
+\end{thebibliography}
+%Т.~А.~Болохов, Особенности параметризации
+%    $ SU(N) $ поля Янга-Миллса, 35,
+%	Записки научных семинаров ПОМИ т.~291, СПб, 2003.
+
+
+\end{document}

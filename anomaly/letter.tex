@@ -1,0 +1,132 @@
+%\documentclass[12pt]{article}
+\documentclass[12pt]{revtex4}
+%\documentclass[draft,12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsbsy}
+\usepackage{lscape} 
+\usepackage{color}
+\usepackage{graphicx,epsfig}
+\usepackage[english]{babel}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{palatino}
+%\usepackage{chancery}
+%\usepackage{newcent}
+%\usepackage{charter}
+%\usepackage{zapfchan}
+%\usepackage{bookman}
+%\usepackage{sparticles} 	%Package for displaying sparticle names. 
+%\usepackage{feynmf}		%Package for feynman diagrams. 
+
+%% slashed symbols
+%\newcommand{\slashed}[1]{\hbox{{$#1$}\llap{$/$}}}
+%\newcommand{\sslashed}[1]{\hbox{{$#1$}\llap{$/\,$}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Slash character...
+\def\slashed#1{\setbox0=\hbox{$#1$}             % set a box for #1
+   \dimen0=\wd0                                 % and get its size
+   \setbox1=\hbox{/} \dimen1=\wd1               % get size of /
+   \ifdim\dimen0>\dimen1                        % #1 is bigger
+      \rlap{\hbox to \dimen0{\hfil/\hfil}}      % so center / in box
+      #1                                        % and print #1
+   \else                                        % / is bigger
+      \rlap{\hbox to \dimen1{\hfil$#1$\hfil}}   % so center #1
+      /                                         % and print /
+   \fi}                                        %
+
+%%EXAMPLE:  $\slashed{E}$ or $\slashed{E}_{t}$
+
+
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+\newcommand{\p}{\partial}
+\newcommand{\wt}{\widetilde}
+\newcommand{\ov}{\overline}
+\newcommand{\md}{\mathcal{D}}
+
+\newcommand{\suc}{{\rm SU}_{\rm C}(3)}
+\newcommand{\sul}{{\rm SU}_{\rm L}(2)}
+\newcommand{\ue}{{\rm U}(1)}
+\newcommand{\GeV}{{\rm GeV}}
+%\newcommand{\su3}{{\rm SU}_{\rm C}(3)}
+
+%\newcounter{dim5}
+%\setcounter{dim5}{5}
+
+
+\begin{document}
+    Hi Stefan,
+
+  I have been trying to apply that trick which we used in our SQED
+paper for calculation of anomaly in generic QCD theory, but unfortunately,
+not successful.
+  First, it's highly desirably to be able to reproduce the anomaly 
+in a regular theory. Then it hopefully will be easy to generalize it.
+  Here's the main trouble:
+
+ The covariant variation of the effective action is
+
+\[
+    \delta \Gamma    ~~~\propto~~~
+ Tr \left[~  \delta A^\mu  \gamma_\mu\,  e^{-\slashed{\md}^2/M^2}\, \slashed{\md}^{-1} 
+	\delta (x_2 - x_1) ~\right]
+\]
+
+  My hope was as follows:  as you see here 
+\[
+           \delta A^\mu  ~=~  [  \md_\mu, \phi ]
+\]
+  where $ \phi $ is the infinitesimal parameter of gauge variation,
+and therefore
+\[
+	\delta A^\mu \gamma_\mu  ~=~  [ \slashed{\md}, \phi ]
+\]
+
+And I hoped that this $ \slashed{\md} $ can be integrated by parts
+and hopefully would cancel the $ \slashed{\md}^{-1} $ from the propagator.
+Furthermore! It can be shown that in the case of a generalized kinetic
+term  $ \ov{\psi} {\mathcal O} \psi $, the variation looks approximately
+as
+\[
+  \delta \Gamma    ~~~\propto~~~
+ Tr \left[~  [{\mathcal O}, \phi]\,  e^{-\slashed{\md}^2/M^2}\, 
+{\mathcal O}^{-1} \delta (x_2 - x_1) ~\right]
+\]
+
+The striking fact is that if that indeed happened, the result would
+be more or less correct: one would have again to regularize the delta-function,
+apply the regularizational exponent, take the trace over gamma-matrices
+and obtain the conventional $ F_* F $. Up to a coefficient, this is evident.
+
+However, this cancellation does not happen completely, since there is
+a commutator $ [ \slashed{\md}, \phi ] $. Basically, here $ \md $ 
+is applied in adjoint representation, whereas in the propagator
+$ \slashed{\md}^{-1} \delta (x_2 - x_1) $
+it is applied in the fundamental representation. 
+The extra undesired term is obviously
+\[
+ Tr \left[~  \slashed{A} \;\phi \; e^{-\slashed{\md}^2/M^2}\; \slashed{\md}^{-1} 
+	\delta (x_2 - x_1) ~\right]
+\]
+which I don't see how one can get rid of..
+
+***
+
+I've been trying to look in the literature, since definitely Gates wasn't
+the one who invented this trick. I found the application of this trick
+in supersymmetry explained in more detail in earlier literature, but did 
+not find it applied to regular QCD in exactly the same way. People do 
+calculate the propagator using more or less the same trick,
+but then they always expand the measure in the eigenfunctions of Dirac
+operator or so (maybe that's the way I should try it too..) to actually
+compute the covariant anomaly..
+
+~~~regards
+
+Pasha
+
+\end{document}

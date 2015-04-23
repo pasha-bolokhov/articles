@@ -1,0 +1,56 @@
+This is METAFONT, Version 2.7182 (Web2C 7.3.1) (base=mf 2003.10.23)  5 FEB 2004 17:29
+**\mode:=cx; mag:=1+0/300; nonstopmode; input cmti12
+(/usr/share/texmf/fonts/source/public/cm/cmti12.mf
+(/usr/share/texmf/fonts/source/public/cm/cmbase.mf)
+(/usr/share/texmf/fonts/source/public/cm/textit.mf
+(/usr/share/texmf/fonts/source/public/cm/itall.mf [97] [98] [99] [100] [101]
+[102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113]
+[114] [115] [116] [117] [118] [119] [120] [121] [122])
+(/usr/share/texmf/fonts/source/public/cm/italsp.mf [16] [17] [25] [26] [27]
+[28]) (/usr/share/texmf/fonts/source/public/cm/italig.mf [11] [12] [13]
+[14] [15]) (/usr/share/texmf/fonts/source/public/cm/romanu.mf [65] [66]
+[67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
+[82] [83] [84] [85]
+! Interruption.
+<to be read again> 
+                   begingroup
+z->begingroup
+             (x(SUFFIX2),y(SUFFIX2))endgroup
+<to be read again> 
+                   {
+--->{
+     curl1}..{curl1}
+serif->......{(EXPR6),0}z(SUFFIX4)1--z(SUFFIX4)0--
+                                                  (x(SUFFIX2),y(SUFFIX4)0)--...
+<to be read again> 
+                   ;
+dish_serif->...SUFFIX5),(EXPR6),(EXPR7))(SUFFIX8);
+                                                  if.dish>0:pickup.tiny.nib;...
+<to be read again> 
+                   ;
+l.591 ...if(1',2,a,1/3,outer_jut,b,1/2,inner_jut);
+                                                    % left serif
+? 
+! Emergency stop.
+<to be read again> 
+                   begingroup
+z->begingroup
+             (x(SUFFIX2),y(SUFFIX2))endgroup
+<to be read again> 
+                   {
+--->{
+     curl1}..{curl1}
+serif->......{(EXPR6),0}z(SUFFIX4)1--z(SUFFIX4)0--
+                                                  (x(SUFFIX2),y(SUFFIX4)0)--...
+<to be read again> 
+                   ;
+dish_serif->...SUFFIX5),(EXPR6),(EXPR7))(SUFFIX8);
+                                                  if.dish>0:pickup.tiny.nib;...
+<to be read again> 
+                   ;
+l.591 ...if(1',2,a,1/3,outer_jut,b,1/2,inner_jut);
+                                                    % left serif
+End of file on the terminal!
+
+Font metrics written on cmti12.tfm.
+Output written on cmti12.300gf (58 characters, 8356 bytes).

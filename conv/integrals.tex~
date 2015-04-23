@@ -1,0 +1,10 @@
+\documentclass[14pt]{article}
+
+\newcommand{\slashed}[1]{\hbox{{$#1$}\llap{$/$}}}
+\begin{document}
+
+\begin{center}
+	{\Large\bf Conventions on signs and constants}
+\end{center}
+
+\bigskip

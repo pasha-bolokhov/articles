@@ -1,0 +1,57 @@
+%\documentclass[12pt]{article}
+\documentclass[12pt]{revtex4}
+%\documentclass[draft,12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsbsy}
+\usepackage{lscape} 
+\usepackage{color}
+\usepackage{graphicx,epsfig}
+\usepackage[english]{babel}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{palatino}
+%\usepackage{chancery}
+%\usepackage{newcent}
+%\usepackage{charter}
+%\usepackage{zapfchan}
+%\usepackage{bookman}
+%\usepackage{sparticles} 	%Package for displaying sparticle names. 
+%\usepackage{feynmf}		%Package for feynman diagrams. 
+
+%% slashed symbols
+%\newcommand{\slashed}[1]{\hbox{{$#1$}\llap{$/$}}}
+%\newcommand{\sslashed}[1]{\hbox{{$#1$}\llap{$/\,$}}}
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+\newcommand{\p}{\partial}
+\newcommand{\wt}{\widetilde}
+\newcommand{\ov}{\overline}
+\newcommand{\md}{\mathcal{D}}
+
+\newcommand{\suc}{{\rm SU}_{\rm C}(3)}
+\newcommand{\sul}{{\rm SU}_{\rm L}(2)}
+\newcommand{\ue}{{\rm U}(1)}
+\newcommand{\GeV}{{\rm GeV}}
+%\newcommand{\su3}{{\rm SU}_{\rm C}(3)}
+
+%\newcounter{dim5}
+%\setcounter{dim5}{5}
+
+
+\begin{document}
+    Hi Stefan,
+
+  I have been trying to apply that trick which we used in our SQED
+paper for calculation of anomaly in generic QCD theory, but unfortunately,
+not successful.
+  Here's the main trouble:
+
+ the covariant variation of the effective action is
+
+ Tr (  delta A^\mu  gamma_\mu  exp(regul) \slash{D}^{-1} \delta_12 )
+
+
+\end{document}

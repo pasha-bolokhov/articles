@@ -1,0 +1,1082 @@
+%!
+%%Creator: FeynDiagram 2.4  by Bill Dimm
+%%BoundingBox: 41 288 497 529
+%%LanguageLevel: 1
+%%Pages: 1
+%%EndComments
+%%BeginProlog
+% @(#) abbrev.ps 1.10@(#)
+
+/CP /charpath load def
+/CF /currentflat load def
+/CPT /currentpoint load def
+/C2 /curveto load def
+/RC2 /rcurveto load def
+/FP /flattenpath load def
+/L2 /lineto load def
+/M2 /moveto load def
+/NP /newpath load def
+/PBX /pathbbox load def
+/RM2 /rmoveto load def
+/SD /setdash load def
+/SLC /setlinecap load def
+/SLW /setlinewidth load def
+/S /show load def
+/ST /stroke load def
+
+% @(#) max.ps 1.9@(#)
+
+/max { 2 copy lt {exch} if pop } bind def
+
+% @(#) arrow.ps 1.9@(#)
+
+/tan
+  {
+  dup
+  sin exch cos div
+  } bind def
+
+/arrow_dict 12 dict def
+arrow_dict /arrow_mtrxstor matrix put
+
+/arrow
+  {
+  arrow_dict 
+    begin
+
+    /alpha exch def
+    /y2 exch def
+    /x2 exch def
+    /y1 exch def
+    /x1 exch def
+  
+    /arrow_oldmtrx arrow_mtrxstor currentmatrix def
+  
+    /dx x2 x1 sub def
+    /dy y2 y1 sub def
+  
+    /len dx dx mul dy dy mul add sqrt def
+    
+    /theta 1 alpha tan atan def
+    /rad len alpha tan mul 
+      theta sin alpha tan theta cos -1 add mul add div def
+  
+    x1 y1 translate
+    dy dx atan rotate
+  
+    len 0 M2
+    rad neg 0 rad theta 360 theta sub arcn
+    closepath
+  
+    arrow_oldmtrx setmatrix
+    end
+  } bind def
+
+% @(#) text.ps 1.9@(#)
+
+/text_dict 20 dict def
+text_dict /text_mtrxstor matrix put
+
+/SF* {  exch findfont exch scalefont setfont } bind def
+
+systemdict /selectfont known
+  { /SF /selectfont load def }
+  { /SF /SF* load def }
+  ifelse
+
+/txtsta
+  {
+  text_dict begin
+
+  /angle exch def
+  /y exch def
+  /x exch def
+
+  /text_oldmtrx text_mtrxstor currentmatrix def
+
+  x y translate
+  angle rotate
+  } bind def
+
+
+/txtend
+  {
+  text_oldmtrx setmatrix
+  end
+  } bind def
+
+% @(#)tilde.ps	1.2
+
+/tilde_dict 12 dict def
+tilde_dict /tilde_mtrxstor matrix put
+
+/tilde
+	{
+	tilde_dict
+		begin
+
+		/h exch def
+		/y2 exch def
+		/x2 exch def
+		/y1 exch def
+		/x1 exch def
+
+		x1 y1 M2
+		/w x2 x1 sub def
+
+		/tilde_oldmtrx tilde_mtrxstor currentmatrix def
+		CPT translate
+		w 6 div h scale
+
+		/t .5 def
+
+		0 t RM2
+		1 1.2 2 1.2 3 .5 RC2
+		1 -.7 2 -.7 3 .5 RC2
+		0 -1 t mul rlineto
+		-1 -1.2 -2 -1.2 -3 -.5 RC2
+		-1 .7 -2 .7 -3 -.5 RC2
+
+		closepath
+
+		tilde_oldmtrx setmatrix
+		end
+	} bind def
+%%EndProlog
+%%Page: 1 1
+%%PageBoundingBox: 41.904 288 496.789 528.966
+%%PageOrientation: Portrait
+save
+
+NP
+1.386 SLW
+1 SLC
+56.16 288 M2
+56.16 505.8 L2
+ST
+1 SLW
+0 SLC
+56.16 496.652 56.16 505.8 22 arrow
+fill
+NP
+1.386 SLW
+1 SLC
+72 317.7 M2
+111.6 317.7 L2
+ST
+NP
+1.386 SLW
+1 SLC
+72 347.4 M2
+111.6 347.4 L2
+ST
+NP
+1.386 SLW
+1 SLC
+72 386.604 M2
+111.6 386.604 L2
+ST
+NP
+1.386 SLW
+1 SLC
+72 391.752 M2
+111.6 391.752 L2
+ST
+NP
+1.386 SLW
+1 SLC
+131.4 347.4 M2
+171 347.4 L2
+ST
+NP
+1.386 SLW
+1 SLC
+131.4 388.98 M2
+171 388.98 L2
+ST
+NP
+1.386 SLW
+1 SLC
+180.9 472.14 M2
+220.5 472.14 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 333.738 M2
+279.9 333.738 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 348.984 M2
+279.9 348.984 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 333.738 M2
+339.3 333.738 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 348.984 M2
+339.3 348.984 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 353.34 M2
+279.9 353.34 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 353.34 M2
+339.3 353.34 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 353.736 M2
+398.7 353.736 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 484.02 M2
+279.9 484.02 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 481.644 M2
+279.9 481.644 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 488.97 M2
+279.9 488.97 L2
+ST
+NP
+1.386 SLW
+1 SLC
+240.3 490.95 M2
+279.9 490.95 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 484.02 M2
+339.3 484.02 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 481.644 M2
+339.3 481.644 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 488.97 M2
+339.3 488.97 L2
+ST
+NP
+1.386 SLW
+1 SLC
+299.7 490.95 M2
+339.3 490.95 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 329.283 M2
+398.7 329.283 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 348.588 M2
+398.7 348.588 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 436.5 M2
+398.7 436.5 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 468.18 M2
+398.7 468.18 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 484.416 M2
+398.7 484.416 L2
+ST
+NP
+1.386 SLW
+1 SLC
+359.1 488.772 M2
+398.7 488.772 L2
+ST
+NP
+1.386 SLW
+1 SLC
+418.5 317.7 M2
+458.1 317.7 L2
+ST
+NP
+1.386 SLW
+1 SLC
+418.5 396.9 M2
+458.1 396.9 L2
+ST
+NP
+1.386 SLW
+1 SLC
+418.5 399.375 M2
+458.1 399.375 L2
+ST
+NP
+1.386 SLW
+1 SLC
+418.5 401.85 M2
+458.1 401.85 L2
+ST
+87.84 302.85 0 txtsta
+0 0 M2
+/Times-Roman 12.3552 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 12.3552 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.85328 add
+3 -1 roll pop dup 3 1 roll
+1.48262 tilde fill
+M2
+/Times-Roman 12.3552 SF
+(N) S
+CPT
+0 -2.47104 RM2
+/Times-Roman 8.64864 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 12.3552 SF
+() S
+txtend
+87.84 353.538 0 txtsta
+0 0 M2
+/Times-Roman 12.3552 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 12.3552 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.85328 add
+3 -1 roll pop dup 3 1 roll
+1.48262 tilde fill
+M2
+/Times-Roman 12.3552 SF
+(N) S
+CPT
+0 -2.47104 RM2
+/Times-Roman 8.64864 SF
+(2) S
+exch pop CPT pop exch M2
+/Times-Roman 12.3552 SF
+() S
+txtend
+147.24 353.538 0 txtsta
+0 0 M2
+/Times-Roman 12.3552 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 12.3552 SF
+(C) true CP
+FP PBX
+7 -1 roll setflat
+1.85328 add
+3 -1 roll pop dup 3 1 roll
+1.48262 tilde fill
+M2
+/Times-Roman 12.3552 SF
+(C) S
+CPT
+0 -2.47104 RM2
+/Times-Roman 8.64864 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 12.3552 SF
+() S
+txtend
+77.94 398.84 0 txtsta
+0 0 M2
+/Times-Roman 12.3552 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 12.3552 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.85328 add
+3 -1 roll pop dup 3 1 roll
+1.48262 tilde fill
+M2
+/Times-Roman 12.3552 SF
+(N) S
+CPT
+0 -2.47104 RM2
+/Times-Roman 8.64864 SF
+(3) S
+exch pop CPT pop exch M2
+/Times-Roman 12.3552 SF
+(, ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 12.3552 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.85328 add
+3 -1 roll pop dup 3 1 roll
+1.48262 tilde fill
+M2
+/Times-Roman 12.3552 SF
+(N) S
+CPT
+0 -2.47104 RM2
+/Times-Roman 8.64864 SF
+(4) S
+exch pop CPT pop exch M2
+/Times-Roman 12.3552 SF
+() S
+txtend
+147.24 396.662 0 txtsta
+0 0 M2
+/Times-Roman 12.3552 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 12.3552 SF
+(C) true CP
+FP PBX
+7 -1 roll setflat
+1.85328 add
+3 -1 roll pop dup 3 1 roll
+1.48262 tilde fill
+M2
+/Times-Roman 12.3552 SF
+(C) S
+CPT
+0 -2.47104 RM2
+/Times-Roman 8.64864 SF
+(2) S
+exch pop CPT pop exch M2
+/Times-Roman 12.3552 SF
+() S
+txtend
+198.72 479.664 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(g) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(g) S
+txtend
+254.754 321.66 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(e) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(e) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(R) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+245.646 358.785 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\156) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\156) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(e) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(e) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(e) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(L) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+314.253 321.462 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\155) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\155) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(R) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+305.046 358.785 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\156) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\156) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+() S
+/Symbol 9.1476 SF
+(\155) S
+/Times-Roman 9.1476 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\155) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\155) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(L) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+364.446 358.785 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\164) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\164) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(2) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\156) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\156) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+() S
+/Symbol 9.1476 SF
+(\164) S
+/Times-Roman 9.1476 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+245.646 466.596 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(d) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(d) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(R) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(u) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(u) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(R) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+245.646 498.672 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(u) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(u) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(L) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(d) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(d) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(L) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+305.64 466.596 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(s) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(s) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(R) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(c) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(c) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(R) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+305.64 498.672 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(c) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(c) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(L) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(s) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(s) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(L) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+374.346 316.195 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+() true CP
+/Symbol 13.068 SF
+(\164) true CP
+/Times-Roman 13.068 SF
+() true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+() S
+/Symbol 13.068 SF
+(\164) S
+/Times-Roman 13.068 SF
+() S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+374.346 422.64 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(t) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(t) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+374.346 452.736 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(b) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(b) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+364.842 495.504 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(b) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(b) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(2) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+(,  ) S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 13.068 SF
+(t) true CP
+FP PBX
+7 -1 roll setflat
+1.9602 add
+3 -1 roll pop dup 3 1 roll
+1.56816 tilde fill
+M2
+/Times-Roman 13.068 SF
+(t) S
+CPT
+0 -2.6136 RM2
+/Times-Roman 9.1476 SF
+(2) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+435.33 323.244 0 txtsta
+0 0 M2
+/Times-Roman 13.068 SF
+(h) S
+CPT
+0 6.534 RM2
+/Times-Roman 9.1476 SF
+(0) S
+exch pop CPT pop exch M2
+/Times-Roman 13.068 SF
+() S
+txtend
+415.53 408.028 0 txtsta
+0 0 M2
+/Times-Roman 11.88 SF
+(A) S
+CPT
+0 5.94 RM2
+/Times-Roman 8.316 SF
+(0) S
+exch pop CPT pop exch M2
+/Times-Roman 11.88 SF
+(, H) S
+CPT
+0 5.94 RM2
+/Times-Roman 8.316 SF
+(0) S
+exch pop CPT pop exch M2
+/Times-Roman 11.88 SF
+(, H) S
+CPT
+0 5.94 RM2
+/Times-Roman 8.316 SF
+(+) S
+exch pop CPT pop exch M2
+/Times-Roman 11.88 SF
+() S
+txtend
+41.904 512.334 0 txtsta
+0 0 M2
+/Times-Roman 16.632 SF
+(Mass) S
+txtend
+restore
+showpage
+%%EOF

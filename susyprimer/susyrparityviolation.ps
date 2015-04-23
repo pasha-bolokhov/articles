@@ -1,0 +1,767 @@
+%!
+%%Creator: FeynDiagram 2.4  by Bill Dimm
+%%BoundingBox: 69 127 430 196
+%%LanguageLevel: 1
+%%Pages: 1
+%%EndComments
+%%BeginProlog
+% @(#) abbrev.ps 1.10@(#)
+
+/CP /charpath load def
+/CF /currentflat load def
+/CPT /currentpoint load def
+/C2 /curveto load def
+/RC2 /rcurveto load def
+/FP /flattenpath load def
+/L2 /lineto load def
+/M2 /moveto load def
+/NP /newpath load def
+/PBX /pathbbox load def
+/RM2 /rmoveto load def
+/SD /setdash load def
+/SLC /setlinecap load def
+/SLW /setlinewidth load def
+/S /show load def
+/ST /stroke load def
+
+% @(#) max.ps 1.9@(#)
+
+/max { 2 copy lt {exch} if pop } bind def
+
+% @(#) vertex.ps 1.10@(#) 
+
+/vtx_dict 20 dict def
+vtx_dict /vtx_mtrxstor matrix put
+
+/vtx_create
+  {
+  vtx_dict begin
+
+  /ang exch def
+  /rad exch def
+  /y exch def
+  /x exch def
+  /vtx_proc exch def
+
+  /vtx_oldmatrix vtx_mtrxstor currentmatrix def
+
+  x y translate
+  ang rotate
+
+  vtx_proc
+
+  vtx_oldmatrix setmatrix
+  end
+  } bind def
+
+
+/vtx_dot
+  {
+  NP
+  rad 0 M2
+  0 0 rad 0 360 arc
+  0 setgray
+  fill
+  } bind def
+
+
+/vtx_box
+  {
+  NP
+  rad rad M2
+  rad rad neg L2
+  rad neg rad neg L2
+  rad neg rad L2
+  closepath
+  0 setgray
+  fill
+  } def
+
+/vtx_open_box
+  {
+  NP
+  rad rad M2
+  rad rad neg L2
+  rad neg rad neg L2
+  rad neg rad L2
+  closepath
+  1 setgray
+  gsave fill grestore
+	0 setgray
+	ST
+  } def
+
+/vtx_cross
+  {
+  NP
+  -1 2 sqrt div rad mul
+  -1 2 sqrt div rad mul
+  M2
+  1 2 sqrt div rad mul
+  1 2 sqrt div rad mul
+  L2
+
+  -1 2 sqrt div rad mul
+  1 2 sqrt div rad mul
+  M2
+  1 2 sqrt div rad mul
+  -1 2 sqrt div rad mul
+  L2
+
+  ST
+  } def
+
+/vtx_circlecross
+  {
+  /xshrfct .63 def
+
+    % blank out whatever is underneath
+  NP
+  rad 0 M2
+  0 0 rad 0 360 arc
+  1 setgray
+  fill
+
+  NP
+  -1 2 sqrt div rad mul xshrfct mul
+  -1 2 sqrt div rad mul xshrfct mul
+  M2
+  1 2 sqrt div rad mul xshrfct mul
+  1 2 sqrt div rad mul xshrfct mul
+  L2
+
+  -1 2 sqrt div rad mul xshrfct mul
+  1 2 sqrt div rad mul xshrfct mul
+  M2
+  1 2 sqrt div rad mul xshrfct mul
+  -1 2 sqrt div rad mul xshrfct mul
+  L2
+
+  rad 0 M2
+  0 0 rad 0 360 arc
+
+  0 setgray
+  ST
+  } def
+
+% @(#) arrow.ps 1.9@(#)
+
+/tan
+  {
+  dup
+  sin exch cos div
+  } bind def
+
+/arrow_dict 12 dict def
+arrow_dict /arrow_mtrxstor matrix put
+
+/arrow
+  {
+  arrow_dict 
+    begin
+
+    /alpha exch def
+    /y2 exch def
+    /x2 exch def
+    /y1 exch def
+    /x1 exch def
+  
+    /arrow_oldmtrx arrow_mtrxstor currentmatrix def
+  
+    /dx x2 x1 sub def
+    /dy y2 y1 sub def
+  
+    /len dx dx mul dy dy mul add sqrt def
+    
+    /theta 1 alpha tan atan def
+    /rad len alpha tan mul 
+      theta sin alpha tan theta cos -1 add mul add div def
+  
+    x1 y1 translate
+    dy dx atan rotate
+  
+    len 0 M2
+    rad neg 0 rad theta 360 theta sub arcn
+    closepath
+  
+    arrow_oldmtrx setmatrix
+    end
+  } bind def
+
+% @(#) text.ps 1.9@(#)
+
+/text_dict 20 dict def
+text_dict /text_mtrxstor matrix put
+
+/SF* {  exch findfont exch scalefont setfont } bind def
+
+systemdict /selectfont known
+  { /SF /selectfont load def }
+  { /SF /SF* load def }
+  ifelse
+
+/txtsta
+  {
+  text_dict begin
+
+  /angle exch def
+  /y exch def
+  /x exch def
+
+  /text_oldmtrx text_mtrxstor currentmatrix def
+
+  x y translate
+  angle rotate
+  } bind def
+
+
+/txtend
+  {
+  text_oldmtrx setmatrix
+  end
+  } bind def
+
+% @(#)tilde.ps	1.2
+
+/tilde_dict 12 dict def
+tilde_dict /tilde_mtrxstor matrix put
+
+/tilde
+	{
+	tilde_dict
+		begin
+
+		/h exch def
+		/y2 exch def
+		/x2 exch def
+		/y1 exch def
+		/x1 exch def
+
+		x1 y1 M2
+		/w x2 x1 sub def
+
+		/tilde_oldmtrx tilde_mtrxstor currentmatrix def
+		CPT translate
+		w 6 div h scale
+
+		/t .5 def
+
+		0 t RM2
+		1 1.2 2 1.2 3 .5 RC2
+		1 -.7 2 -.7 3 .5 RC2
+		0 -1 t mul rlineto
+		-1 -1.2 -2 -1.2 -3 -.5 RC2
+		-1 .7 -2 .7 -3 -.5 RC2
+
+		closepath
+
+		tilde_oldmtrx setmatrix
+		end
+	} bind def
+%%EndProlog
+%%Page: 1 1
+%%PageBoundingBox: 69 127.733 429.921 195.992
+%%PageOrientation: Portrait
+save
+
+NP
+0.5 SLW
+1 SLC
+100.98 168.84 M2
+72 168.84 L2
+ST
+1 SLW
+0 SLC
+88.14 168.84 84.84 168.84 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+100.98 168.84 M2
+128.304 185.4 L2
+ST
+1 SLW
+0 SLC
+113.231 176.265 116.053 177.975 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+125.82 156.42 M2
+154.8 144 L2
+ST
+1 SLW
+0 SLC
+138.793 150.86 141.827 149.56 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+125.82 156.42 M2
+154.8 168.84 L2
+ST
+1 SLW
+0 SLC
+138.793 161.98 141.827 163.28 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+[ 3.6 3 ] 0 SD
+125.82 156.42 M2
+100.98 168.84 L2
+ST
+[] 0 SD
+1 SLW
+0 SLC
+114.876 161.892 111.924 163.368 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+72 168.84 M2
+73.2075 165.84 74.415 165.84 75.6225 168.84 C2
+76.83 171.84 78.0375 171.84 79.245 168.84 C2
+80.4525 165.84 81.66 165.84 82.8675 168.84 C2
+84.075 171.84 85.2825 171.84 86.49 168.84 C2
+87.6975 165.84 88.905 165.84 90.1125 168.84 C2
+91.32 171.84 92.5275 171.84 93.735 168.84 C2
+94.9425 165.84 96.15 165.84 97.3575 168.84 C2
+98.565 171.84 99.7725 171.84 100.98 168.84 C2
+ST
+0.75 SLW
+{vtx_dot} 100.98 168.84 0.99 0 vtx_create
+0.75 SLW
+{vtx_dot} 125.82 156.42 0.99 0 vtx_create
+110.088 132.408 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(\(a\)) S
+txtend
+72 176.292 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 9.35 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.4025 add
+3 -1 roll pop dup 3 1 roll
+1.122 tilde fill
+M2
+/Times-Roman 9.35 SF
+(N) S
+CPT
+0 -1.87 RM2
+/Times-Roman 6.545 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 9.35 SF
+() S
+txtend
+129.339 186.642 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(l) S
+txtend
+117.457 163.665 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 9.35 SF
+(l) true CP
+FP PBX
+7 -1 roll setflat
+1.4025 add
+3 -1 roll pop dup 3 1 roll
+1.122 tilde fill
+M2
+/Times-Roman 9.35 SF
+(l) S
+txtend
+156.042 170.91 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(l) S
+txtend
+156.042 146.07 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+/Symbol 9.35 SF
+(\156) S
+/Times-Roman 9.35 SF
+() S
+txtend
+124.164 147.726 0 txtsta
+0 0 M2
+/Times-Roman 8.5 SF
+() S
+/Symbol 8.5 SF
+(\154) S
+/Times-Roman 8.5 SF
+() S
+txtend
+NP
+0.5 SLW
+1 SLC
+226.98 168.84 M2
+198 168.84 L2
+ST
+1 SLW
+0 SLC
+214.14 168.84 210.84 168.84 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+226.98 168.84 M2
+254.304 185.4 L2
+ST
+1 SLW
+0 SLC
+239.231 176.265 242.053 177.975 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+251.82 156.42 M2
+280.8 144 L2
+ST
+1 SLW
+0 SLC
+264.793 150.86 267.827 149.56 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+251.82 156.42 M2
+280.8 168.84 L2
+ST
+1 SLW
+0 SLC
+264.793 161.98 267.827 163.28 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+[ 3.6 3 ] 0 SD
+251.82 156.42 M2
+226.98 168.84 L2
+ST
+[] 0 SD
+1 SLW
+0 SLC
+240.876 161.892 237.924 163.368 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+198 168.84 M2
+199.207 165.84 200.415 165.84 201.623 168.84 C2
+202.83 171.84 204.038 171.84 205.245 168.84 C2
+206.452 165.84 207.66 165.84 208.868 168.84 C2
+210.075 171.84 211.282 171.84 212.49 168.84 C2
+213.697 165.84 214.905 165.84 216.112 168.84 C2
+217.32 171.84 218.528 171.84 219.735 168.84 C2
+220.942 165.84 222.15 165.84 223.357 168.84 C2
+224.565 171.84 225.773 171.84 226.98 168.84 C2
+ST
+0.75 SLW
+{vtx_dot} 226.98 168.84 0.99 0 vtx_create
+0.75 SLW
+{vtx_dot} 251.82 156.42 0.99 0 vtx_create
+236.088 132.408 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(\(b\)) S
+txtend
+198 176.292 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 9.35 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.4025 add
+3 -1 roll pop dup 3 1 roll
+1.122 tilde fill
+M2
+/Times-Roman 9.35 SF
+(N) S
+CPT
+0 -1.87 RM2
+/Times-Roman 6.545 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 9.35 SF
+() S
+txtend
+255.339 186.642 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(l) S
+txtend
+243.457 163.665 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 9.35 SF
+(l) true CP
+FP PBX
+7 -1 roll setflat
+1.4025 add
+3 -1 roll pop dup 3 1 roll
+1.122 tilde fill
+M2
+/Times-Roman 9.35 SF
+(l) S
+txtend
+282.042 170.91 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(q) S
+txtend
+282.042 146.07 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(q) S
+CPT
+0 4.675 RM2
+/Times-Roman 6.545 SF
+() S
+0 -5.11819 RM2
+/Symbol 11.1265 SF
+(\242) S
+0 5.11819 RM2
+/Times-Roman 6.545 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 9.35 SF
+() S
+txtend
+248.094 147.726 0 txtsta
+0 0 M2
+/Times-Roman 8.5 SF
+() S
+/Symbol 8.5 SF
+(\154) S
+/Times-Roman 8.5 SF
+() S
+CPT
+0 4.25 RM2
+/Times-Roman 5.95 SF
+() S
+0 -4.6529 RM2
+/Symbol 10.115 SF
+(\242) S
+0 4.6529 RM2
+/Times-Roman 5.95 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 8.5 SF
+() S
+txtend
+NP
+0.5 SLW
+1 SLC
+352.98 168.84 M2
+324 168.84 L2
+ST
+1 SLW
+0 SLC
+340.14 168.84 336.84 168.84 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+352.98 168.84 M2
+380.304 185.4 L2
+ST
+1 SLW
+0 SLC
+365.231 176.265 368.053 177.975 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+377.82 156.42 M2
+406.8 144 L2
+ST
+1 SLW
+0 SLC
+390.793 150.86 393.827 149.56 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+377.82 156.42 M2
+406.8 168.84 L2
+ST
+1 SLW
+0 SLC
+390.793 161.98 393.827 163.28 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+[ 3.6 3 ] 0 SD
+377.82 156.42 M2
+352.98 168.84 L2
+ST
+[] 0 SD
+1 SLW
+0 SLC
+366.876 161.892 363.924 163.368 22 arrow
+fill
+NP
+0.5 SLW
+1 SLC
+324 168.84 M2
+325.207 165.84 326.415 165.84 327.623 168.84 C2
+328.83 171.84 330.038 171.84 331.245 168.84 C2
+332.452 165.84 333.66 165.84 334.868 168.84 C2
+336.075 171.84 337.283 171.84 338.49 168.84 C2
+339.697 165.84 340.905 165.84 342.113 168.84 C2
+343.32 171.84 344.528 171.84 345.735 168.84 C2
+346.942 165.84 348.15 165.84 349.358 168.84 C2
+350.565 171.84 351.772 171.84 352.98 168.84 C2
+ST
+0.75 SLW
+{vtx_dot} 352.98 168.84 0.99 0 vtx_create
+0.75 SLW
+{vtx_dot} 377.82 156.42 0.99 0 vtx_create
+362.088 132.408 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(\(c\)) S
+txtend
+324 176.292 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 9.35 SF
+(N) true CP
+FP PBX
+7 -1 roll setflat
+1.4025 add
+3 -1 roll pop dup 3 1 roll
+1.122 tilde fill
+M2
+/Times-Roman 9.35 SF
+(N) S
+CPT
+0 -1.87 RM2
+/Times-Roman 6.545 SF
+(1) S
+exch pop CPT pop exch M2
+/Times-Roman 9.35 SF
+() S
+txtend
+381.339 186.642 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(q) S
+txtend
+369.457 163.665 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+() S
+CF dup 5 mul setflat
+CPT
+/Times-Roman 9.35 SF
+(q) true CP
+FP PBX
+7 -1 roll setflat
+1.4025 add
+3 -1 roll pop dup 3 1 roll
+1.122 tilde fill
+M2
+/Times-Roman 9.35 SF
+(q) S
+txtend
+408.042 170.91 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(q) S
+CPT
+0 4.675 RM2
+/Times-Roman 6.545 SF
+() S
+0 -5.11819 RM2
+/Symbol 11.1265 SF
+(\242) S
+0 5.11819 RM2
+/Times-Roman 6.545 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 9.35 SF
+() S
+txtend
+408.042 146.07 0 txtsta
+0 0 M2
+/Times-Roman 9.35 SF
+(q) S
+CPT
+0 4.675 RM2
+/Times-Roman 6.545 SF
+() S
+0 -5.11819 RM2
+/Symbol 11.1265 SF
+(\242) S
+0 5.11819 RM2
+/Times-Roman 6.545 SF
+() S
+0 -5.11819 RM2
+/Symbol 11.1265 SF
+(\242) S
+0 5.11819 RM2
+/Times-Roman 6.545 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 9.35 SF
+() S
+txtend
+373.349 147.726 0 txtsta
+0 0 M2
+/Times-Roman 8.5 SF
+() S
+/Symbol 8.5 SF
+(\154) S
+/Times-Roman 8.5 SF
+() S
+CPT
+0 4.25 RM2
+/Times-Roman 5.95 SF
+() S
+0 -4.6529 RM2
+/Symbol 10.115 SF
+(\242) S
+0 4.6529 RM2
+/Times-Roman 5.95 SF
+() S
+0 -4.6529 RM2
+/Symbol 10.115 SF
+(\242) S
+0 4.6529 RM2
+/Times-Roman 5.95 SF
+() S
+exch pop CPT pop exch M2
+/Times-Roman 8.5 SF
+() S
+txtend
+restore
+showpage
+%%EOF

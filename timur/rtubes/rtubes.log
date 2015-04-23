@@ -1,0 +1,746 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 2007.11.16)  20 DEC 2007 17:28
+**rtubes.tex
+(rtubes.tex
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, i
+talian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2001/07/10 v0.99a Input encoding file 
+
+(/usr/share/texmf/tex/latex/cyrillic/koi8-r.def
+File: koi8-r.def 1999/11/16 v1.0d Input encoding file
+))
+(/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 2001/03/01 v3.7h The Babel package
+
+(/usr/share/texmf/tex/generic/babel/russianb.ldf
+Language: russianb 2001/02/21 v1.1n Russian support from the babel system
+
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 2001/03/01 v3.7h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Russian'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@russian = a dialect from \language0
+(/usr/share/texmf/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2001/08/11 v1.0f Cyrillic encoding definition file
+)
+LaTeX Info: Redefining \latintext on input line 118.
+LaTeX Info: Redefining \textlatin on input line 123.
+Package babel Info: Making " an active character on input line 188.
+))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2001/06/05 v1.94 Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2001/08/11 v1.0f Cyrillic encoding definition file
+LaTeX Font Info:    Redeclaring font encoding T2A on input line 38.
+)
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 95.
+
+(/usr/share/texmf/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+)) (rtubes.aux)
+\openout1 = `rtubes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+Overfull \hbox (65.20271pt too wide) in paragraph at lines 26--41
+\T2A/cmr/m/n/12 ^^ed^^e5^^eb^^e8^^ed^^e5^^e9^^ed^^fb^^f5 ^^f7^^e5^^f2^^fb^^f0^^
+e5^^f5^^ec^^e5^^f0^^ed^^fb^^f5 ^^ec^^ee^^e4^^e5^^eb^^e5^^e9, ^^ee^^e1^^eb^^e0^^
+e4^^e0^^fe^^f9^^e8^^f5 ^^f3^^f1^^f2^^ee^^e9^^f7^^e8^^e2^^fb^^ec^^e8 ^^f1^^ee^^e
+b^^e8^^f2^^ee^^ed^^ee^^ef^^ee^^e4^^ee^^e1^^ed^^fb^^ec^^e8
+ []
+
+
+Overfull \hbox (22.79039pt too wide) in paragraph at lines 26--41
+\T2A/cmr/m/n/12 ^^f0^^e5^^f8^^e5^^ed^^e8^^ff^^ec^^e8. ^^ce^^e4^^ed^^e0 ^^e8^^e7
+ ^^f2^^e0^^ea^^e8^^f5 ^^ec^^ee^^e4^^e5^^eb^^e5^^e9, ^^f1 ^^ef^^e5^^f0^^e5^^ec^^
+e5^^ed^^ed^^fb^^ec^^e8 ^^ef^^f0^^e8^^ed^^e8^^ec^^e0^^fe^^f9^^e8^^ec^^e8 ^^e7^^e
+d^^e0^^f7^^e5^^ed^^e8^^ff
+ []
+
+
+Overfull \hbox (3.5304pt too wide) in paragraph at lines 26--41
+\T2A/cmr/m/n/12 ^^e2 ^^ea^^ee^^ec^^ef^^e0^^ea^^f2^^ed^^ee^^ec ^^ec^^ed^^ee^^e3^
+^ee^^ee^^e1^^f0^^e0^^e7^^e8^^e8, ^^e1^^fb^^eb^^e0 ^^ef^^f0^^e5^^e4^^eb^^ee^^e6^
+^e5^^ed^^e0 ^^e1^^ee^^eb^^e5^^e5 25 ^^eb^^e5^^f2 ^^ed^^e0^^e7^^e0^^e4 ^^e2 ^^f0
+^^e0^^e1^^ee^^f2^^e5
+ []
+
+
+Overfull \hbox (22.29967pt too wide) in paragraph at lines 26--41
+\T2A/cmr/m/n/12 [[]]. ^^dd^^f2^^e0 ^^ec^^ee^^e4^^e5^^eb^^fc (^^ec^^ee^^e4^^e5^^
+eb^^fc ^^d4^^e0^^e4^^e4^^e5^^e5^^e2^^e0-^^d1^^ea^^e8^^f0^^ec^^e0) ^^e8^^ec^^e5^
+^e5^^f2 ^^ed^^e5^^f2^^f0^^e8^^e2^^e8^^e0^^eb^^fc^^ed^^fb^^e5 ^^ef^^f0^^e8^^eb^^
+ee^^e6^^e5^^ed^^e8^^ff
+ []
+
+
+Overfull \hbox (1.73688pt too wide) in paragraph at lines 26--41
+\T2A/cmr/m/n/12 ^^e2 ^^f4^^e8^^e7^^e8^^ea^^e5 ^^f2^^e2^^e5^^f0^^e4^^ee^^e3^^ee 
+^^f2^^e5^^eb^^e0 [[]], ^^e2 ^^f4^^e8^^e7^^e8^^ea^^e5 ^^ef^^eb^^e0^^e7^^ec^^fb [
+[]], ^^e5^^e5 ^^f0^^e0^^f1^^f8^^e8^^f0^^e5^^ed^^e8^^ff ^^e2^^ee^^e7^^ed^^e8^^ea
+^^e0^^fe^^f2
+ []
+
+
+Overfull \hbox (4.508pt too wide) in paragraph at lines 26--41
+\T2A/cmr/m/n/12 ^^ef^^f0^^e8 ^^ee^^ef^^f0^^e5^^e4^^e5^^eb^^e5^^ed^^ed^^ee^^ec ^
+^e2^^fb^^e1^^ee^^f0^^e5 ^^ef^^e5^^f0^^e5^^ec^^e5^^ed^^ed^^fb^^f5 ^^e2 ^^ee^^ef^
+^e8^^f1^^e0^^ed^^e8^^e8 ^^e8^^ed^^f4^^f0^^e0^^ea^^f0^^e0^^f1^^ed^^ee^^e3^^ee ^^
+ef^^f0^^e5^^e4^^e5^^eb^^e0
+ []
+
+
+Overfull \hbox (29.14836pt too wide) in paragraph at lines 42--51
+[]\T2A/cmr/m/n/12 ^^ce^^e4^^ed^^e8^^ec ^^e8^^e7 ^^e2^^e0^^e6^^ed^^fb^^f5 ^^f1^^
+e2^^ee^^e9^^f1^^f2^^e2 ^^ec^^ee^^e4^^e5^^eb^^e8 ^^d4^^e0^^e4^^e4^^e5^^e5^^e2^^e
+0-^^d1^^ea^^e8^^f0^^ec^^e0 ^^ff^^e2^^eb^^ff^^e5^^f2^^f1^^ff ^^e2^^ee^^e7^^ec^^e
+e^^e6^^ed^^ee^^f1^^f2^^fc
+ []
+
+
+Overfull \hbox (26.20746pt too wide) in paragraph at lines 42--51
+\T2A/cmr/m/n/12 ^^e8^^ed^^f2^^e5^^f0^^ef^^f0^^e5^^f2^^e0^^f6^^e8^^e8 ^^e5^^e5 ^
+^f1^^f2^^e0^^f2^^e8^^f7^^e5^^f1^^ea^^e8^^f5 ^^f0^^e5^^f8^^e5^^ed^^e8^^e9 ^^e2 ^
+^e2^^e8^^e4^^e5 ^^f3^^e7^^eb^^ee^^e2 ^^f1^^ee^^f1^^f2^^ee^^ff^^f9^^e8^^f5 ^^e8^
+^e7 ^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^fb^^f5
+ []
+
+
+Overfull \hbox (13.97458pt too wide) in paragraph at lines 42--51
+\T2A/cmr/m/n/12 ^^d5^^ee^^ef^^f4^^e0. ^^dd^^f2^^ee^^f2 ^^e7^^e0^^f0^^ff^^e4 ^^e
+8^^ec^^e5^^e5^^f2 ^^ef^^f0^^ee^^f1^^f2^^f3^^fe ^^e8^^ed^^f2^^e5^^f0^^ef^^f0^^e5
+^^f2^^e0^^f6^^e8^^fe ^^f7^^e5^^f0^^e5^^e7 ^^f1^^f2^^e5^^ef^^e5^^ed^^fc ^^e7^^e0
+^^f6^^e5^^ef^^eb^^e5^^ed^^e8^^ff
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+)
+Overfull \hbox (2.38768pt too wide) in paragraph at lines 52--61
+[]\T2A/cmr/m/n/12 ^^c2 ^^ed^^e0^^f1^^f2^^ee^^ff^^f9^^e5^^e9 ^^f0^^e0^^e1^^ee^^f
+2^^e5 ^^ef^^f0^^e8 ^^ef^^ee^^ec^^ee^^f9^^e8 ^^ea^^ee^^ed^^f6^^e5^^ef^^f6^^e8^^e
+8 ^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^fb^^f5 ^^f2^^f0^^f3^^e1^^ee^^ea ^^e4^^e0^^e
+5^^f2^^f1^^ff
+ []
+
+
+Overfull \hbox (7.94197pt too wide) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 ^^e2 ^^ee^^e1^^eb^^e0^^f1^^f2^^e8 ^^e2^^fb^^f1^^ee^^ea^^e8^^f5 
+^^fd^^ed^^e5^^f0^^e3^^e8^^e9. ^^dd^^f2^^ee ^^ef^^ee^^e7^^e2^^ee^^eb^^ff^^e5^^f2
+ ^^e0^^e2^^f2^^ee^^f0^^e0^^ec ^^f1^^e4^^e5^^eb^^e0^^f2^^fc ^^ef^^f0^^e5^^e4^^ef
+^^ee^^eb^^ee^^e6^^e5^^ed^^e8^^e5
+ []
+
+
+Overfull \hbox (12.5025pt too wide) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 ^^ee^^e1 ^^ee^^e1^^eb^^e0^^f1^^f2^^e8 ^^ef^^f0^^e8^^ec^^e5^^ed^
+^e8^^ec^^ee^^f1^^f2^^e8 ^^f1^^f2^^e5^^ef^^e5^^ed^^ed^^fb^^f5 ^^ef^^f0^^e8^^e1^^
+eb^^e8^^e6^^e5^^ed^^e8^^e9 ^^e4^^eb^^ff ^^fd^^ed^^e5^^f0^^e3^^e8^^e8 ^^ea^^ee^^
+ed^^ea^^f0^^e5^^f2^^ed^^fb^^f5
+ []
+
+
+Overfull \hbox (16.74808pt too wide) in paragraph at lines 62--67
+\T2A/cmr/m/n/12 ^^e5^^e5 ^^f1^^e2^^ee^^e9^^f1^^f2^^e2. ^^cb^^e0^^e3^^f0^^e0^^ed
+^^e6^^e8^^e0^^ed ^^ec^^ee^^e4^^e5^^eb^^e8 ^^e7^^e0^^e4^^e0^^e5^^f2^^f1^^ff ^^f1
+^^eb^^e5^^e4^^f3^^fe^^f9^^e5^^e9 ^^f4^^f3^^ed^^ea^^f6^^e8^^e5^^e9 ^^ef^^f0^^ee^
+^e8^^e7^^e2^^ee^^e4^^ed^^fb^^f5
+ []
+
+
+Overfull \hbox (8.68855pt too wide) in paragraph at lines 70--74
+\T2A/cmr/m/n/12 ^^e2^^ea^^eb^^fe^^f7^^e0^^e5^^f2 ^^e2 ^^f1^^e5^^e1^^ff ^^ee^^e4
+^^ed^^f3 ^^ea^^ee^^ed^^f1^^f2^^e0^^ed^^f2^^f3, ^^ea^^ee^^f2^^ee^^f0^^e0^^ff ^^e
+8^^ec^^e5^^e5^^f2 ^^f0^^e0^^e7^^ec^^e5^^f0^^ed^^ee^^f1^^f2^^fc $\OT1/cmr/m/n/12
+ [\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 ] = [][]$\T2A/cmr/m/n/12 . 
+ []
+
+
+Overfull \hbox (39.58258pt too wide) in paragraph at lines 87--99
+\T2A/cmr/m/n/12 ^^e5^^f1^^eb^^e8 ^^e4^^eb^^e8^^ed^^e0 ^^e2^^e5^^ea^^f2^^ee^^f0^
+^e0 $[]$ ^^ff^^e2^^eb^^ff^^e5^^f2^^f1^^ff ^^ef^^ee^^f1^^f2^^ee^^ff^^ed^^ed^^ee^
+^e9 ^^e2^^e5^^eb^^e8^^f7^^e8^^ed^^ee^^e9 (^^e2^^e5^^ea^^f2^^ee^^f0 $[]$ ^^ef^^e
+0^^f0^^e0^^ec^^e5^^f2^^f0^^e8^^e7^^f3^^e5^^f2^^f1^^ff
+ []
+
+[1
+
+]
+Overfull \hbox (4.02261pt too wide) in paragraph at lines 119--121
+[]\T2A/cmr/m/n/12 ^^d1^^f2^^e0^^f2^^e8^^f7^^e5^^f1^^ea^^e8^^e5 ^^f0^^e5^^f8^^e5
+^^ed^^e8^^ff ^^ec^^ee^^e4^^e5^^eb^^e8 ^^ec^^ee^^e3^^f3^^f2 ^^e1^^fb^^f2^^fc ^^e
+d^^e0^^e9^^e4^^e5^^ed^^fb ^^ef^^f3^^f2^^e5^^ec ^^ec^^e8^^ed^^e8^^ec^^e8^^e7^^e0
+^^f6^^e8^^e8
+ []
+
+
+Overfull \hbox (19.8445pt too wide) in paragraph at lines 123--130
+\T2A/cmr/m/n/12 ^^d1^^ee^^ef^^ee^^f1^^f2^^e0^^e2^^eb^^ff^^ff ^^ee^^e1^^f9^^e5^^
+e5 ^^e2^^fb^^f0^^e0^^e6^^e5^^ed^^e8^^e5 ^^e4^^eb^^ff ^^f2^^ee^^ef^^ee^^eb^^ee^^
+e3^^e8^^f7^^e5^^f1^^ea^^ee^^e3^^ee ^^e7^^e0^^f0^^ff^^e4^^e0 (2[]) ^^f1 ^^ea^^ee
+^^ed^^ea^^f0^^e5^^f2^^ed^^fb^^ec
+ []
+
+
+Overfull \hbox (36.91403pt too wide) in paragraph at lines 123--130
+\T2A/cmr/m/n/12 ^^ef^^ee^^f2^^e5^^ed^^f6^^e8^^e0^^eb^^ee^^ec $\OML/cmm/m/it/12 
+E$ \T2A/cmr/m/n/12 ^^ef^^f0^^e8 ^^ef^^ee^^ec^^ee^^f9^^e8 ^^f2^^e5^^ee^^f0^^e5^^
+ec ^^e2^^eb^^ee^^e6^^e5^^ed^^e8^^ff ^^e2 ^^f4^^f3^^ed^^ea^^f6^^e8^^ee^^ed^^e0^^
+eb^^fc^^ed^^fb^^f5 ^^ef^^f0^^ee^^f1^^f2^^f0^^e0^^ed^^f1^^f2^^e2^^e0^^f5
+ []
+
+
+Overfull \hbox (16.09164pt too wide) in paragraph at lines 133--141
+\T2A/cmr/m/n/12 ^^c8^^e7 ^^fd^^f2^^ee^^e3^^ee ^^ed^^e5^^f0^^e0^^e2^^e5^^ed^^f1^
+^f2^^e2^^e0 ^^ed^^e5^^ec^^e5^^e4^^eb^^e5^^ed^^ed^^ee ^^f1^^eb^^e5^^e4^^f3^^e5^^
+f2 ^^e2^^e0^^e6^^ed^^ee^^e5 ^^e7^^e0^^ea^^eb^^fe^^f7^^e5^^ed^^e8^^e5: ^^f1^^f3^
+^ef^^e5^^f0^^ef^^ee^^e7^^e8^^f6^^e8^^ff
+ []
+
+
+Overfull \hbox (1.24492pt too wide) in paragraph at lines 133--141
+\T2A/cmr/m/n/12 ^^f2^^ee ^^e5^^f1^^f2^^fc ^^ec^^e5^^e6^^e4^^f3 ^^f2^^e0^^ea^^e8
+^^ec^^e8 ^^f0^^e5^^f8^^e5^^ed^^e8^^ff^^ec^^e8 ^^e8^^ec^^e5^^e5^^f2^^f1^^ff ^^ed
+^^e5^^f2^^f0^^e8^^e2^^e8^^e0^^eb^^fc^^ed^^ee^^e5 ^^e2^^e7^^e0^^e8^^ec^^ee^^e4^^
+e5^^e9^^f1^^f2^^e2^^e8^^e5
+ []
+
+
+Overfull \hbox (34.6916pt too wide) in paragraph at lines 143--168
+\T2A/cmr/m/n/12 ^^d1^^f2^^e0^^f2^^e8^^f7^^e5^^f1^^ea^^e8^^e5 ^^f0^^e5^^f8^^e5^^
+ed^^e8^^ff ^^ec^^ee^^e4^^e5^^eb^^e8 ^^d4^^e0^^e4^^e4^^e5^^e5^^e2^^e0-^^d1^^ea^^
+e8^^f0^^ec^^e0 ^^e8^^ec^^e5^^fe^^f2 ^^ef^^f0^^ee^^f1^^f2^^f3^^fe ^^e8^^ed^^f2^^
+e5^^f0^^ef^^f0^^e5^^f2^^e0^^f6^^e8^^fe
+ []
+
+
+Overfull \hbox (3.58157pt too wide) in paragraph at lines 143--168
+\OML/cmm/m/it/12 S[]$\T2A/cmr/m/n/12 , ^^e8^^eb^^e8, ^^e2 ^^ea^^ee^^ee^^f0^^e4^
+^e8^^ed^^e0^^f2^^e0^^f5, ^^fd^^f2^^ee ^^e2^^e5^^ea^^f2^^ee^^f0 $\OT1/cmr/m/n/12
+ (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$\T
+2A/cmr/m/n/12 . ^^d2^^ee^^e3^^e4^^e0 ^^ef^^f0^^ee^^ee^^e1^^f0^^e0^^e7 ^^fe^^e6^
+^ed^^ee^^e3^^ee ^^ef^^ee^^eb^^fe^^f1^^e0
+ []
+
+
+Overfull \hbox (30.77965pt too wide) in paragraph at lines 143--168
+\T2A/cmr/m/n/12 ^^ef^^ee^^eb^^fe^^f1^^e0 ^^ff^^e2^^eb^^ff^^e5^^f2^^f1^^ff, ^^e2
+ ^^f1^^e2^^ee^^fe ^^ee^^f7^^e5^^f0^^e5^^e4^^fc, ^^ec^^ed^^ee^^e6^^e5^^f1^^f2^^e
+2^^ee^^ec ^^e7^^e0^^ec^^ea^^ed^^f3^^f2^^fb^^f5 ^^ea^^f0^^e8^^e2^^fb^^f5, ^^ee^^
+e1^^f0^^e0^^e7^^f3^^fe^^f9^^e8^^f5
+ []
+
+
+Overfull \hbox (6.30254pt too wide) in paragraph at lines 143--168
+\T2A/cmr/m/n/12 ^^ef^^f0^^ee^^e8^^e7^^e2^^ee^^eb^^fc^^ed^^ee ^^ec^^e0^^eb^^fb^^
+e9 ^^e7^^e0^^ec^^ea^^ed^^f3^^f2^^fb^^e9 ^^ea^^ee^^ed^^f2^^f3^^f0 ^^ef^^f0^^ee^^
+f5^^ee^^e4^^ff^^f9^^e8^^e9 ^^ee^^e4^^e8^^ed ^^f0^^e0^^e7 ^^e2^^ee^^ea^^f0^^f3^^
+e3 ^^eb^^e8^^ed^^e8^^e8
+ []
+
+
+Overfull \hbox (35.5086pt too wide) in paragraph at lines 143--168
+\T2A/cmr/m/n/12 ^^ec^^ee^^e4^^e5^^eb^^e8 ^^ef^^ee^^ea^^e0^^e7^^fb^^e2^^e0^^fe^^
+f2, ^^f7^^f2^^ee ^^f3^^f1^^f2^^ee^^e9^^f7^^e8^^e2^^fb^^ec^^e8 ^^ff^^e2^^eb^^ff^
+^fe^^f2^^f1^^ff ^^f2^^ee^^eb^^fc^^ea^^ee ^^f0^^e5^^f8^^e5^^ed^^e8^^ff ^^f1 ^^f2
+^^f0^^e8^^e2^^e8^^e0^^eb^^fc^^ed^^fb^^ec
+ []
+
+[2]
+Overfull \hbox (23.76021pt too wide) in paragraph at lines 186--200
+\T2A/cmr/m/n/12 ^^f0^^e5^^f8^^e5^^ed^^e8^^e9 ^^ec^^ee^^e6^^ed^^ee ^^e2^^e2^^e5^
+^f1^^f2^^e8 ^^ed^^e5^^ea^^ee^^f2^^ee^^f0^^fb^^e5 ^^eb^^ee^^ea^^e0^^eb^^fc^^ed^^
+fb^^e5 ^^f5^^e0^^f0^^e0^^ea^^f2^^e5^^f0^^e8^^f1^^f2^^e8^^f7^^e5^^f1^^ea^^e8^^e5
+ ^^ef^^e0^^f0^^e0^^ec^^e5^^f2^^f0^^fb,
+ []
+
+
+Overfull \hbox (17.41887pt too wide) in paragraph at lines 186--200
+\OML/cmm/m/it/12 g$\T2A/cmr/m/n/12 , ^^ed^^ee ^^ed^^e5 ^^ee^^f2 ^^fd^^ed^^e5^^f
+0^^e3^^e8^^e8 ^^e8^^eb^^e8 ^^e7^^e0^^f0^^ff^^e4^^e0 ^^d5^^ee^^ef^^f4^^e0 ^^f1^^
+ee^^eb^^e8^^f2^^ee^^ed^^e0. ^^c2 ^^ea^^e0^^f7^^e5^^f1^^f2^^e2^^e5 ^^f2^^e0^^ea^
+^e8^^f5 ^^ef^^e0^^f0^^e0^^ec^^e5^^f2^^f0^^ee^^e2
+ []
+
+
+Overfull \hbox (16.98318pt too wide) in paragraph at lines 203--221
+\T2A/cmr/m/n/12 ^^e8^^ec^^e5^^ed^^ed^^ee, ^^f0^^e0^^e4^^e8^^f3^^f1 ^^f2^^f0^^f3
+^^e1^^ea^^e8 $\OML/cmm/m/it/12 r$ \T2A/cmr/m/n/12 ^^e8^^eb^^e8 ^^ef^^ee^^eb^^ee
+^^e2^^e8^^ed^^f3 ^^f1^^f0^^e5^^e4^^ed^^e5^^e3^^ee ^^f0^^e0^^f1^^f1^^f2^^ee^^ff^
+^ed^^e8^^ff ^^ec^^e5^^e6^^e4^^f3 ^^f6^^e5^^ed^^f2^^f0^^e0^^ec^^e8
+ []
+
+
+Overfull \hbox (31.75484pt too wide) in paragraph at lines 203--221
+\T2A/cmr/m/n/12 ^^e2^^fb^^e2^^ee^^e4 ^^f7^^f2^^ee ^^ef^^e5^^f0^^e5^^f7^^e8^^f1^
+^eb^^e5^^ed^^ed^^fb^^e5 ^^e2^^fb^^f8^^e5 ^^e2^^e5^^eb^^e8^^f7^^e8^^ed^^fb ^^e4^
+^ee^^eb^^e6^^ed^^fb ^^e1^^fb^^f2^^fc ^^f1^^e2^^ff^^e7^^e0^^ed^^fb ^^f1^^ee^^ee^
+^f2^^ed^^ee^^f8^^e5^^ed^^e8^^e5^^ec
+ []
+
+
+Overfull \hbox (36.33095pt too wide) in paragraph at lines 227--244
+\T2A/cmr/m/n/12 ^^e2^^fb^^f8^^e5 ^^f1^^ee^^ee^^f2^^ed^^ee^^f8^^e5^^ed^^e8^^e5 ^
+^ed^^e0^^f2^^e0^^eb^^ea^^e8^^e2^^e0^^fe^^f2^^f1^^ff ^^ed^^e0 ^^ee^^ef^^f0^^e5^^
+e4^^e5^^eb^^e5^^ed^^ed^^fb^^e5 ^^ef^^f0^^e5^^ef^^ff^^f2^^f1^^f2^^e2^^e8^^ff. ^^
+d1^^f0^^e0^^e2^^ed^^e8^^f2^^e5^^eb^^fc^^ed^^ee
+ []
+
+
+Overfull \hbox (5.48682pt too wide) in paragraph at lines 227--244
+\T2A/cmr/m/n/12 ^^ef^^f0^^ee^^f1^^f2^^ee^^e5 ^^e4^^e2^^f3^^ec^^e5^^f0^^ed^^ee^^
+e5 ^^ec^^ee^^e4^^e5^^eb^^e8^^f0^^ee^^e2^^e0^^ed^^e8^^e5 ^^e4^^e2^^f3^^f5 ^^ef^^
+e0^^f0^^e0^^eb^^eb^^e5^^eb^^fc^^ed^^fb^^f5 ^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^fb
+^^f5 ^^f2^^f0^^f3^^e1^^ee^^ea
+ []
+
+
+Overfull \hbox (53.78192pt too wide) in paragraph at lines 227--244
+\T2A/cmr/m/n/12 ^^f1^^ee^^e6^^e0^^eb^^e5^^ed^^e8^^fe, ^^f2^^f0^^e5^^f5^^ec^^e5^
+^f0^^ed^^ee^^e5 ^^ec^^ee^^e4^^e5^^eb^^e8^^f0^^ee^^e2^^e0^^ed^^e8^^e5 ^^f2^^f0^^
+e5^^e1^^f3^^e5^^f2 ^^f1^^eb^^e8^^f8^^ea^^ee^^ec ^^e1^^ee^^eb^^fc^^f8^^e8^^f5 ^^
+e2^^fb^^f7^^e8^^f1^^eb^^e8^^f2^^e5^^eb^^fc^^ed^^fb^^f5
+ []
+
+[3]
+Overfull \hbox (34.9092pt too wide) in paragraph at lines 259--259
+[]\T2A/cmr/bx/n/17.28 ^^d1^^e2^^ff^^e7^^fc ^^ea^^ee^^ed^^f6^^e5^^ef^^f6^^e8^^e8
+ ^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^fb^^f5 ^^f2^^f0^^f3^^e1^^ee^^ea ^^f1 ^^ee^^f
+6^^e5^^ed^^ea^^ee^^e9
+ []
+
+
+Overfull \hbox (15.92336pt too wide) in paragraph at lines 260--268
+\T2A/cmr/m/n/12 ^^c2 ^^fd^^f2^^ee^^e9 ^^f7^^e0^^f1^^f2^^e8 ^^ec^^fb ^^ef^^f0^^e
+8^^e2^^e5^^e4^^e5^^ec ^^ef^^f0^^ee^^f1^^f2^^ee^^e5 ^^ed^^e0^^e3^^eb^^ff^^e4^^ed
+^^ee^^e5 ^^ee^^e1^^fa^^ff^^f1^^ed^^e5^^ed^^e8^^e5 ^^ee^^f6^^e5^^ed^^ea^^e8 ^^c2
+^^e0^^ea^^f3^^eb^^e5^^ed^^ea^^ee-
+ []
+
+
+Overfull \hbox (1.56694pt too wide) in paragraph at lines 260--268
+\T2A/cmr/m/n/12 ^^ca^^e0^^ef^^e8^^f2^^e0^^ed^^f1^^ea^^ee^^e3^^ee ^^ef^^f0^^e8 ^
+^ef^^ee^^ec^^ee^^f9^^e8 ^^e2^^e2^^e5^^e4^^e5^^ed^^ee^^e9 ^^f0^^e0^^ed^^e5^^e5 ^
+^ea^^ee^^ed^^f6^^e5^^ef^^f6^^e8^^e8 ^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^fb^^f5 ^^
+f2^^f0^^f3^^e1^^ee^^ea.
+ []
+
+
+Overfull \hbox (11.84703pt too wide) in paragraph at lines 260--268
+\T2A/cmr/m/n/12 ^^c0 ^^e8^^ec^^e5^^ed^^ed^^ee, ^^ec^^fb ^^ef^^ee^^ea^^e0^^e6^^e
+5^^ec, ^^f7^^f2^^ee ^^e4^^eb^^ff ^^f1^^f2^^e0^^f2^^e8^^f7^^e5^^f1^^ea^^e8^^f5 ^
+^f0^^e5^^f8^^e5^^ed^^e8^^e9 ^^f1 ^^e4^^ee^^f1^^f2^^e0^^f2^^ee^^f7^^ed^^ee ^^e1^
+^ee^^eb^^fc^^f8^^ee^^e9
+ []
+
+
+Overfull \hbox (42.20636pt too wide) in paragraph at lines 273--289
+[]\T2A/cmr/m/n/12 ^^ce^^e1^^fa^^ff^^f1^^ed^^e5^^ed^^e8^^e5 ^^e2^^fb^^e3^^eb^^ff
+^^e4^^e8^^f2 ^^f1^^eb^^e5^^e4^^f3^^fe^^f9^^e8^^ec ^^ee^^e1^^f0^^e0^^e7^^ee^^ec.
+ ^^c1^^f3^^e4^^e5^^ec ^^f0^^e0^^f1^^f1^^ec^^e0^^f2^^f0^^e8^^e2^^e0^^f2^^fc ^^f1
+^^f2^^e0^^f2^^e8^^f7^^e5^^f1^^ea^^ee^^e5
+ []
+
+
+Overfull \hbox (7.19255pt too wide) in paragraph at lines 273--289
+\T2A/cmr/m/n/12 ^^f0^^e5^^f8^^e5^^ed^^e8^^e5 (^^f1^^ee^^eb^^e8^^f2^^ee^^ed) ^^e
+a^^e0^^ea ^^f2^^ee^^ed^^ea^^f3^^fe ^^fd^^eb^^e0^^f1^^f2^^e8^^f7^^ed^^f3^^fe ^^f
+2^^f0^^f3^^e1^^ea^^f3 ^^f0^^e0^^e4^^e8^^f3^^f1^^e0 $\OML/cmm/m/it/12 r$ \T2A/cm
+r/m/n/12 (^^e8^^eb^^e8 ^^ef^^eb^^ee^^f9^^e0^^e4^^e8
+ []
+
+
+Overfull \hbox (26.37051pt too wide) in paragraph at lines 291--313
+[]\T2A/cmr/m/n/12 ^^c4^^eb^^ff ^^f2^^ee^^e3^^ee ^^f7^^f2^^ee^^e1^^fb ^^e2^^fb^^
+f7^^e8^^f1^^eb^^e8^^f2^^fc ^^f2^^ee^^ef^^ee^^eb^^ee^^e3^^e8^^f7^^e5^^f1^^ea^^e8
+^^e9 ^^e7^^e0^^f0^^ff^^e4 ^^ed^^e5^^ee^^e1^^f5^^ee^^e4^^e8^^ec^^ee <<^^f0^^e0^^
+f1^^f2^^e0^^f9^^e8^^f2^^fc>>
+ []
+
+
+Overfull \hbox (3.69217pt too wide) in paragraph at lines 291--313
+\T2A/cmr/m/n/12 ^^ef^^ee^^e4^^f1^^f7^^e8^^f2^^fb^^e2^^e0^^ff ^^ef^^f0^^e8 ^^fd^
+^f2^^ee^^ec ^^ea^^ee^^eb^^e8^^f7^^e5^^f1^^f2^^e2^^ee ^^ee^^ef^^e5^^f0^^e0^^f6^^
+e8^^e9 ^^f0^^e0^^f1^^f6^^e5^^ef^^eb^^e5^^ed^^e8^^ff ^^ec^^e5^^e6^^e4^^f3 ^^eb^^
+e8^^ed^^e8^^ff^^ec^^e8.
+ []
+
+
+Overfull \hbox (32.07233pt too wide) in paragraph at lines 291--313
+\T2A/cmr/m/n/12 ^^e5^^e4^^e8^^ed^^e8^^f7^^ed^^ee^^e9 ^^e4^^eb^^e8^^ed^^fb ^^ef^
+^f0^^ee^^ef^^ee^^f0^^f6^^e8^^ee^^ed^^e0^^eb^^fc^^ed^^ee ^^eb^^e8^^ed^^e5^^e9^^e
+d^^ee^^ec^^f3 ^^f0^^e0^^e7^^ec^^e5^^f0^^f3 ^^f3^^e7^^eb^^e0 $\OML/cmm/m/it/12 x
+$\T2A/cmr/m/n/12 . ^^c4^^e5^^e9^^f1^^f2^^e2^^e8^^f2^^e5^^eb^^fc^^ed^^ee,
+ []
+
+[4]
+Overfull \hbox (47.09245pt too wide) in paragraph at lines 316--326
+\T2A/cmr/m/n/12 ^^ef^^f0^^ee^^ee^^e1^^f0^^e0^^e7^^ee^^e2, ^^f1^^e2^^ff^^e7^^e0^
+^ed^^ed^^fb^^ec^^e8 ^^f1 ^^e8^^f5 ^^e2^^f0^^e0^^f9^^e5^^ed^^e8^^e5^^ec ^^e4^^f0
+^^f3^^e3 ^^ee^^f2^^ed^^ee^^f1^^e8^^f2^^e5^^eb^^fc^^ed^^ee ^^e4^^f0^^f3^^e3^^e0 
+(^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^ee^^f1^^f2^^fc^^fe
+ []
+
+
+Overfull \hbox (5.33145pt too wide) in paragraph at lines 316--326
+\T2A/cmr/m/n/12 ^^f2^^f0^^f3^^e1^^ea^^e8). ^^d2^^e0^^ea ^^ea^^e0^^ea ^^f7^^e8^^
+f1^^eb^^ee <<^^f1^^ea^^f0^^f3^^f7^^e8^^e2^^e0^^ed^^e8^^e9>> ^^ed^^e0 ^^e5^^e4^^
+e8^^ed^^e8^^f6^^f3 ^^e4^^eb^^e8^^ed^^fb ^^f2^^f0^^f3^^e1^^ea^^e8 ^^ff^^e2^^eb^^
+ff^^e5^^f2^^f1^^ff
+ []
+
+
+Overfull \hbox (28.65604pt too wide) in paragraph at lines 316--326
+\T2A/cmr/m/n/12 ^^f4^^e8^^ea^^f1^^e8^^f0^^ee^^e2^^e0^^ed^^ed^^fb^^ec ^^ef^^e0^^
+f0^^e0^^ec^^e5^^f2^^f0^^ee^^ec [[]], ^^f2^^ee ^^f7^^e8^^f1^^eb^^ee ^^f2^^e0^^ea
+^^e8^^f5 ^^f0^^e0^^f1^^f6^^e5^^ef^^eb^^e5^^ed^^e8^^e9 ^^ef^^f0^^ee^^ef^^ee^^f0^
+^f6^^e8^^ee^^ed^^e0^^eb^^fc^^ed^^ee
+ []
+
+
+Overfull \hbox (9.40402pt too wide) in paragraph at lines 327--342
+[]\T2A/cmr/m/n/12 ^^cd^^e5^^f1^^ec^^ee^^f2^^f0^^ff ^^ed^^e0 ^^f2^^ee, ^^f7^^f2^
+^ee ^^ef^^f0^^e8^^e2^^e5^^e4^^e5^^ed^^ed^^ee^^e5 ^^e2^^fb^^f7^^e8^^f1^^eb^^e5^^
+ed^^e8^^e5 ^^ed^^e8 ^^e2 ^^ea^^ee^^e5^^e9 ^^ec^^e5^^f0^^e5 ^^ed^^e5 ^^ff^^e2^^e
+b^^ff^^e5^^f2^^f1^^ff
+ []
+
+
+Overfull \hbox (28.82193pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^f2^^ee^^f7^^ed^^fb^^ec, ^^ee^^ed^^ee, ^^f2^^e5^^ec ^^ed^^e5 ^
+^ec^^e5^^ed^^e5^^e5, ^^e4^^e5^^ec^^ee^^ed^^f1^^f2^^f0^^e8^^f0^^f3^^e5^^f2 ^^ef^
+^f0^^e8^^f0^^ee^^e4^^f3 ^^ed^^e5^^f2^^f0^^e8^^e2^^e8^^e0^^eb^^fc^^ed^^ee^^e3^^e
+e ^^ef^^ee^^ea^^e0^^e7^^e0^^f2^^e5^^eb^^ff
+ []
+
+
+Overfull \hbox (18.37604pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^f1^^e0^^ec^^ee^^e7^^e0^^f6^^e5^^ef^^eb^^e5^^ed^^e8^^ff ^^f1^^
+e2^^ff^^e7^^e0^^ed^^ed^^fb^^f5 ^^ea^^ee^^ec^^ee^^ef^^ee^^ed^^e5^^ed^^f2 ^^f3^^e
+7^^eb^^e0 ^^e8 ^^e7^^e0^^f6^^e5^^ef^^eb^^e5^^ed^^e8^^ff ^^f0^^e0^^e7^^ed^^fb^^f
+5 ^^ea^^ee^^ec^^ef^^ee^^ed^^e5^^ed^^f2
+ []
+
+
+Overfull \hbox (25.8881pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^e4^^f0^^f3^^e3 ^^e7^^e0 ^^e4^^f0^^f3^^e3^^e0. ^^c2 ^^f2^^ee ^
+^e6^^e5 ^^e2^^f0^^e5^^ec^^ff, ^^e1^^eb^^e0^^e3^^ee^^e4^^e0^^f0^^ff ^^f1^^ea^^f0
+^^f3^^f7^^e5^^ed^^ed^^ee^^f1^^f2^^e8 ^^f2^^f0^^f3^^e1^^ee^^ea, ^^f2^^ee^^ef^^ee
+^^eb^^ee^^e3^^e8^^f7^^e5^^f1^^ea^^e8^^e9
+ []
+
+
+Overfull \hbox (12.18237pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^e7^^e0^^f0^^ff^^e4 $\OML/cmm/m/it/12 Q$ \T2A/cmr/m/n/12 ^^e8^
+^ec^^e5^^e5^^f2 ^^f1^^ee^^f1^^f2^^e0^^e2^^eb^^ff^^fe^^f9^^f3^^fe ^^ef^^f0^^ee^^
+ef^^ee^^f0^^f6^^e8^^ee^^ed^^e0^^eb^^fc^^ed^^f3^^fe ^^fd^^ed^^e5^^f0^^e3^^e8^^e8
+ ^^e2 ^^ef^^e5^^f0^^e2^^ee^^e9 ^^f1^^f2^^e5^^ef^^e5^^ed^^e8,
+ []
+
+
+Overfull \hbox (9.084pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^ea^^ee^^f2^^ee^^f0^^e0^^ff ^^ff^^e2^^eb^^ff^^e5^^f2^^f1^^ff ^
+^e4^^ee^^ec^^e8^^ed^^e8^^f0^^f3^^fe^^f9^^e5^^e9 ^^ef^^f0^^e8 ^^ec^^e0^^eb^^fb^^
+f5 ^^f0^^e0^^e7^^ec^^e5^^f0^^e0^^f5 ^^f3^^e7^^eb^^e0. ^^dd^^f2^^ee ^^f3^^ea^^e0
+^^e7^^fb^^e2^^e0^^e5^^f2
+ []
+
+
+Overfull \hbox (28.9836pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^ed^^e0 ^^ed^^e5^^ee^^e1^^ee^^f1^^ed^^ee^^e2^^e0^^ed^^ed^^ee^^
+f1^^f2^^fc ^^ef^^ee^^ef^^fb^^f2^^ee^^ea [[]], [[]], [[]] ^^e0^^ef^^ef^^f0^^ee^^
+ea^^f1^^e8^^ec^^e8^^f0^^ee^^e2^^e0^^f2^^fc ^^fd^^ea^^f1^^ef^^e5^^f0^^e8^^ec^^e5
+^^ed^^f2^^e0^^eb^^fc^^ed^^fb^^e5
+ []
+
+
+Overfull \hbox (24.2496pt too wide) in paragraph at lines 327--342
+\T2A/cmr/m/n/12 ^^e4^^e0^^ed^^ed^^fb^^e5 ^^e4^^eb^^ff ^^ed^^e8^^e7^^ea^^e8^^f5 
+^^fd^^ed^^e5^^f0^^e3^^e8^^e9 ^^ef^^f0^^e8 ^^ef^^ee^^ec^^ee^^f9^^e8 ^^f1^^f2^^e5
+^^ef^^e5^^ed^^ed^^ee^^e9 ^^e7^^e0^^e2^^e8^^f1^^e8^^ec^^ee^^f1^^f2^^e8 ^^f1 ^^ef
+^^ee^^ea^^e0^^e7^^e0^^f2^^e5^^eb^^e5^^ec
+ []
+
+
+Overfull \hbox (20.65869pt too wide) in paragraph at lines 344--351
+\T2A/cmr/m/n/12 ^^cf^^f0^^ee^^f1^^f2^^ee^^e5 ^^e2^^fb^^f7^^e8^^f1^^eb^^e5^^ed^^
+e8^^e5, ^^ef^^f0^^e5^^e4^^f1^^f2^^e0^^e2^^eb^^e5^^ed^^ed^^ee^^e5 ^^e2 ^^ef^^f0^
+^e5^^e4^^fb^^e4^^f3^^f9^^e5^^e9 ^^f7^^e0^^f1^^f2^^e8, ^^ef^^ee^^e7^^e2^^ee^^eb^
+^ff^^e5^^f2 ^^f1^^e4^^e5^^eb^^e0^^f2^^fc
+ []
+
+
+Overfull \hbox (3.3821pt too wide) in paragraph at lines 344--351
+\T2A/cmr/m/n/12 (^^f0^^e0^^e7^^ec^^e5^^f0^^e0^^ec^^e8) ^^f3^^e7^^eb^^e0. ^^cf^^
+f0^^e5^^e4^^ef^^ee^^eb^^ee^^e6^^e8^^ec, ^^f7^^f2^^ee ^^e8^^f1^^ea^^ee^^ec^^e0^^
+ff ^^e4^^eb^^e8^^ed^^e0 $\OML/cmm/m/it/12 l$ \T2A/cmr/m/n/12 ^^ff^^e2^^eb^^ff^^
+e5^^f2^^f1^^ff ^^ed^^e5^^ea^^ee^^f2^^ee^^f0^^ee^^e9
+ []
+
+
+Overfull \hbox (20.49706pt too wide) in paragraph at lines 354--361
+\T2A/cmr/m/n/12 ^^e7^^e0^^f6^^e5^^ef^^eb^^e5^^ed^^e8^^ff ^^ee^^e4^^ed^^ee^^e9 ^
+^f1^^e2^^ff^^e7^^e0^^ed^^ed^^ee^^e9 ^^ea^^ee^^ec^^ef^^ee^^ed^^e5^^ed^^f2^^fb ^^
+f1^^ee ^^e2^^f1^^e5^^ec^^e8 ^^ee^^f1^^f2^^e0^^eb^^fc^^ed^^fb^^ec^^e8 ^^ea^^ee^^
+ec^^ef^^ee^^ed^^e5^^ed^^f2^^e0^^ec^^e8
+ []
+
+[5]
+Overfull \hbox (13.32178pt too wide) in paragraph at lines 394--409
+\T2A/cmr/m/n/12 ^^ea^^ee^^ed^^f6^^e5^^ef^^f6^^e8^^e8 ^^f1^^ea^^f0^^f3^^f7^^e5^^
+ed^^ed^^fb^^f5 ^^f2^^f0^^f3^^e1^^ee^^ea. ^^cf^^ee^^ef^^fb^^f2^^ea^^e8 ^^ef^^ee^
+^f1^^f2^^f0^^ee^^e8^^f2^^fc ^^ea^^ee^^ed^^f4^^e8^^e3^^f3^^f0^^e0^^f6^^e8^^e8 ^^
+f1 ^^e4^^eb^^e8^^ed^^ee^^e9
+ []
+
+
+Overfull \hbox (0.59221pt too wide) in paragraph at lines 394--409
+\T2A/cmr/m/n/12 ^^e8 ^^f1^^f2^^e5^^ef^^e5^^ed^^fc^^fe ^^e7^^e0^^f6^^e5^^ef^^eb^
+^e5^^ed^^e8^^ff ^^f3^^e4^^ee^^e2^^eb^^e5^^f2^^e2^^ee^^f0^^ff^^fe^^f9^^e8^^ec^^e
+8 ^^f1^^ee^^ee^^f2^^ed^^ee^^f8^^e5^^ed^^e8^^fe (6[]) ^^ef^^ee^^ea^^e0^^e7^^fb^^
+e2^^e0^^fe^^f2,
+ []
+
+
+Overfull \hbox (36.32298pt too wide) in paragraph at lines 394--409
+\T2A/cmr/m/n/12 ^^ef^^f0^^ee^^e8^^e7^^e2^^ee^^eb^^fc^^ed^^ee ^^e2^^fb^^f1^^ee^^
+ea^^ee^^e9 ^^fd^^ed^^e5^^f0^^e3^^e8^^e5^^e9 ^^ed^^e5^^eb^^fc^^e7^^ff ^^e8^^f1^^
+ef^^ee^^eb^^fc^^e7^^ee^^e2^^e0^^f2^^fc ^^ea^^ee^^ec^^ef^^ee^^ed^^e5^^f2^^fb ^^f
+4^^e8^^ea^^f1^^e8^^f0^^ee^^e2^^e0^^ed^^ed^^ee^^e3^^ee
+ []
+
+
+Overfull \hbox (62.7507pt too wide) in paragraph at lines 411--419
+\T2A/cmr/m/n/12 ^^c2 ^^e7^^e0^^ea^^eb^^fe^^f7^^e5^^ed^^e8^^e5 ^^ef^^f0^^e8^^e2^
+^e5^^e4^^e5^^ec ^^ea^^ee^^ed^^f1^^f2^^f0^^f3^^ea^^f2^^e8^^e2^^ed^^fb^^e9 ^^ef^^
+f0^^e8^^ec^^e5^^f0 ^^ef^^ee^^f1^^eb^^e5^^e4^^ee^^e2^^e0^^f2^^e5^^eb^^fc^^ed^^ee
+^^f1^^f2^^e8 ^^ea^^ee^^ed^^f4^^e8^^e3^^f3^^f0^^e0^^f6^^e8^^e9,
+ []
+
+
+Overfull \hbox (7.1196pt too wide) in paragraph at lines 411--419
+\T2A/cmr/m/n/12 ^^f1^^ee^^f1^^f2^^ee^^ff^^f9^^e8^^f5 ^^e8^^e7 ^^f1^^ea^^f0^^f3^
+^f7^^e5^^ed^^ed^^fb^^f5 ^^f2^^f0^^f3^^e1^^ee^^ea, ^^fd^^ed^^e5^^f0^^e3^^e8^^ff 
+^^e8 ^^e7^^e0^^f0^^ff^^e4 ^^ea^^ee^^f2^^ee^^f0^^fb^^f5 ^^f3^^e4^^ee^^e2^^eb^^e5
+^^f2^^e2^^ee^^f0^^ff^^fe^^f2
+ []
+
+
+Overfull \hbox (4.99724pt too wide) in paragraph at lines 420--431
+[]\T2A/cmr/m/n/12 ^^ca^^e0^^e6^^e4^^e0^^ff ^^e8^^e7 ^^fd^^f2^^e8^^f5 ^^ea^^ee^^
+ed^^f4^^e8^^e3^^f3^^f0^^e0^^f6^^e8^^e9 ^^ef^^f0^^e5^^e4^^f1^^f2^^e0^^e2^^eb^^ff
+^^e5^^f2 ^^e8^^e7 ^^f1^^e5^^e1^^ff ^^ef^^ee^^e4^^ee^^e1^^e8^^e5 ^^f1^^f2^^e0^^e
+b^^fc^^ed^^ee^^e3^^ee
+ []
+
+
+Overfull \hbox (1.08284pt too wide) in paragraph at lines 420--431
+\T2A/cmr/m/n/12 ^^e8^^e7 ^^f0^^e0^^f1^^f1^^ec^^e0^^f2^^f0^^e8^^e2^^e0^^e5^^ec^^
+fb^^f5 ^^e7^^e4^^e5^^f1^^fc ^^f1^^ea^^f0^^f3^^f7^^e5^^ed^^ed^^fb^^f5 ^^f2^^f0^^
+f3^^e1^^ee^^ea, ^^ee^^e1^^e2^^e8^^e2^^e0^^fe^^f9^^e8^^f5^^f1^^ff ^^ef^^ee ^^f1^
+^ef^^e8^^f0^^e0^^eb^^e8
+ []
+
+
+Overfull \hbox (20.01013pt too wide) in paragraph at lines 420--431
+\T2A/cmr/m/n/12 ^^e2^^ee^^ea^^f0^^f3^^e3 ^^f6^^e5^^ed^^f2^^f0^^e0^^eb^^fc^^ed^^
+ee^^e9 ^^eb^^e8^^ed^^e8^^e8 ^^ee^^e1^^fa^^e5^^ea^^f2^^e0 ^^e8, ^^f2^^e0^^ea^^e8
+^^ec ^^ee^^e1^^f0^^e0^^e7^^ee^^ec, ^^e7^^e0^^ef^^ee^^eb^^ed^^ff^^fe^^f9^^e8^^f5
+ ^^ee^^e1^^ee^^eb^^ee^^f7^^ea^^f3
+ []
+
+
+Overfull \hbox (16.58127pt too wide) in paragraph at lines 432--442
+[]\T2A/cmr/m/n/12 ^^cf^^f0^^e8^^e2^^e5^^e4^^e5^^ec ^^ee^^f6^^e5^^ed^^ea^^f3 ^^e
+4^^eb^^ff ^^fd^^ed^^e5^^f0^^e3^^e8^^e8 ^^e8 ^^f2^^ee^^ef^^ee^^eb^^ee^^e3^^e8^^f
+7^^e5^^f1^^ea^^ee^^e3^^ee ^^e7^^e0^^f0^^ff^^e4^^e0 ^^f0^^e0^^f1^^f1^^ec^^e0^^f0
+^^e8^^e2^^e0^^e5^^ec^^fb^^f5
+ []
+
+
+Overfull \hbox (14.36955pt too wide) in paragraph at lines 432--442
+\T2A/cmr/m/n/12 ^^ef^^ee^^ec^^ee^^f9^^e8 ^^e5^^e3^^ee ^^f0^^e0^^e4^^e8^^f3^^f1^
+^e0 $\OML/cmm/m/it/12 R$\T2A/cmr/m/n/12 . ^^c4^^eb^^ff ^^f2^^ee^^e3^^ee ^^f7^^f
+2^^ee^^e1^^fb ^^ea^^ee^^ed^^f4^^e8^^e3^^f3^^f0^^e0^^f6^^e8^^e8 ^^e2 ^^ef^^ee^^f
+1^^eb^^e5^^e4^^ee^^e2^^e0^^f2^^e5^^eb^^fc^^ed^^ee^^f1^^f2^^e8
+ []
+
+
+Overfull \hbox (53.5965pt too wide) in paragraph at lines 432--442
+\T2A/cmr/m/n/12 ^^e1^^fb^^eb^^e8 ^^ef^^ee^^e4^^ee^^e1^^ed^^fb ^^e4^^f0^^f3^^e3 
+^^e4^^f0^^f3^^e3^^f3 ^^e4^^eb^^e8^^ed^^e0 ^^ea^^e0^^e6^^e4^^ee^^e9 ^^e8^^e7 ^^e
+d^^e8^^f5 $\OML/cmm/m/it/12 L[]$ \T2A/cmr/m/n/12 ^^e4^^ee^^eb^^e6^^ed^^e0 ^^e1^
+^fb^^f2^^fc ^^ef^^f0^^ee^^ef^^ee^^f0^^f6^^e8^^ee^^ed^^e0^^eb^^fc^^ed^^e0
+ []
+
+[6]
+Overfull \hbox (2.11612pt too wide) in paragraph at lines 443--466
+\T2A/cmr/m/n/12 (^^f7^^e8^^f1^^eb^^ee ^^ea^^ee^^f2^^ee^^f0^^fb^^f5 ^^ef^^f0^^ee
+^^ef^^ee^^f0^^f6^^e8^^ee^^ed^^e0^^eb^^fc^^ed^^ee $\OML/cmm/m/it/12 R[]$\T2A/cmr
+/m/n/12 ) ^^e2^^e5^^eb^^e8^^f7^^e8^^ed $\OML/cmm/m/it/12 Rr[]$\T2A/cmr/m/n/12 .
+ ^^ce^^f7^^e5^^e2^^e8^^e4^^ed^^ee, ^^f7^^f2^^ee ^^f2^^e0^^ea^^e0^^ff
+ []
+
+
+Overfull \hbox (3.62213pt too wide) in paragraph at lines 443--466
+\T2A/cmr/m/n/12 ^^f1^^f3^^ec^^ec^^e0 ^^ef^^f0^^ee^^ef^^ee^^f0^^f6^^e8^^ee^^ed^^
+e0^^eb^^fc^^ed^^e0 $\OML/cmm/m/it/12 R[]$\T2A/cmr/m/n/12 . ^^c1^^ee^^eb^^e5^^e5
+ ^^f2^^ee^^f7^^ed^^fb^^e5 ^^e2^^fb^^f7^^e8^^f1^^eb^^e5^^ed^^e8^^ff ^^e4^^e0^^fe
+^^f2 ^^ef^^f0^^e8^^e1^^eb^^e8^^e6^^e5^^ed^^e8^^e5 
+ []
+
+
+Overfull \hbox (33.70985pt too wide) in paragraph at lines 476--483
+\T2A/cmr/m/n/12 ^^c2^^e0^^ea^^f3^^eb^^e5^^ed^^ea^^ee-^^ca^^e0^^ef^^e8^^f2^^e0^^
+ed^^f1^^ea^^ee^^e3^^ee. ^^cf^^f0^^e8^^e2^^e5^^e4^^e5^^ed ^^ef^^f0^^e8^^ec^^e5^^
+f0 ^^ef^^ee^^f1^^eb^^e5^^e4^^ee^^e2^^e0^^f2^^e5^^eb^^fc^^ed^^ee^^f1^^f2^^e8 ^^e
+a^^ee^^ed^^f4^^e8^^e3^^f3^^f0^^e0^^f6^^e8^^e9
+ []
+
+
+Overfull \hbox (21.6404pt too wide) in paragraph at lines 476--483
+\T2A/cmr/m/n/12 ^^f1^^ee ^^f1^^ea^^ee^^eb^^fc ^^f3^^e3^^ee^^e4^^ed^^ee ^^e1^^ee
+^^eb^^fc^^f8^^ee^^e9 ^^fd^^ed^^e5^^f0^^e3^^e8^^e5^^e9, ^^f3^^e4^^ee^^e2^^eb^^e5
+^^f2^^e2^^ee^^f0^^ff^^f9^^e8^^f5 ^^f1^^f2^^e5^^ef^^e5^^ed^^ed^^ee^^ec^^f3 ^^f1^
+^ee^^ee^^f2^^ed^^ee^^f8^^e5^^ed^^e8^^fe
+ []
+
+[7]
+Overfull \hbox (19.5159pt too wide) in paragraph at lines 526--537
+\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 4$ \T2A/cmr/m/n/12 ^^e2^^f5^
+^ee^^e4^^ff^^f9^^e5^^e3^^ee ^^e2 ^^ee^^f6^^e5^^ed^^ea^^f3 ^^c2^^e0^^ea^^f3^^eb^
+^e5^^ed^^ea^^ee-^^ca^^e0^^ef^^e8^^f2^^e0^^ed^^f1^^ea^^ee^^e3^^ee ^^e2 ^^ee^^e1^
+^eb^^e0^^f1^^f2^^e8 ^^e2^^fb^^f1^^ee^^ea^^e8^^f5 ^^fd^^ed^^e5^^f0^^e3^^e8^^e9.
+ []
+
+
+Overfull \hbox (18.04977pt too wide) in paragraph at lines 526--537
+\T2A/cmr/m/n/12 ^^f1^^f2^^e5^^ef^^e5^^ed^^ed^^fb^^f5 ^^ef^^f0^^e8^^e1^^eb^^e8^^
+e6^^e5^^ed^^e8^^e9 ^^e4^^eb^^ff ^^fd^^ed^^e5^^f0^^e3^^e8^^e8 ^^ea^^ee^^ed^^ea^^
+f0^^e5^^f2^^ed^^fb^^f5 ^^f0^^e5^^f8^^e5^^ed^^e8^^e9 ^^f0^^e0^^f1^^f1^^ec^^e0^^f
+2^^f0^^e8^^e2^^e0^^e5^^ec^^ee^^e9
+ []
+
+[8] (rtubes.aux) ) 
+Here is how much of TeX's memory you used:
+ 1956 strings out of 20880
+ 20340 string characters out of 197305
+ 69783 words of memory out of 350001
+ 4910 multiletter control sequences out of 10000+15000
+ 12672 words of font info for 39 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 10000
+ 27i,9n,24p,634b,294s stack positions out of 3000i,100n,1500p,50000b,4000s
+
+Output written on rtubes.dvi (8 pages, 35320 bytes).

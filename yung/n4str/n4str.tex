@@ -1,0 +1,873 @@
+%\documentstyle[12pt,epsf]{article}
+\documentclass[12pt,epsf]{article}
+%\usepackage{graphicx}
+\setlength{\unitlength}{1mm}
+\textwidth 15.0 true cm
+\textheight 22.0 true cm
+\headheight 0 cm
+\headsep 0 cm
+\topmargin 0.4 true in
+\oddsidemargin 0.25 true in
+\def\lsim{\mathrel{\rlap{\lower3pt\hbox{\hskip0pt$\sim$}}
+    \raise1pt\hbox{$<$}}}
+%less than or approx. symbol
+\def\gsim{\mathrel{\rlap{\lower4pt\hbox{\hskip1pt$\sim$}}
+    \raise1pt\hbox{$>$}}}
+%greater than or approx. symbol
+\begin{document}
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}
+%
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+%
+\def\beqn{\begin{eqnarray}}
+\def\eeqn{\end{eqnarray}}
+%
+\newcommand{\qt}{\tilde q}
+\newcommand{\Tr}{{\rm Tr}\,}
+\newcommand{\E}{{\cal E}}
+\newcommand{\qtu}{\tilde q_{1}}
+\newcommand{\qtd}{\tilde q_{2}}
+\newcommand{\ntwo}{${\cal N}=2\;$}
+\newcommand{\none}{${\cal N}=1\;$}
+\newcommand{\nfour}{${\cal N}=4\;$}
+\newcommand{\vp}{\varphi}
+\newcommand{\pt}{\partial}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+
+
+
+
+
+
+
+
+
+\begin{flushright}
+FIAN/TD-??/03\\
+ITEP/TH-??/03\\
+PNPI/????/03
+\end{flushright}
+
+
+\vfil
+
+\begin{center}
+\baselineskip20pt
+{\bf \LARGE Non-Abelian Strings in \none * gauge theory}
+\end{center}
+\bigskip
+%\begin{center}
+%\baselineskip12pt
+%{\large A.~Marshakov}\\
+%\medskip
+%{\em Theory Department, Lebedev Physics Institute\\
+%Institute of Theoretical and Experimental Physics\\ Moscow, Russia}\\
+%{\sf e-mail:\ mars@lpi.ru, mars@itep.ru}\\
+%\bigskip
+%{\large A.~Yung}\\
+%\medskip
+%{\em Petersburg Nuclear Physics Institute, Gatchina, St.
+%Petersburg\\
+%Institute of Theoretical and Experimental Physics, Moscow\\ Russia}\\
+%{\sf e-mail:\ yung@thd.pnpi.spb.ru}\\
+%\end{center}
+%\bigskip\bigskip\medskip
+
+
+\begin{center}
+{\large\bf Abstract} \vspace*{.2cm}
+\end{center}
+
+\begin{quotation}
+We investigate the low energy effective theory and string solutions in
+supersymmetric QCD.
+\end{quotation}
+
+
+
+\vfil
+\end{titlepage}
+
+\newpage
+
+
+
+
+
+
+
+\setcounter{footnote}{0}
+\setcounter{equation}{0}
+
+
+\section{Introduction}
+
+
+
+
+
+\section{The model}
+
+In terms of \none superfields   \nfour gauge theory with
+SU(2) gauge group has a vector
+multiplet which consist of gauge field $A_{\mu}^a$ and gaugino
+$\lambda^{\alpha a}$ and three chiral multiplets $\Phi^a_A$, $A=1,2,3$
+all in the adjoint representation of the gauge group, $a=1,2,3$ is the
+colour index.
+The superpotential of the \nfour gauge theory  reads
+\beq
+W_{{\cal N}=4}= -\frac{\sqrt{2}}{g^2}
+\varepsilon_{abc}\Phi_1^a\Phi_2^b\Phi_3^c.
+\label{n4sup}
+\eeq
+
+We can deform this theory breaking \nfour supersymmetry down to \ntwo
+by adding mass terms
+with equal mass $m$ for first two flavors of the adjoint matter
+\beq
+\label{N2mass}
+W_{{\cal N}=2} = {m\over 2g^2} \Phi_1^{a2} +   {m\over 2g^2}
+\Phi_2^{a2}.
+\eeq
+Then the third flavor combines with the vector
+multiplet to form a \ntwo vector supermultiplet while first two flavors
+represent the adjoint matter.
+
+We can further break the supersymmetry down to \none adding a mass
+term  to $\Phi_3$ multiplet
+\beq
+\label{N1mass}
+W_{{\cal N}=1} = {m_3\over 2g^2} \Phi_3^{a2}.
+\eeq
+
+The bosonic action of the model with above  mass terms  reads
+$$
+{1\over g^2}\int d^4 x\left\{ \frac14F_{\mu\nu}^2 + \sum_A \left| D^{\rm
+adj}_\mu\ \Phi^a_A\right|^2 +\right.
+$$
+$$
++\frac12\left[(\bar{\Phi}_A\bar{\Phi}_B)(\Phi^A\Phi^B)-
+(\bar{\Phi}_A\Phi^B)(\bar{\Phi}_B\Phi^A)\right]
+$$
+\beq
+\left.
++\left|\frac1{\sqrt{2}}\varepsilon_{abc}\varepsilon^{ABC}\Phi^b_B\Phi^c_C
+-m_A\Phi^a_A\right|^2\right\},
+\label{su2}
+\eeq
+where we we use the same notations $\Phi^a_A$ for the scalar components
+of the corresponding chiral superfields.
+
+In this paper we are mostly interested  in a particular point
+of the parameter space of the theory for which $m_3=m$.
+For this value of mass the theory (\ref{su2}) has a symmetric
+vacuum
+\beq
+\label{svac}
+\Phi_A^a =\frac{m}{\sqrt{2}}\left(
+\begin{array}{ccc}
+  1 &
+ 0& 0 \\
+ 0 &
+1 & 0 \\
+  0 & 0 & 1
+\end{array}
+\right),
+\eeq
+where $\Phi^a_A$
+most conveniently (for the $SU(2)$ gauge group and three \nfour
+"flavours") written in terms of the $3\times 3$ colour-flavour matrix.
+
+
+This vacuum respect global O(3)$_{C+F}$ symmetry
+\beq
+\Phi\rightarrow O\Phi O^{-1}
+\label{c+f}
+\eeq
+which combine transformations from global color  and flavor groups.
+As we will see later this symmetry is responsible for the presence of
+non-Abelian strings in the vacuum (\ref{svac}).
+
+Now let us study the mass spectrum of the theory in the vacuum
+(\ref{svac})...
+
+\section{U(1) truncation and \ntwo limit}
+
+
+In fact in the limit of small $m_3$ the mass term  (\ref{N1mass}
+does not break \ntwo
+supersymmetry \cite{HSZ,VY}. The model reduces to \ntwo QED with
+a Fayet-Iliopoulos (FI) term
+\cite{FI}. At zero $m_3$ the theory has a Coulomb branch parametrized
+by arbitrary VEV of $\Phi^a_3$ which by gauge rotation can
+be directed along the third axis in color space,
+$<\Phi^a_3>=\delta^{a3}<a>$. Thus the SU(2) group is broken down to
+U(1) and the theory becomes essentially Abelian.
+
+The Coulomb branch has a singular points
+where some   matter adjoint fields or monopoles/dyons become massless
+\cite{SW1,SW2}.  These singular points become isolated \none vacua
+once small parameter $m_3$ is introduced.
+
+In this paper we will concentrate at the vacuum in
+which adjoint matter becomes massless. At large $m$ this vacuum is
+in the weak coupling regime. If we increase $m_3$
+and eventualy come to the point $m_3=m$ this vacuum will
+evolve to the one in (\ref{svac}).
+Now let  see which matter fields become massless in this vacuum
+at $m_3=0$. To do so
+we analyse the mass matrix of the matter fields given by
+superpotentials (\ref{n4sup}), (\ref{N2mass})...
+
+
+Thus our low energy effective QED besides U(1) gauge multiplet
+includes the following mater fields
+\beq
+\label{phi}
+\phi_A^a =\left(
+\begin{array}{ccc}
+  {g\over 2\sqrt{2}}\left(\chi+\tilde\chi\right) &
+-{g\over 2\sqrt{2}i}\left(\chi-\tilde\chi\right) & 0 \\
+ {g\over 2\sqrt{2}i}\left(\chi-\tilde\chi\right) &
+{g\over 2\sqrt{2}}\left(\chi+\tilde\chi\right) & 0 \\
+  0 & 0 & a
+\end{array}\right)
+\eeq
+The normalisation here is chosen to ensure standard kinetic terms
+for the charged chiral fields   $\chi$ and $\tilde{\chi}$ which form a
+\ntwo matter hypermultiplet of \ntwo QED. The superpotential
+(\ref{n4sup}), (\ref{N2mass}) is given by
+\beq
+W_{QED}=-\sqrt{2}{\chi}a\tilde\chi +m{\chi}\tilde\chi.
+\label{qedsup}
+\eeq
+We see that two flavors of adjoint matter
+of \nfour theory form one flavor of  standard
+charged hypermultiplet (with charge equal one) in the low energy
+effective \ntwo QED.
+
+Now let us introduce small mass term for $a$-field. The bosonic action
+of the model takes the form
+\beq
+\label{qed}
+\int d^4 x\left\{{1\over 4g^2}F_{\mu\nu}^2 +
+|D_\mu\chi|^2 + | D_\mu\bar{\tilde{\chi}}|^2 +
+{1\over g^2}|\pt_\mu a|^2 +
+V(\chi,\tilde\chi,a)\right\}
+\eeq
+with $D_\mu = \pt_\mu - iA^3_\mu$, and the potential
+$$
+V(\chi,\tilde\chi,a) =
+2g^2\left|\chi\tilde\chi -
+\frac1{\sqrt{2}g^2}m_3 a\right|^2 + 2\left|a-\frac{m}{\sqrt{2}}
+\right|^2\left(
+|\chi|^2+|\tilde\chi|^2\right)
+$$
+\beq
+\label{pot}
+ +const g^2 \left[|\chi|^2-|\bar{\chi}|^2\right],
+\eeq
+where the last line comes from the D-terms.
+
+The vacuum of this theory is given by
+$$
+<a>=\frac{m}{\sqrt{2}},
+$$
+\beq
+<\chi>=<\bar{\tilde{\chi}}>=\frac1{g}\sqrt{\frac{mm_3}{2}}
+\label{vac}.
+\eeq
+
+To study the mass spectrum of the low energy theory let us analyse
+the mass matrix in (\ref{pot}) in the vacuum (\ref{vac})...
+
+This  model possess standard Abrikosov-Nielsen-Olesen
+(ANO) U(1) strings \cite{ANO}. In the limit of small
+$m_3$, $m_3\ll m$ the addition of the mass term for $\Phi_3$
+reduces to FI term \cite{VY} with FI parameter
+\beq
+\xi=\frac1{g^2}mm_3.
+\label{xi}
+\eeq
+This limit corresponds to expansion of $a$ in the first term in the
+potential (\ref{pot}) near its VEV and truncating the series keeping
+only the constant term
+\beq
+\frac1{\sqrt{2}g^2}m_3 a\rightarrow \frac1{2g^2}mm_3=\frac12 \xi.
+\label{atoxi}
+\eeq
+
+With this truncation the theory (\ref{qed}) is a bosonic part of \ntwo
+QED. It has a BPS Abelian ANO  strings. To find the string
+with winding number $n=1$ one uses the
+{\em ansatz}
+$$
+\chi = \frac1{\sqrt{2}}\phi(r)e^{i\alpha},
+$$
+$$
+\tilde\chi = \frac1{\sqrt{2}}\phi(r)e^{-i\theta},
+$$
+$$
+a=\frac{m}{\sqrt{2}},
+$$
+\beq
+\label{bpsstr}
+A_i = \pt_i\alpha\left(1-f(r)\right),
+\eeq
+where $r$ and $\alpha$ are polar coordinates in the plane orthogonal
+to the string axis. The profile functions in (\ref{bpsstr}) satisfy
+the first order equations \cite{B}
+$$
+r\phi' - f\phi=0,
+$$
+\beq
+-\frac1r f' +g^2(\phi^2-\xi)=0,
+\label{foe}
+\eeq
+where primes denote derivatives with respect to $r$. These equations
+ should be supplemented by the boundary conditions
+$$
+\phi(0) = 0, \ \ \ \ \phi(\infty) = \sqrt{\xi}=\frac1{g^2}\sqrt{
+mm_3},
+$$
+\beq f(0) = 1, \ \ \ \ f(\infty) = 0.
+\label{bpsbc}
+\eeq
+
+Now let us increase $m_3$. The \ntwo supersymmetry gets broken down to
+\none. Still it is clear that the deformed theory has ANO strings.
+However they  are not  BPS saturated any longer. In fact what happen is
+that short BPS string multiplet of \ntwo SUSY becomes a long
+non-BPS string multiplet of \none theory \cite{VY}. The number of
+states in the string multiplet remains the same (two bosonic + two
+fermionic).
+
+As $m_3$ increases and becomes of order of $m$ the "light" fields which
+enter QED (\ref{qed}) become havier.  Eventually their masses ($\sim
+\sqrt{mm_3}$) become of the same order as the masses of heavy
+non-Abelian fields ( of order of $m$).  Thus the QED
+description becomes no longer valid and we should study the full
+non-Abelian theory (\ref{su2}). Still we can use the QED truncation
+(\ref{qed}) on the classical level to look for the Abelian strings
+embedded into non-Abelian theory.
+
+The only modification we have to make is to introduce a new profile
+function for the field $a$. This is because the replacement
+(\ref{atoxi})
+is no longer valid and field $a$ cannot be constant on the string
+solution. Our modified {\em ansatz} for the Abelian string
+embedded in the non-Abelian theory is
+$$
+\chi = \frac1{\sqrt{2}}\phi(r)e^{i\alpha},
+$$
+$$
+\tilde\chi = \frac1{\sqrt{2}}\phi(r)e^{-i\theta},
+$$
+$$
+a=a_0(r),
+$$
+\beq
+\label{str}
+A_i = \pt_i\alpha\left(1-f(r)\right).
+\eeq
+
+The profile functions here satisfy now the second order equations
+$$
+\phi''+{1\over r}\phi'-{1\over r^2}f^2\phi =
+g^2\phi\left(\phi^2-\sqrt{2}\frac{m_3}{g^2} a\right)+4\phi\left(a-
+\frac{m}{\sqrt{2}}\right)^2 ,
+$$
+$$
+a''+ {1\over r}a' = \sqrt{2}m_3\left(
+\phi^2-\sqrt{2}\frac{m_3}{g^2} a\right)
++4\left(a-\frac{m}{\sqrt{2}}\right)^2 \phi^2,
+$$
+\beq \label{streq}
+f''- {1\over r}f' = 2g^2f\phi^2 .
+\eeq
+and boundary conditions
+$$
+\phi(0) = 0, \ \ \ \ \phi(\infty) = \sqrt{\xi}=\frac1{g^2}\sqrt{
+mm_3},
+$$
+$$
+a(\infty) = \frac{m}{\sqrt{2}},
+$$
+\beq
+f(0) = 1, \ \ \ \ f(\infty) = 0.
+\label{bc}
+\eeq
+
+It is worth noting that only elementary strings with winding number
+$n=1$ are stable when embedded in the non-Abelian theory. They are
+so called $Z_2$ strings which are associated with the center of the
+SU(2) gauge group
+ \beq \pi_1(SO(3))=Z_2.
+\label{top}
+\eeq
+All strings with multiple winding numbers become unstable
+at $m_3\sim m$ \cite{SYmeta}.
+
+
+
+
+\section{Non-Abelian strings}
+
+When $m_3\rightarrow m$ the theory acquires additional symmetry
+In this
+case a new orientational zero
+modes arises, which can be introduced in the
+following way.
+
+
+
+%\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{Shifman:2002jm}
+M.~Shifman and A.~Yung,
+%{\em Domain walls and flux tubes in N = 2 SQCD: D-brane prototypes,}
+Phys.\ Rev.\ D {\bf 67}, 125007 (2003)
+[hep-th/0212293].
+%%CITATION = HEP-TH 0212293;%%
+
+\bibitem{SYsu3wall}
+M.~Shifman and A.~Yung,
+{\em Localization of non-Abelian gauge fields on domain walls at weak coupling
+(D-brane prototypes II),}
+hep-th/0312257, (Phys. Rev. D, submitted).
+%%CITATION = HEP-TH 0312257;%%
+
+\bibitem{Auzzi:2003fs}
+R.~Auzzi, S.~Bolognesi, J.~Evslin, K.~Konishi and A.~Yung,
+%{\em Nonabelian superconductors: Vortices and confinement in N = 2
+%SQCD,}
+Nucl.\ Phys.\ B {\bf 673}, 187 (2003)
+hep-th/0307287.  %%CITATION = HEP-TH 0307287;%%
+
+\bibitem{Hanany:2003hp}
+A.~Hanany and D.~Tong,
+%``Vortices, instantons and branes,''
+JHEP {\bf 0307}, 037 (2003)
+[hep-th/0306150].
+%%CITATION = HEP-TH 0306150;%%
+
+\bibitem{Tong:2003pz}
+D.~Tong,
+{\em Monopoles in the Higgs phase,}
+hep-th/0307302.
+%%CITATION = HEP-TH 0307302;%%
+
+\bibitem{AdSCFT}
+J.~M.~Maldacena,
+%``The large N limit of superconformal field theories and supergravity,''
+Adv.\ Theor.\ Math.\ Phys.\  {\bf 2}, 231 (1998)
+[Int.\ J.\ Theor.\ Phys.\  {\bf 38}, 1113 (1999)]
+[hep-th/9711200];
+%%CITATION = HEP-TH 9711200;%%
+S.~S.~Gubser, I.~R.~Klebanov and A.~M.~Polyakov,
+%``Gauge theory correlators from non-critical string theory,''
+Phys.\ Lett.\ B {\bf 428}, 105 (1998)
+[hep-th/9802109];
+%%CITATION = HEP-TH 9802109;%%
+E.~Witten,
+%``Anti-de Sitter space and holography,''
+Adv.\ Theor.\ Math.\ Phys.\  {\bf 2}, 253 (1998)
+[hep-th/9802150].
+%%CITATION = HEP-TH 9802150;%%
+
+\bibitem{P}
+J.~Polchinski,
+%``Dirichlet-Branes and Ramond-Ramond Charges,''
+Phys.\ Rev.\ Lett.\  {\bf 75}, 4724 (1995)
+[hep-th/9510017];
+%%CITATION = HEP-TH 9510017;%%
+see also the excellent text by J.~Polchinski, {\em String Theory}, Vols. 1 and 2
+(Cambridge University Press,  Cambridge, 1998).
+
+\bibitem{DS}
+G.~R.~Dvali and M.~A.~Shifman,
+%``Domain walls in strongly coupled theories,''
+Phys.\ Lett.\ B {\bf 396}, 64 (1997)
+(E)\ B {\bf 407}, 452 (1997)
+[hep-th/9612128].
+%%CITATION = HEP-TH 9612128;%%
+
+\bibitem{Witten:1997ep}
+E.~Witten,
+%``Branes and the dynamics of {QCD},''
+Nucl.\ Phys.\ B {\bf 507}, 658 (1997)
+[hep-th/9706109].
+%%CITATION = HEP-TH 9706109;%%
+
+
+
+
+\bibitem{SW1}
+N.~Seiberg and E.~Witten,
+ %``Electric - magnetic duality, monopole
+ %condensation, and confinement in N=2
+%supersymmetric Yang-Mills theory,''
+Nucl. Phys. {\bf B426}, 19 (1994),
+(E) {\bf B430},  485 (1994) [hep-th/9407087].
+
+\bibitem{SW2}
+N.~Seiberg and E.~Witten,
+%``Monopoles, duality and chiral symmetry breaking in N=2
+%supersymmetric QCD,''
+Nucl. Phys. {\bf B431}, 484  (1994)
+[hep-th/9408099].
+
+\bibitem{FI}
+P.~Fayet and J.~Iliopoulos,
+%``Spontaneously Broken Supergauge Symmetries And Goldstone Spinors,''
+Phys.\ Lett.\ B {\bf 51}, 461 (1974).
+%%CITATION = PHLTA,B51,461;%%
+
+
+
+\bibitem{APS}
+P.~Argyres, M.~Plesser and N.~Seiberg,
+%``The Moduli Space of N=2 SUSY {QCD} and Duality in
+%N=1 SUSY {QCD},'
+Nucl. Phys. {\bf B471}, 159  (1996)
+[hep-th/9603042].
+
+\bibitem{CKM}
+G.~Carlino, K.~Konishi and H.~Murayama,
+ %``Dynamical symmetry breaking in supersymmetric
+ %SU(n(c)) and USp(2n(c))  gauge
+%theories,''
+Nucl.\ Phys.\ B {\bf 590}, 37 (2000)
+[hep-th/0005076].
+%%CITATION = HEP-TH 0005076;%%
+
+\bibitem{MY}
+A.~Marshakov and A.~Yung,
+%``Non-Abelian confinement via Abelian
+%flux tubes in softly broken N = 2  SUSY QCD,''
+Nucl.\ Phys.\ B {\bf 647}, 3 (2002)
+[hep-th/0202172].
+%%CITATION = HEP-TH 0202172;%%
+
+\bibitem{ABEK}
+R.~Auzzi, S.~Bolognesi, J.~Evslin and  K.~Konishi,
+{\em Non-Abelian monopoles and vortices that confine them,}
+hep-th/0312233.
+
+\bibitem{We}
+E.~J.~Weinberg,
+ %``Fundamental Monopoles And Multi -
+ %Monopole Solutions For Arbitrary Simple
+%Gauge Groups,''
+Nucl.\ Phys.\ B {\bf 167}, 500 (1980);
+%%CITATION = NUPHA,B167,500;%%
+%``Fundamental Monopoles In Theories With
+%Arbitrary Symmetry Breaking,''
+Nucl.\ Phys.\ B {\bf 203}, 445 (1982).
+%%CITATION = NUPHA,B203,445;%%
+
+\bibitem{thopo}
+G.~'t Hooft,
+%``Magnetic Monopoles In Unified Gauge Theories,''
+Nucl.\ Phys.\ B {\bf 79}, 276 (1974);
+%%CITATION = NUPHA,B79,276;%%
+A.~M.~Polyakov,
+%``Particle Spectrum In Quantum Field Theory,''
+Pisma Zh.\ Eksp.\ Teor.\ Fiz.\  {\bf 20}, 430 (1974)
+[JETP Lett.\  {\bf 20}, 194 (1974)].
+%%CITATION = JTPLA,20,194;%%
+
+
+
+
+\bibitem{HSZ}
+A.~Hanany, M.~J.~Strassler and A.~Zaffaroni,
+%``Confinement and strings in M{QCD},''
+Nucl.\ Phys.\ B {\bf 513}, 87 (1998)
+[hep-th/9707244].
+%%CITATION = HEP-TH 9707244;%%
+
+\bibitem{VY}
+A.~I.~Vainshtein and A.~Yung,
+%``Type I superconductivity upon
+%monopole condensation in Seiberg-Witten  theory,''
+Nucl.\ Phys.\ B {\bf 614}, 3 (2001)
+[hep-th/0012250].
+%%CITATION = HEP-TH 0012250;%%
+
+\bibitem{BarH}
+K.~Bardakci and M.~B.~Halpern,
+%``Spontaneous Breakdown And Hadronic Symmetries,''
+Phys.\ Rev.\ D {\bf 6}, 696 (1972).
+%%CITATION = PHRVA,D6,696;%%
+
+
+
+\bibitem{ANO}
+A.~Abrikosov, Sov.~Phys. JETP {\bf32} 1442  (1957)
+[Reprinted in {\em Solitons and Particles}, Eds. C. Rebbi and G. Soliani
+(World Scientific, Singapore, 1984), p. 356];\\
+H.~Nielsen and P.~Olesen, Nucl.~Phys. {\bf B61} 45 (1973)
+[Reprinted in {\em Solitons and Particles}, Eds. C. Rebbi and G. Soliani
+(World Scientific, Singapore, 1984), p. 365].
+
+\bibitem{asrptobe}
+A. Ritz, M. Shifman, and A. Vainshtein, to appear.
+
+\bibitem{SYmeta}
+M.~Shifman and A.~Yung,
+%``Metastable strings in Abelian Higgs models embedded in non-Abelian
+%theories: Calculating the decay rate,''
+Phys.\ Rev.\ D {\bf 66}, 045012 (2002), [hep-th/0205025].
+
+\bibitem{VS}
+H.~J.~de Vega and F.~A.~Schaposnik,
+ %``Electrically Charged Vortices In Nonabelian
+ %Gauge Theories With Chern-Simons
+%Term,''
+Phys.\ Rev.\ Lett.\  {\bf 56}, 2564 (1986);
+%%CITATION = PRLTA,56,2564;%%
+%``Vortices And Electrically Charged Vortices
+%In Nonabelian Gauge Theories,''
+Phys.\ Rev.\ D {\bf 34}, 3206 (1986).
+%%CITATION = PHRVA,D34,3206;%%
+
+\bibitem{HV}
+J.~Heo and T.~Vachaspati,
+%``Z(3) strings and their interactions,''
+Phys.\ Rev.\ D {\bf 58}, 065011 (1998)
+[hep-ph/9801455].
+%%CITATION = HEP-PH 9801455;%%
+
+\bibitem{Su}
+P.~Suranyi,
+%``Vortex solutions in SU(N) adjoint Higgs theories,''
+Phys.\ Lett.\ B {\bf 481}, 136 (2000)
+[hep-lat/9912023].
+%%CITATION = HEP-LAT 9912023;%%
+
+\bibitem{SS}
+F.~A.~Schaposnik and P.~Suranyi,
+%``New vortex solution in SU(3) gauge-Higgs theory,''
+Phys.\ Rev.\ D {\bf 62}, 125002 (2000)
+[hep-th/0005109].
+%%CITATION = HEP-TH 0005109;%%
+
+\bibitem{KB}
+M.~A.~C.~Kneipp and P.~Brockill,
+%``BPS string solutions in non-Abelian Yang-Mills theories,''
+Phys.\ Rev.\ D {\bf 64}, 125012 (2001)
+[hep-th/0104171].
+%%CITATION = HEP-TH 0104171;%%
+
+\bibitem{KoS}
+K.~Konishi and L.~Spanu,
+%``Non-Abelian vortex and confinement,''
+Int.\ J.\ Mod.\ Phys.\ A {\bf 18}, 249 (2003)
+[hep-th/0106175].
+%%CITATION = HEP-TH 0106175;%%
+
+
+
+%\bibitem{HS}
+%Z.~Hlou\v{s}ek and D.~Spector,
+%``Why topological charges imply extended supersymmetry,''
+%Nucl.\ Phys.\ B {\bf 370}, 143 (1992);
+%%CITATION = NUPHA,B370,143;%%
+%J.~Edelstein, C.~Nu\~{n}ez and F.~Schaposnik,
+%``Supersymmetry And Bogomolny Equations In
+%The Abelian Higgs Model,''
+%Phys.\ Lett.\ B {\bf 329}, 39 (1994)
+%[hep-th/9311055].
+%%CITATION = HEP-TH 9311055;%%
+
+%\bibitem{DDT}
+%S.~C.~Davis, A.~C.~Davis and M.~Trodden,
+%``N = 1 supersymmetric cosmic strings,''
+%Phys.\ Lett.\ B {\bf 405}, 257 (1997)
+%[hep-ph/9702360].
+%%CITATION = HEP-PH 9702360;%%
+
+\bibitem{GS}
+A.~Gorsky and M.~A.~Shifman,
+%``More on the tensorial central charges
+%in N = 1 supersymmetric gauge  theories (BPS wall junctions and strings),''
+Phys.\ Rev.\ D {\bf 61}, 085001 (2000)
+[hep-th/9909015].
+%%CITATION = HEP-TH 9909015;%%
+
+
+
+
+
+
+
+
+
+\bibitem{NSVZ}
+V.~Novikov, M.~Shifman, A.~Vainshtein,  V.~Zakharov,
+ %``Two-Dimensional Sigma Models: Modeling
+ %Nonperturbative Effects Of Quantum
+%Chromodynamics,''
+Phys.\ Reports\  {\bf 116}, 103 (1984).
+%%CITATION = PRPLC,116,103;%%
+
+
+
+
+
+
+\bibitem{siaf}
+A.~M.~Polyakov,
+ %``Interaction Of Goldstone Particles In
+ %Two-Dimensions. Applications To
+%Ferromagnets And Massive Yang-Mills Fields,''
+Phys.\ Lett.\ B {\bf 59}, 79 (1975).
+%%CITATION = PHLTA,B59,79;%%
+
+\bibitem{Losev}
+A.~Losev and M.~Shifman,
+ %``N = 2 sigma model with twisted mass
+ %and superpotential: Central charges  and
+%solitons,''
+Phys.\ Rev.\ D {\bf 68}, 045006 (2003)
+[hep-th/0304003].
+%%CITATION = HEP-TH 0304003;%%
+
+\bibitem{dwano}
+G.~R.~Dvali and M.~A.~Shifman,
+%``Domain walls in strongly coupled theories,''
+Phys.\ Lett.\ B {\bf 396}, 64 (1997), (E)
+\ B {\bf 407}, 452 (1997)
+[hep-th/9612128];
+%%CITATION = HEP-TH 9612128;%%
+A.~Kovner, M.~A.~Shifman and A.~Smilga,
+%``Domain walls in supersymmetric Yang-Mills theories,''
+Phys.\ Rev.\ D {\bf 56}, 7978 (1997)
+[hep-th/9706089];
+%%CITATION = HEP-TH 9706089;%%
+B.~Chibisov and M.~A.~Shifman,
+%``BPS-saturated walls in supersymmetric theories,''
+Phys.\ Rev.\ D {\bf 56}, 7990 (1997), (E)
+\ D {\bf 58}, 109901 (1998)
+[hep-th/9706141].
+%%CITATION = HEP-TH 9706141;%%
+
+
+\bibitem{WitIndex}
+E.~Witten,
+%``Constraints On Supersymmetry Breaking,''
+Nucl.\ Phys.\ B {\bf 202}, 253 (1982).
+%%CITATION = NUPHA,B202,253;%%
+
+\bibitem{Alvarez}
+L.~Alvarez-Gaum\'{e} and D.~Z.~Freedman,
+%``Potentials For The Supersymmetric Nonlinear Sigma Model,''
+Commun.\ Math.\ Phys.\  {\bf 91}, 87 (1983);
+%%CITATION = CMPHA,91,87;%%
+S.~J.~Gates,
+%``Superspace Formulation Of New Nonlinear Sigma Models,''
+Nucl.\ Phys.\ B {\bf 238}, 349 (1984);
+%%CITATION = NUPHA,B238,349;%%
+S.~J.~Gates, C.~M.~Hull and M.~Ro\v{c}ek,
+%``Twisted Multiplets And New Supersymmetric
+%Nonlinear Sigma Models,''
+Nucl.\ Phys.\ B {\bf 248}, 157 (1984).
+%%CITATION = NUPHA,B248,157;%%
+
+\bibitem{HoVa}
+K.~Hori and C.~Vafa,
+{\em Mirror symmetry,}
+hep-th/0002222, unpublished.
+%%CITATION = HEP-TH 0002222;%%
+
+\bibitem{CFIV}
+S.~Cecotti, P.~Fendley, K.~A.~Intriligator and C.~Vafa,
+%``A New supersymmetric index,''
+Nucl.\ Phys.\ B {\bf 386}, 405 (1992)
+[hep-th/9204102];
+%%CITATION = HEP-TH 9204102;%%
+P.~Fendley and K.~A.~Intriligator,
+%``Scattering and thermodynamics of fractionally
+%charged supersymmetric solitons,''
+Nucl.\ Phys.\ B {\bf 372}, 533 (1992)
+[hep-th/9111014];
+%%CITATION = HEP-TH 9111014;%%
+S.~Cecotti and C.~Vafa,
+%``On classification of N=2 supersymmetric theories,''
+Commun.\ Math.\ Phys.\  {\bf 158}, 569 (1993)
+[hep-th/9211097].%%CITATION = HEP-TH 9211097;%%
+
+
+
+\bibitem{Dorey}
+N.~Dorey,
+%``The BPS spectra of two-dimensional
+%supersymmetric gauge theories
+%with  twisted mass terms,''
+JHEP {\bf 9811}, 005 (1998) [hep-th/9806056].
+%%CITATION = HEP-TH 9806056;%%
+
+\bibitem{B}
+E.~B.~Bogomolny,
+%``Stability Of Classical Solutions,''
+Yad.\ Fiz.\  {\bf 24}, 861 (1976) [Sov.\ J.\ Nucl.\ Phys.\
+{\bf 24}, 449 (1976),
+reprinted in {\em Solitons and Particles}, Eds. C. Rebbi and G. Soliani
+(World Scientific, Singapore, 1984), p. 389].
+%%CITATION = SJNCA,24,449;%%
+
+
+
+\bibitem{AV}
+A.~Achucarro and T.~Vachaspati,
+Phys.\ Rep.\  {\bf 327}, 347 (2000)
+[hep-ph/9904229]
+
+\bibitem{HaHo}
+A.~Hanany and K.~Hori,
+%``Branes and N = 2 theories in two dimensions'',
+Nucl.\ Phys.\ B {\bf 513}, 119 (1998) [hep-th/9707192].
+%%CITATION = HEP-TH 9707192;%%
+
+
+\bibitem{AD}
+P.~C.~Argyres and M.~R.~Douglas,
+%``New phenomena in SU(3) supersymmetric gauge theory,''
+Nucl.\ Phys.\ B {\bf 448}, 93 (1995)
+[hep-th/9505062].
+%%CITATION = HEP-TH 9505062;%%
+
+\bibitem{BF}
+A.~Bilal and F.~Ferrari,
+ %``The BPS spectra and superconformal
+ %points in massive N = 2  supersymmetric
+%{QCD},''
+Nucl.\ Phys.\ B {\bf 516}, 175 (1998)
+[hep-th/9706145].
+%%CITATION = HEP-TH 9706145;%%
+
+
+
+\end{thebibliography}
+
+
+
+
+
+\end{document}
+
+
+

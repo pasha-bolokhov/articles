@@ -1,0 +1,277 @@
+		Dear Misha,
+Here follow my comments on the history of the Yang-Mills field.
+
+1.Geometry and Physics.
+	The basic role of geometry in fundamental physics was predicted in
+XIX century by Lobachevsky and Riemann. The first real breakthrough was
+done by Einstein in his theory of gravitation. At that time only two
+fields - EM and gravitational were known. Naturally people began to look
+for the geometrical interpretation of the Maxwell's EM field. First
+attempt by H. Weyl in 1918, based on the scale transformation (and
+conformal structure of space-time) was wrong. However it underlined
+the role of the vector-potential in the description of the EM field.
+Also the term "gauge-invariance" (eich-invarianz) was introduced
+for the first time.
+	The proper role of these two notions was realized after the
+advent of Schroedinger version of Quantum Mechanics by Fock and London
+in 1926. The gauge transformation was realized as the localized change
+of the phase of complex wave function and vector potential entered
+through the "long" momentum operator.
+	I the independent papers of Weyl and Fock of 1929 the first
+nonabelian gauge group appeared as that of the local Lorentz transformation
+of the moving frame, indispencible in the description of spinors, entering 
+the (first-quantized) Dirac equation. The spin connection transformation
+law already involved all attributes of the nonabelian gauge fields.
+	Another geometric idea was connected with higher dimensional
+space-time (Kaluza-Klein), where the EM vector potential appeared as the
+off-diagonal \mu 5 (or 5\mu) element of the 5-dimensional metric. This
+idea was generalized by O. Klein in 1938 and W. Pauli in 1953 to
+higher dimensional (e.g. 6 or 7) space-time and also led to several aspects
+of the nonabelian gauge field theory.
+
+2. Yang and Mills.
+	Isospin and analogy between EM and meson nuclear force naturally
+led to the idea of the localized isospin transformation. It was realized
+in the paper of Yang and Mills of 1954. Pauli (who knew main formula
+through his Kaluza-Klein-like approach) immediately raised the problem
+of mass of charged vector fields. The adequate answer was to be waited
+for until the beginning of 70-ties.
+	However several lines of thought gradually led to more wide
+acceptance of the Y-M idea. Among them were search for universal weak
+interactions, current algebra and application of the group theory to the
+systematization of hadrons. Names of Feynman, Gell-Mann, Schwinger,
+Sakurai are relevant here. The collection of translations "Compensating
+fields", edited by Ivanenko around 1963, illustrates this development.
+Still nobody (besides Schwinger) attempted the quantization problem.
+	In the USSR due to the (correct) results by Landau et al
+for QED the field theory was forbidden.
+
+3. My story.
+	I graduated from Physics Dept. of Leningrad University in 1956,
+had my PhD there in 1959, working mostly on mathematical aspects of
+quantum scattering theory. From the fall of 59 I belonged to Steklov
+Math. Inst. in SPb. Around 1964, after reasonable success of my treatment
+of the 3-particle system, I decided, that now I can (have enough force)
+turn to QFT. Of course, I knew about the difficulties in QED, so I began
+to learn gravity. I began to read monographs on gravity (e.g. that by
+A. Lichnerovitz and Ivanenko's volume mentioned above). But then
+occasionally I came across Feynman's lecture on quantum gravity,
+published in the "Polonica Physica Acta". This was (apparently
+unauthorized) transcript of his talk at the gathering of the
+gravitationists, at that time completely separated from the HEP community.
+In this lecture he presented his results on one loop calculations
+for YM S-matrix. He was prompted to this by Gell-Mann, who recommended
+him YM just as a toy model for gravity with vector particles instead
+of tensor - great simplification for combinatorics.
+	Feynman used his own diagrammatic technique in its naive form:
+classical lagrangian is a quadratic form + higher order terms. They
+define propagator and vertices, correspondingly. Because of the gradient
+invariance (let us use once Fock's term) propagator is defined up to
+longitudal term, which enters with an arbitrary coefficient. It was
+expected, that physical amplitudes does not depend on the latter just as
+in QED. However Feynman found, that it was not the case.
+	As is well known, in 1948 Feynman derived the diagram technique
+for QED via functional integral. But this derivation was not understood
+by public and was substituted by the paradigm, formulated above. I find
+it strange, that Feynman did not return to his own derivation and
+diagrammatic rules to resolve the paradox. Instead he tried to correct
+calculation by the fashionable in 60-ties considerations based on
+analyticity principles. Namely for one loop the imaginary part
+of amplitude has only tree contribution. The real part then is
+reconstructed via dispersion relation.
+	Feynman found, the the result differ from the naive one-loop result 
+by a term , which can be interpreted as a contribution of a fictitious
+(as he called it) scalar particle. Interesting enough this contribution 
+enters with - sigh, characteristic of fermion statistics.
+	After this he proceeded to look for more general rules but failed.
+In particular he proposed to add the (non gauge invariant) mass term, use
+proper diagram technique and get the answer as a limit when m -> 0.
+As we know now (first shown by Slavnov and me in 1968) it was wrong.
+Even in one loop the results differ by a factor 1/2.
+	So reading Feynman lecture I realized the challenge at the very
+basic point of QFT. The classical lagrangian was not enough to define
+quantum theory. It became clear, that here is the place, where I can begin
+to work on QFT.
+	Another stimulus to do YM was pure mathematical. Knowing the name
+of Lichnerowitz because of his monograph on gravitation, I looked into
+his another book on differential geometry, dedicated mostly to the theory
+of connections. Curiously enough I acquired this rather thin volume on the
+streetstand with second hand books for 43 kopecs. From it I found that
+YM field has a definite geometrical meaning as a connection in the vector
+bundle. This immediately gave me a geometrical picture for constructing the
+interactions: matter field define a linear (or nonlinear as in
+\sigma-model) space, where they get their values (now we say target);
+this space is a fiber in a vector bundle with space-time being the base.
+Thus matter fields are sections of this bundle. The interaction is
+introduced via connection, which is another type of a field.
+	In this way the YM theory became as geometric as Einstein's
+gravity. Moreover, idea of a fiber, independent of space-time and/or
+its tangent plane, was certainly a generalization of geometry in pure
+gravity theory. The matter fields were not only tensors (or spinors)
+but carried other labels, associated with the space of charges, encoded
+in the basics compact group, which had nothing to do with the Lorentz
+group.
+	This geometrical picture, which crystallized in my mind in the
+middle of 1965, was another basic point of departure for my work on the
+quantization of YM field, which I rather slowly began to work on.
+	I want to stress here, that these mathematical intuitive 
+considerations were my real ideological base, which I formulated for myself
+before concrete work.
+	Victor Popov was my graduate student at the beginning of 60-ties,
+whom I inherited from Yu. Novozhilov when he left Steklov because of
+the canceling academic positions (half-jobs) for University professors.
+His PhD thesis was dedicated to Bose gas, where he proposed an adequate
+diagram technique valid for any interaction potential (we have a joint
+article in JETP in 1963). SO I had a technically qualified collaborator.
+	It was clear, that the main new feature of YM is nontrivial
+gauge covariance. It is not a point in space of fields (concrete field),
+but an orbit of the gauge group (class of gauge equivalent fields) which
+plays the role of physical configuration. Functional (Feynman) formulation
+of QFT was most natural to take this into account. Namely, one was sum up
+over the gauge orbits rather than over fields. Thus a new question
+aroused - how to define the measure in the space of orbits.
+	First thing was to parameterize orbits. This was simple - the
+standard gauge condition (like the Lorentz or Coulomb) does it. The
+inclusion of gauge condition into functional integral amounts to
+introducing the \delta-function. However it is not enough. Indeed,
+contrary to QED, the gauge orbits of YM intersect the gauge plane with
+angle, depending on the field variables. Thus one must introduce
+corresponding jacobian. Scattering theory already taught me about
+determinants of differential operators, so I supposed, that the sought
+jacobian is a determinant of some natural differential operator,
+associated with Lorentz condition. The only candidate was the operator
+of the equation, which is to be satisfied by the infinitesimal gauge
+parameter, when the Lorentz condition is imposed on the fields. One
+day in the fall of 66 I discussed all this with Victor - next day he
+returned with derivation, based on the insertion of unity: the form
+of the \delta-function, averaged by gauge group. It was clear that this
+formal trick solves the problem. However I was not completely satisfied.
+Indeed, derivation was based on the trick and did not take into account
+the unitarity.
+	There was no rush in publishing. We did not know anybody doing
+quantum YM. In the end of 66 I was allowed for the first time to go
+abroad for a long time (two months). I visited IHES near Paris, where
+Leon Motchane (Anselm's uncle) was director. I was invited as a specialist
+in quantum 3-body problem. It was not clear, with whom to discuss my new
+things. In fact, S. Deser visited IHES at the same time and we lived in
+the same Residence. It was quite instructive to discuss classical
+gravity with him. He introduced me to Lichnerowitz and I even has given
+a talk on their seminar, discussing the problem of positivity of mass.
+Occasionally I mentioned to Deser Feynman lecture and my interest in
+YM. It happened that he participated in Polish conference and he brought
+the name of De-Witt to me. I found, that De-Witt successfully continues
+Feynman's approach to quantization by reconstructing amplitudes from
+their imaginary parts. It became clear, that it was time to publish
+something about our approach. Before leaving France I discussed YM with
+Stora and he was the first person really supporting our staff.
+	If I remember right, Veltman also visited IHES during my time
+and spoke about massive YM. But I was too shy to approach him.
+	In the meantime the problem of unitarity was solved. The
+Coulomb gauge allowed to reduce the functional integral to manifestly
+hamiltonian form, where unitarity is evident.
+	Returning home in the mid. January 67 I began to prepare
+publication. It was no doubt, that our paper will not be accepted by
+JETP. QFT was proclaimed to be dead and YM was especially vulnerable
+due to the masslessness of charged components. Fortunately mid. 60-ties
+was still kind of thaw period and Soviet physicists were allowed to
+publish in a new European journal "Physics Letters". Manuscript was
+to be two published pages. So I decided to use this opportunity.
+I remember, how careful I was to choose every word to make the text
+economical and didactic at the same time. Thus the paper was written,
+sent abroad and to our delight immediately accepted. Later Veltman
+told me, that he was a referee, did not understand anything, but allowed
+publication because of my name in it.
+	In two pages it was impossible to explain our philosophy
+(hamiltonian method) and technical details, e.g. comments on 
+renormalization or the representation of determinant in term of
+fermi-integral, where fictitious particles (ghosts) were introduced
+in term of their own fields. Thus a problem of an extended publications
+still existed. We half-solved it using another new opportunity - the
+preprint system of just organized (by Bogolubov) Kiev Institute of
+Theoretical Physics. We sent there rather long text, which was published
+(in Russian) in summer of 1967.
+	This preprint has an interesting story. When YM came to lime-light
+due to 't Hooft, it was published in English as a Fermi-Lab preprint
+in 1972 by B. Lee. To that time I already visited US (Dec. 71 - March 72)
+and met C.N.Yang and Feynman personally. B.Lee was working at Stony-Brook
+at the time, so I discussed a lot with him. Curiously enough, in the
+preface to translation, written by Lee, it is mentioned, that he publishes
+the English version, prepared for Veltman in 1968. So Kiev preprint was
+known in Utrecht in 1968.
+	I cannot help mentioning that in November 99 I found, that somebody
+put on my name in SPIRES the file of Fermi-Lab edition of Kiev preprint
+under number 1 contrary to chronological order. I do not know to whom I
+should be grateful.
+	In the second half of 1967 I had exchange of letters with De-Witt
+and Weinberg. De-Witt's version of quantization of gravity and YM appeared
+in a monumental paper in summer of 67. His main goal was gauge invariance,
+namely independence of amplitudes from the longitudal parts of propagators.
+i have written to him, that Victor and me fixed the unitarity. He politely
+answered me agreeing that our approaches are rather different in goals
+and technique.
+	With Weinberg I had contacts before due to our mutual interests in
+few-body scattering. So I mentioned to him, that we have now new joint
+interest. I referred of course to his new EW model and mentioned, that
+may be our diagrammatic rules will be useful to him. He send me back his
+preprint and proposed, that I should work on quantization myself. As a
+result neither of us paid serious attention to each other.
+	To finish this part of the story, let me mention, that I decided to
+write an invariant discussion of quantization of systems with constraints.
+There were rumours, that Bogolubov will begin a new journal and i had written
+a paper with intention to publish it there. Paper was done in the fall of
+1967, but the launching of journal was delayed, so it was published only
+in Nov. 69 as the very first paper, opening the journal "Theoretical and
+Mathematical Physics".
+
+4. Development after 1967.
+	There was no doubt for me about renormalization. Moreover, it was
+clear, that YM is a rather exceptional QFT. First of all, it has only
+logarithmic divergences. Indeed, being massless, there was no problem of
+the mass renormalization. Furthermore, the coupling constant entered as
+a factor in front of action and the lagrangian density was the only
+local gauge invariant term with proper dimension. So the coupling
+constant rescaling was the only renormalization required.
+	I cannot explain now, why I did not bother to look at the important
+sign in one loop renormalization term. Apparently I did not have any worry
+about it. The real problem was that of mass and i spent at least two years
+on futile efforts to find anomalous Green function in analogy with
+fashionable at that time theory of superconductivity. Ironically the
+problem of mass and renormalization were found to be tightly connected in
+what is called now "dimensional transmutation". But it was realized only
+in the beginning of 70-ties by you know whom.
+	Recently I asked Slavnov, who joined YM around 1968, why we did not
+look at the sign of one loop contribution. He already published the
+expression for the renormalization of invariant charge, so one was to sum
+up several easily calculable constants. He answered, that in Bogolubov
+school, where he was raised, the problem of zero charge was considered
+as formal and non-interesting. Unfortunately neither of us knew about
+physical considerations of scaling.
+	Our collaboration with Slavnov began curiously enough. After one of
+my very first talks about diagrammatic rules for YM (apparently in summer
+of 1968 in Kiev) he pointed on discrepancy of our results with his one
+loop calculation in massive YM case. First he claimed, that our rules
+with Popov are mistaken, factor 1/2 was missed. However, as our rules
+were based on determinant, I was sure that we are right. So we analyzed
+the problem and found that indeed, the vanishing mass limit of massive
+YM does not coincide with the result for massless case. The factor 1/2
+was expected. In this way we showed, that original Feynman idea was too
+lighthearted.
+	Slavnov brought in heavy machinery of QFT, formulated the
+analogues of Ward identities and derived expression for the invariant
+charge. This essentially finished the formal aspects of quantization of
+YM field.
+	In winter of 69 at the school at Asau I described to Fralkin
+my approach to YM. I stressed the fact, that only one renormalization is
+needed. He was quite impressed and apparently began to work on YM after
+that. However I consider his large paper in Phys. Rev. of 1970 inconclusive.
+He made an important statement, that both Feynman and Landau gauge can be 
+used (our derivation was based on Landau gauge). but I believe, that
+there was no proper derivation. This was done later by 't Hooft via
+clever trick of using the inhomogeneous Lorentz condition.
+	't Hooft entered this story in 1969 and found the first viable
+application of YM. You know what follows.
+
+			with best wishes, Ludwig
+
+P.S. I send you unchecked version to prompt our interaction. Next week I
+return from Hamburg and shall correct the draft. L.
